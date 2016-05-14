@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TMK Firmware Builder</title>
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>TMK Firmware Builder</h1>
+		<div class="wrapper">
+
+			<!-- MESSAGES -->
+			<div id="err"></div>
+			<div id="msg"></div>
+
+			<!-- INITIAL SETUP -->
+			<div id="screen-initial">
+				<h4>Upload TMK Firmware Builder configuration</h4>
+				<button class="block" id="tfb-upload">Upload</button>
+				<br>
+				<br>
+				<h4>Or import from keyboard-layout-editor.com</h4>
+				<textarea id="kle" placeholder="Paste layout here..."></textarea>
+				<button class="block" id="kle-import">Import</button>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/utilities.js"></script>
+		<script src="js/keyboard.js"></script>
+		<script src="js/ui.js"></script>
+	</body>
+</html>
