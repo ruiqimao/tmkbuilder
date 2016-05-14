@@ -1,4 +1,4 @@
-// List of all possible keys.,
+// List of all possible keys.
 KEYS = [
 	'TRNS',
 	'NO',
