@@ -30,6 +30,17 @@ function clearMessages() {
 
 
 /*
+ * Show a screen.
+ *
+ * @param screen Screen name.
+ */
+function showScreen(screen) {
+	$('.screen').hide();
+	$('#screen-' + screen).show();
+}
+
+
+/*
  * Read a text file.
  *
  * @param callback Function to call with the data.

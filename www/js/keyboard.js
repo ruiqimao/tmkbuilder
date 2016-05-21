@@ -16,6 +16,9 @@ function Key() {
  */
 function Keyboard() {
 	this.keys = [];
+
+	this.rows = 0;
+	this.cols = 0;
 }
 
 /*
@@ -34,14 +37,16 @@ function fromKLE(json) {
 
 	// Create a new keyboard.
 	var keyboard = new Keyboard();
+	keyboard.rows = layout.length;
 
 	// Iterate through all the keys in the layout.
 	var y = 0;
 	for (var r in layout) {
 		var row = layout[r];
 
-		// Reset the x position.
+		// Reset the x position and number of columns.
 		var x = 0;
+		var cols = 0;
 		for (var c = 0; c < row.length; c ++) {
 			// Set the key size.
 			var width = 1;
@@ -73,7 +78,13 @@ function fromKLE(json) {
 
 			// Increment the x position.
 			x += width;
+
+			// Increment the number of columns.
+			cols ++;
 		}
+
+		// Set the number of keyboard columns.
+		keyboard.cols = Math.max(keyboard.cols, cols);
 
 		// Increment the y position.
 		y ++;

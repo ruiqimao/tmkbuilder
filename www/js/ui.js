@@ -17,6 +17,10 @@ $('#tfb-upload').click(function() {
 	readFile(function(json) {
 		try {
 			_keyboard = JSON.parse(json);
+			
+			// Reset and show the config screen.
+			resetConfig();
+			showScreen('config');
 		} catch (e) {
 			showError('Bad configuration file.');
 		}
@@ -31,7 +35,20 @@ $('#kle-import').click(function() {
 	// Attempt to create the keyboard.
 	try {
 		_keyboard = fromKLE(json);
+
+		// Reset and show the config screen.
+		resetConfig();
+		showScreen('config');
 	} catch (e) {
 		showError('Invalid layout.');
 	}
 });
+
+
+/*** CONFIG ***/
+
+/*
+ * Reset the config.
+ */
+function resetConfig() {
+}
