@@ -9,6 +9,9 @@ function Key() {
 
 	this.x = 0;
 	this.y = 0;
+
+	this.row = 0;
+	this.col = 0;
 }
 
 /*

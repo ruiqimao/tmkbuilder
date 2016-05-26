@@ -71,6 +71,19 @@ input[type="text"] {
 	font-size:1rem;
 }
 
+input[type="number"] {
+	display:inline-block;
+	outline:none;
+	background:#ffffff;
+	border:1px solid #f0f0f0;
+	border-radius:0.2rem;
+	line-height:1.7rem;
+	padding:0 0.5rem;
+	font-family:Lato;
+	font-size:0.9rem;
+	text-align:center;
+}
+
 textarea {
 	outline:none;
 	background:#ffffff;
@@ -149,6 +162,13 @@ button.block {
 }
 
 
+/*** SCREENS ***/
+
+#screen-config {
+	display:none;
+}
+
+
 /*** INITIAL SETUP ***/
 
 #kle {
@@ -157,4 +177,50 @@ button.block {
 	font-family:monospace;
 	text-align:left;
 	resize:none;
+}
+
+
+/*** CONFIG - KEYBOARD ***/
+
+.keyboard-wrapper {
+	padding:0.5rem;
+	margin:auto;
+	background:#ffffff;
+	border:1px solid rgba(0,0,0,0.1);
+	border-radius:0.5rem;
+	display:inline-block;
+}
+
+#keyboard {
+	position:relative;
+}
+
+.key {
+	position:absolute;
+}
+
+.key-inner {
+	position:absolute;
+	top:0.3rem;
+	left:0.3rem;
+	right:0.3rem;
+	bottom:0.3rem;
+	border:1px solid rgba(0,0,0,0.2);
+	border-radius:0.2rem;
+	cursor:pointer;
+}
+
+.key-inner:hover {
+	background:rgba(0,0,0,0.02);
+}
+
+.key.active .key-inner {
+	border:1px solid rgba(0,0,100,0.5);
+}
+
+
+/*** CONFIG - DISPLAY ***/
+
+#layer {
+	width:3rem;
 }

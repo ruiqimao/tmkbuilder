@@ -242,3 +242,5 @@ KEYS = [
 	'FN30',
 	'FN31'
 ];
+
+UI_KEY_SIZE = 3.7;
