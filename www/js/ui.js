@@ -346,17 +346,19 @@ function drawWires() {
 		// Move the row and column indicators.
 		var rowInd = _rowInds[key.row];
 		var colInd = _colInds[key.col];
-		if (from.y < rowInd.offset().top || !rowInd.is(':visible')) {
+		if (!rowInd.is(':visible') || from.x < rowInd.data('x')) {
 			rowInd.css({
 				'top': _keys[i].position().top,
 				'line-height': _keys[i].height() + 'px'
 			});
+			rowInd.data('x', from.x);
 		}
-		if (from.x < colInd.offset().left || !colInd.is(':visible')) {
+		if (!colInd.is(':visible') || from.y < rowInd.data('y')) {
 			colInd.css({
 				'left': _keys[i].position().left,
 				'width': _keys[i].width()
 			});
+			colInd.data('y', from.y);
 		}
 
 		// Show the indicators.
