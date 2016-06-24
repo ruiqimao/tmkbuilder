@@ -26,6 +26,7 @@
 
 			<!-- CONFIG -->
 			<div class="screen" id="screen-config">
+				<br><br>
 				<div class="keyboard-wrapper">
 					<div id="keyboard"></div>
 					<div id="wires"></div>
@@ -34,28 +35,44 @@
 				<br><br>
 
 				<div class="config-display">
-					<h3>
-						<input type="checkbox" id="wires" checked>
-						&nbsp;&nbsp;
-						Display Wires
-					</h3>
-					
-					<h3>
-						Display Layer
-						&nbsp;&nbsp;
-						<input type="number" id="layer" value="0">
-					</h3>
+					<div class="radio-group">
+						<button class="active" id="config-wire">Wire Mode</button>
+						<button id="config-firmware">Firmware Mode</button>
+					</div>
 				</div>
 
-				<div class="config-key">
+				<div class="config-wire config-panel panel">
+					<h2>Wire Config</h2>
+					<div class="input">
+						<label>Row</label>
+						<input type="number" id="config-wire-row" value="0" min="0">
+					</div>
+					<div class="input">
+						<label>Column</label>
+						<input type="number" id="config-wire-col" value="0" min="0">
+					</div>
+				</div>
+
+				<div class="config-pin config-panel panel">
+					<h2>Pin Config</h2>
+				</div>
+
+				<div class="config-firmware config-panel panel">
 				</div>
 			</div>
 		</div>
 
 		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.transform2d.min.js"></script>
+		<script src="js/jquery.domline.min.js"></script>
+
 		<script src="js/constants.js"></script>
 		<script src="js/utilities.js"></script>
+
 		<script src="js/keyboard.js"></script>
+
+		<script src="js/ui-elements.js"></script>
+
 		<script src="js/ui.js"></script>
 	</body>
 </html>

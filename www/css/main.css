@@ -82,6 +82,18 @@ input[type="number"] {
 	font-family:Lato;
 	font-size:0.9rem;
 	text-align:center;
+	width:4rem;
+}
+
+label {
+	font-family:Hind;
+	font-size:1rem;
+	font-weight:500;
+	color:#666666;
+	margin-right:0.5rem;
+	display:inline-block;
+	min-width:5rem;
+	text-align:right;
 }
 
 textarea {
@@ -109,8 +121,13 @@ button {
 	cursor:pointer;
 }
 
+.radio-group button:not(.active) {
+	background:#677c8f;
+}
+
+
 button:hover {
-	background:#455a6f;
+	background:#455a6f !important;
 }
 
 button:active {
@@ -127,6 +144,20 @@ button.block {
 	width:100%;
 	max-width:500px;
 	margin:auto;
+}
+
+.input {
+	margin:0.5rem 0;
+}
+
+.panel {
+	background:#ffffff;
+	padding:0.5rem;
+	border:1px solid rgba(0,0,0,0.1);
+	border-radius:0.2rem;
+	width:100%;
+	max-width:500px;
+	margin:1rem auto;
 }
 
 .wrapper {
@@ -218,9 +249,31 @@ button.block {
 	border:1px solid rgba(0,0,100,0.5);
 }
 
-
-/*** CONFIG - DISPLAY ***/
-
-#layer {
-	width:3rem;
+.config-panel {
+	display:none;
 }
+
+
+/*** CONFIG - WIRE ***/
+
+.keyboard-row-indicator, .keyboard-col-indicator {
+	position:absolute;
+	font-family:monospace;
+	font-size:0.9rem;
+	font-weight:500;
+}
+
+.keyboard-row-indicator {
+	left:-2rem;
+	color:#c0392b;
+}
+
+.keyboard-col-indicator {
+	top:-2.5rem;
+	text-align:center;
+	color:#2c3e50;
+}
+
+
+
+/*** CONFIG - FIRMWARE ***/
