@@ -40,9 +40,9 @@ function init() {
 	// Show the wire config.
 	setConfigMode(MODE_WIRE);
 
-	// Draw the wires.
-	drawWires();
-
 	// Set the pin config.
 	setPinConfig();
+
+	// Draw the wires.
+	drawWires();
 }

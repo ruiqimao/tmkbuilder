@@ -9,6 +9,3 @@ var _rowLines = {}; // List of row line elements on the keyboard.
 var _colLines = {}; // List of column line elements on the keyboard.
 var _rowInds = []; // List of row indicators.
 var _colInds = []; // List of column indicators.
-
-var _rowPins = []; // List of row pin elements.
-var _colPins = []; // List of column pin elements.

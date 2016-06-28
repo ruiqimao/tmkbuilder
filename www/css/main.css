@@ -165,6 +165,13 @@ button.block {
 }
 
 
+.clearfix:after {
+	display:block;
+	content:'';
+	clear:both;
+}
+
+
 /*** MESSAGES ***/
 
 #err, #msg {
@@ -279,14 +286,19 @@ button.block {
 }
 
 .keyboard-row-indicator {
-	left:-2rem;
+	left:-3.8rem;
 	color:#c0392b;
 }
 
 .keyboard-col-indicator {
-	top:-2.5rem;
+	top:-2.8rem;
 	text-align:center;
 	color:#2c3e50;
+}
+
+.config-pin-column {
+	width:50%;
+	float:left;
 }
 
 

@@ -141,6 +141,10 @@ function drawWires() {
 			colInd.data('y', from.y);
 		}
 
+		// Show the pin assignments on the indicators.
+		_rowInds[key.row].html('(' + PINS[_keyboard.rowPins[key.row]] + ') ' + key.row);
+		_colInds[key.col].html('(' + PINS[_keyboard.colPins[key.col]] + ')<br>' + key.col);
+
 		// Show the indicators.
 		_rowInds[key.row].show();
 		_colInds[key.col].show();
@@ -173,10 +177,10 @@ function hideWires() {
  */
 function setPinConfig() {
 
-	function createPinSelector(pinNum) {
+	function createPinSelector(type, pinNum) {
 		// Create the elements.
 		var element = $('<div></div>');
-		var label = $('<label style="width:2rem"></label>');
+		var label = $('<label style="width:1rem; text-align:left;"></label>');
 		var select = $('<select></select>');
 
 		// Set the values.
@@ -188,19 +192,34 @@ function setPinConfig() {
 			select.append(option);
 		}
 
-		// Pack and return.
+		// Pack the elements.
 		element.append(label);
 		element.append(select);
+
+		// Change event.
+		element.change(function() {
+			// Change the pin.
+			var value = parseInt(this.select.val());
+			if (this.type == 0) {
+				_keyboard.rowPins[this.pinNum] = value;
+			} else {
+				_keyboard.colPins[this.pinNum] = value;
+			}
+
+		// Redraw the wires.
+		drawWires();
+		}.bind({ type: type, pinNum: pinNum, select: select }));
+
 		return element;
 	}
 
 	// Add fields for each row and column.
 	for (var row = 0; row < _keyboard.rows; row ++) {
-		var selector = createPinSelector(row);
+		var selector = createPinSelector(0, row);
 		$('#config-pin-rows').append(selector);
 	}
 	for (var col = 0; col < _keyboard.cols; col ++) {
-		var selector = createPinSelector(col);
+		var selector = createPinSelector(1, col);
 		$('#config-pin-cols').append(selector);
 	}
 }
