@@ -41,10 +41,11 @@ h2 {
 
 h3 {
 	font-family:Lato;
-	font-size:0.9rem;
-	font-weight:400;
-	color:#444444;
-	margin-bottom:0.3rem;
+	font-size:1rem;
+	font-weight:600;
+	color:#666666;
+	margin-bottom:1rem;
+	text-align:left;
 }
 
 h4 {
@@ -152,11 +153,12 @@ button.block {
 
 .panel {
 	background:#ffffff;
-	padding:0.5rem;
+	padding:0.5rem 1.5rem;
 	border:1px solid rgba(0,0,0,0.1);
 	border-radius:0.2rem;
 	width:100%;
 	max-width:500px;
+	box-sizing:border-box;
 	margin:1rem auto;
 }
 
