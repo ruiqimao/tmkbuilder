@@ -249,6 +249,20 @@ button.block {
 	border:1px solid rgba(0,0,100,0.5);
 }
 
+.key-pad {
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:0;
+	height:0;
+	border:3px solid #888888;
+	border-radius:50%;
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	-moz-transform:translateX(-50%) translateY(-50%);
+	-ms-transform:translateX(-50%) translateY(-50%);
+	transform:translateX(-50%) translateY(-50%);
+}
+
 .config-panel {
 	display:none;
 }

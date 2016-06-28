@@ -104,7 +104,7 @@ function createKeyboardUI() {
 		var key = _keyboard.keys[i];
 
 		// Create a new key.
-		var uiKey = $('<div class="key"><div class="key-inner"></div></div>');
+		var uiKey = $('<div class="key"><div class="key-inner"></div><div class="key-pad"></div></div>');
 
 		// Set the key's size.
 		uiKey.css('width', key.width * UI_KEY_SIZE + 'rem');
@@ -168,6 +168,9 @@ function setConfigMode(mode) {
 
 		// Draw wires.
 		drawWires();
+
+		// Set the pin config.
+		showPinConfig();
 	} else {
 		$('.config-wire').hide(); // Wire config panel.
 		$('.config-pin').hide(); // Pin config panel.
@@ -286,6 +289,9 @@ function getKeyPosition(id) {
  * Draws wires on the keyboard.
  */
 function drawWires() {
+	// Show key pads.
+	$('.key-pad').show();
+
 	// Hide all row and column indicators.
 	$('.keyboard-row-indicator, .keyboard-col-indicator').hide();
 
@@ -371,6 +377,9 @@ function drawWires() {
  * Hides the wire display.
  */
 function hideWires() {
+	// Hide key pads.
+	$('.key-pad').hide();
+
 	// Hide all row and column indicators.
 	$('.keyboard-row-indicator, .keyboard-col-indicator').hide();
 
@@ -383,6 +392,12 @@ function hideWires() {
 		_colLines[i].remove();
 		delete _colLines[i];
 	}
+}
+
+/*
+ * Shows the pin config.
+ */
+function showPinConfig() {
 }
 
 

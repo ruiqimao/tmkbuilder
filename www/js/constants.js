@@ -243,6 +243,15 @@ KEYS = [
 	'FN31'
 ];
 
+// List of all possible pins.
+PINS = [
+	'B0', 'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7',
+	'C6', 'C7',
+	'D0', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7',
+	'E0',
+	'F0', 'F1', 'F4', 'F5', 'F6', 'F7'
+];
+
 // UI key size.
 UI_KEY_SIZE = 3.7;
 

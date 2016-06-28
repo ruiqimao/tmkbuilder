@@ -20,6 +20,9 @@ function Key() {
 function Keyboard() {
 	this.keys = [];
 
+	this.rowPins = [];
+	this.colPins = [];
+
 	this.width = 0;
 	this.height = 0;
 
@@ -110,10 +113,8 @@ function fromKLE(json) {
 	for (var i in keyboard.keys) {
 		var key = keyboard.keys[i];
 
-		console.log(JSON.stringify(posTaken));
-
 		// Get the estimated column.
-		var col = Math.floor(key.x / keyboard.width * keyboard.cols);
+		var col = Math.floor((key.x + key.width / 2) / keyboard.width * keyboard.cols);
 
 		// If the position is already taken, increment the column by one.
 		while (posTaken.indexOf(key.row + ',' + col) != -1) col ++;
@@ -122,8 +123,23 @@ function fromKLE(json) {
 		key.col = col;
 
 		// Save the position as taken.
-		posTaken.push(key.row + ',' + col);
+		posTaken.push(key.row + ',' + key.col);
+
+		// If the column number exceeds the number of columns possible, go back and shift everything back by 1.
+		if (col >= keyboard.cols) {
+			// Shift keys until we reach an unclaimed position.
+			var prevIndex = i;
+			var prev;
+			while (posTaken.indexOf((prev = keyboard.keys[prevIndex --]).row + ',' + (prev.col - 1)) != -1) {
+				prev.col --;
+			}
+			prev.col --;
+		}
 	}
+
+	// Add all the pins to the keyboard.
+	keyboard.rowPins = new Array(keyboard.rows).fill(0);
+	keyboard.colPins = new Array(keyboard.cols).fill(0);
 
 	// Return the keyboard.
 	return keyboard;
