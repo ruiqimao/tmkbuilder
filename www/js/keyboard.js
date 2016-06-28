@@ -20,6 +20,9 @@ function Key() {
 function Keyboard() {
 	this.keys = [];
 
+	this.width = 0;
+	this.height = 0;
+
 	this.rows = 0;
 	this.cols = 0;
 }
@@ -50,6 +53,7 @@ function fromKLE(json) {
 		// Reset the x position and number of columns.
 		var x = 0;
 		var cols = 0;
+		var col = 0;
 		for (var c = 0; c < row.length; c ++) {
 			// Set the key size.
 			var width = 1;
@@ -59,7 +63,7 @@ function fromKLE(json) {
 			var kleKey = row[c];
 
 			// If the key is an object, set the properties.
-			if (kleKey instanceof Object) {
+			while (kleKey instanceof Object) {
 				if (kleKey.x) x += kleKey.x;
 				if (kleKey.y) y += kleKey.y;
 				if (kleKey.w) width = kleKey.w;
@@ -75,6 +79,7 @@ function fromKLE(json) {
 			key.height = height;
 			key.x = x;
 			key.y = y;
+			key.row = r;
 
 			// Add the key to the keyboard.
 			keyboard.keys.push(key);
@@ -84,13 +89,40 @@ function fromKLE(json) {
 
 			// Increment the number of columns.
 			cols ++;
+
+			// Increment the real column index.
+			col ++;
 		}
 
-		// Set the number of keyboard columns.
+		// Set the number of keyboard columns and width.
 		keyboard.cols = Math.max(keyboard.cols, cols);
+		keyboard.width = Math.max(keyboard.width, x);
 
 		// Increment the y position.
 		y ++;
+	}
+
+	// Set the keyboard height.
+	keyboard.height = y;
+
+	// Assign estimated columns to the keys.
+	var posTaken = [];
+	for (var i in keyboard.keys) {
+		var key = keyboard.keys[i];
+
+		console.log(JSON.stringify(posTaken));
+
+		// Get the estimated column.
+		var col = Math.floor(key.x / keyboard.width * keyboard.cols);
+
+		// If the position is already taken, increment the column by one.
+		while (posTaken.indexOf(key.row + ',' + col) != -1) col ++;
+
+		// Set the column.
+		key.col = col;
+
+		// Save the position as taken.
+		posTaken.push(key.row + ',' + col);
 	}
 
 	// Return the keyboard.
