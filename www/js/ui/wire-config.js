@@ -107,12 +107,14 @@ function drawWires() {
 			_rowLines[i] = $.line(from, to, {
 				lineColor: '#2c3e50'
 			});
+			_rowLines[i].css('pointer-events', 'none');
 		}
 		if (prevCol !== undefined) {
 			var to = getKeyPosition(prevColI);
 			_colLines[i] = $.line(from, to, {
 				lineColor: '#c0392b'
 			});
+			_colLines[i].css('pointer-events', 'none');
 		}
 
 		// Unset prevRow and prevCol;
