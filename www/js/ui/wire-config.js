@@ -38,6 +38,9 @@ function loadWireConfig() {
 	// Set the row and column selector values.
 	$('#config-wire-row').val(key.row);
 	$('#config-wire-col').val(key.col);
+
+	// Redraw the wires.
+	drawWires();
 }
 
 /*
@@ -169,5 +172,35 @@ function hideWires() {
  * Sets the pin config.
  */
 function setPinConfig() {
+
+	function createPinSelector(pinNum) {
+		// Create the elements.
+		var element = $('<div></div>');
+		var label = $('<label style="width:2rem"></label>');
+		var select = $('<select></select>');
+
+		// Set the values.
+		label.text(pinNum);
+		for (var i in PINS) {
+			var option = $('<option></option>');
+			option.text(PINS[i]);
+			option.val(i);
+			select.append(option);
+		}
+
+		// Pack and return.
+		element.append(label);
+		element.append(select);
+		return element;
+	}
+
 	// Add fields for each row and column.
+	for (var row = 0; row < _keyboard.rows; row ++) {
+		var selector = createPinSelector(row);
+		$('#config-pin-rows').append(selector);
+	}
+	for (var col = 0; col < _keyboard.cols; col ++) {
+		var selector = createPinSelector(col);
+		$('#config-pin-cols').append(selector);
+	}
 }

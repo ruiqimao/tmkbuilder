@@ -44,8 +44,7 @@ h3 {
 	font-size:1rem;
 	font-weight:600;
 	color:#666666;
-	margin-bottom:1rem;
-	text-align:left;
+	margin-bottom:0.5rem;
 }
 
 h4 {
@@ -93,7 +92,6 @@ label {
 	color:#666666;
 	margin-right:0.5rem;
 	display:inline-block;
-	min-width:5rem;
 	text-align:right;
 }
 
@@ -290,7 +288,6 @@ button.block {
 	text-align:center;
 	color:#2c3e50;
 }
-
 
 
 /*** CONFIG - FIRMWARE ***/
