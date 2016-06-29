@@ -15,10 +15,20 @@ function Key() {
 }
 
 /*
+ * Prototype for Fn action.
+ */
+function Fn() {
+	this.action = 0;
+
+	this.layer = 0;
+}
+
+/*
  * Prototype for Keyboard.
  */
 function Keyboard() {
 	this.keys = [];
+	this.fn = [];
 
 	this.rowPins = [];
 	this.colPins = [];
@@ -145,6 +155,11 @@ function fromKLE(json) {
 	// Add all the pins to the keyboard.
 	keyboard.rowPins = new Array(keyboard.rows).fill(0);
 	keyboard.colPins = new Array(keyboard.cols).fill(0);
+
+	// Add all the Fn actions.
+	for (var i = 0; i < 31; i ++) {
+		keyboard.fn.push(new Fn());
+	}
 
 	// Return the keyboard.
 	return keyboard;
