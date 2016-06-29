@@ -52,8 +52,8 @@ function loadWireConfig() {
  */
 function getKeyPosition(id) {
 	var key = _keys[id];
-	var x = key.offset().left + key.width() / 2;
-	var y = key.offset().top + key.height() / 2;
+	var x = key.position().left + key.width() / 2;
+	var y = key.position().top + key.height() / 2;
 	return { x: x, y: y };
 }
 
