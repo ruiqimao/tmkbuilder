@@ -196,6 +196,7 @@ function createChooser(callback) {
 			<button class="config-key-btn">T7</button>
 			<br><br>
 			<h3>Macro</h3>
+			<button class="config-key-btn">M0</button>
 			<button class="config-key-btn">M1</button>
 			<button class="config-key-btn">M2</button>
 			<button class="config-key-btn">M3</button>
@@ -203,7 +204,6 @@ function createChooser(callback) {
 			<button class="config-key-btn">M5</button>
 			<button class="config-key-btn">M6</button>
 			<button class="config-key-btn">M7</button>
-			<button class="config-key-btn">M8</button>
 		</div>`;
 
 	// Create the element.
