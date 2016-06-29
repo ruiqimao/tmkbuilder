@@ -12,6 +12,13 @@ body {
 	background:#fafafa;
 }
 
+hr {
+	margin:0.5rem 0;
+	border:none;
+	height:1px;
+	background:#dddddd;
+}
+
 a {
 	text-decoration:none;
 	color:#566b7f;
@@ -253,7 +260,7 @@ button.block {
 	border-radius:0.2rem;
 	cursor:pointer;
 	font-family:Hind;
-	font-size:0.9rem;
+	font-size:0.75rem;
 	line-height:3rem;
 	overflow:hidden;
 }
@@ -314,8 +321,16 @@ button.block {
 
 /*** CONFIG - FIRMWARE ***/
 
-#config-key-value {
-	width:5rem;
-	text-align:center;
-	text-transform:uppercase;
+.config-key-pane {
+	display:none;
+}
+
+.config-key-btn {
+	background:#ffffff !important;
+	color:#666666;
+	margin:0.2rem 0;
+}
+
+.config-key-btn:hover {
+	background:#fafafa !important;
 }

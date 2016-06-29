@@ -20,53 +20,12 @@ $('#config-layer-value').change(function() {
 	if (_activeId !== undefined) loadFirmwareConfig();
 });
 
-// Key selector.
-$('#config-key-value').change(function() {
-	// Get the value.
-	var value = $(this).val().trim().toUpperCase();
-
-	// If the value starts with KC_, get rid of it.
-	if (value.startsWith('KC_')) value = value.substr(3);
-
-	// If the value is empty, assume TRNS.
-	if (value.length == 0) {
-		value = 'TRNS';
-	} else {
-		// Find the closest match.
-		value = getKeyValue(value);
-	}
-
-	// Set the value.
-	$(this).val(value);
-
-	// Set the active key to the given value.
-	_keyboard.keys[_activeId].codes[_activeLayer] = value;
-
-	// Redraw the keys.
-	drawKeys();
-
-	// Reload the firmware config.
-	loadFirmwareConfig();
-});
-$('#config-key-value').focus(function() {
-	$(this).select();
-});
-
 /*
  * Load the firmware config.
  */
 function loadFirmwareConfig() {
 	// Show the panel.
 	$('.config-key').show();
-
-	// Set the key config value.
-	$('#config-key-value').val(_keyboard.keys[_activeId].codes[_activeLayer]);
-
-	// Focus on the key selector.
-	$('#config-key-value').focus();
-
-	// Load the Fn configurator.
-	loadFnConfig();
 }
 
 /*
@@ -77,32 +36,6 @@ function hideFirmwareMode() {
 	$('.config-layer').hide();
 	$('.config-fn').hide();
 	$('.key-inner').text('');
-}
-
-/*
- * Loads the Fn config panel.
- */
-function loadFnConfig() {
-	// Get all the Fn keys that are used.
-	var used = [];
-	for (var i in _keyboard.keys) {
-		var key = _keyboard.keys[i];
-		var codes = key.codes;
-		for (var j in codes) {
-			if (codes[j].startsWith('FN')) {
-				var fnId = parseInt(codes[j].substr(2));
-				if (used.indexOf(fnId == -1)) used.push(fnId);
-			}
-		}
-	}
-
-	// If at least one Fn key is used, show the panel.
-	if (used.length > 0) {
-		$('.config-fn').show();
-	} else {
-		$('.config-fn').hide();
-		return;
-	}
 }
 
 /*
@@ -125,6 +58,19 @@ function drawKeys() {
 		// Set the key value.
 		keyElement.find('.key-inner').text(value);
 	}
+}
+
+/*
+ * Sets the keycode of the active key.
+ *
+ * @param keycode The keycode to set.
+ */
+function setKeycode(code) {
+	// Set the code.
+	_keyboard.keys[_activeId].codes[_activeLayer] = getKeyValue(code);
+
+	// Redraw the keys.
+	drawKeys();
 }
 
 /*

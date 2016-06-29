@@ -50,4 +50,7 @@ function init() {
 
 	// Draw the wires.
 	drawWires();
+
+	// Add a key chooser to key config.
+	$('.config-key').append(createChooser(setKeycode));
 }

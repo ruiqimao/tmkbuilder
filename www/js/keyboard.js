@@ -2,7 +2,7 @@
  * Prototype for Key.
  */
 function Key() {
-	this.codes = new Array(32).fill('TRNS');
+	this.codes = new Array(8).fill('TRNS');
 
 	this.width = 1;
 	this.height = 1;
@@ -12,15 +12,6 @@ function Key() {
 
 	this.row = 0;
 	this.col = 0;
-}
-
-/*
- * Prototype for Fn action.
- */
-function Fn() {
-	this.action = 0;
-
-	this.layer = 0;
 }
 
 /*
@@ -155,11 +146,6 @@ function fromKLE(json) {
 	// Add all the pins to the keyboard.
 	keyboard.rowPins = new Array(keyboard.rows).fill(0);
 	keyboard.colPins = new Array(keyboard.cols).fill(0);
-
-	// Add all the Fn actions.
-	for (var i = 0; i < 31; i ++) {
-		keyboard.fn.push(new Fn());
-	}
 
 	// Return the keyboard.
 	return keyboard;
