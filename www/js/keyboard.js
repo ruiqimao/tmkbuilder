@@ -38,11 +38,16 @@ function Keyboard() {
  * @return A keyboard object.
  */
 function fromKLE(json) {
-	// Correct the JSON.
-	json = json.replace(/(['"])?([a-z0-9A-Z_]+)(['"])?:/g, '"$2": ');
+	var layout;
 
-	// Parse the JSON.
-	var layout = JSON.parse('[' + json + ']');
+	// Attempt to parse the JSON.
+	try {
+		layout = JSON.parse(json);
+	} catch (e) {
+		// Correct the JSON.
+		json = json.replace(/(['"])?([a-z0-9A-Z_]+)(['"])?:/g, '"$2": ');
+		layout = JSON.parse('[' + json + ']');
+	}
 
 	// Create a new keyboard.
 	var keyboard = new Keyboard();
