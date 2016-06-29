@@ -104,6 +104,9 @@ function setConfigMode(mode) {
 		// Show the layer config panel.
 		$('.config-layer').show();
 
+		// Load the Fn config panel.
+		loadFnConfig();
+
 		// Draw all the keys.
 		drawKeys();
 	}
