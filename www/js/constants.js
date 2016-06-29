@@ -2,9 +2,6 @@
 KEYS = [
 	'TRNS',
 	'NO',
-	'ROLL_OVER',
-	'POST_FAIL',
-	'UNDEFINED',
 	'A',
 	'B',
 	'C',
@@ -44,6 +41,7 @@ KEYS = [
 	'ENT',
 	'ESC',
 	'BSPC',
+	'TAB',
 	'SPC',
 	'MINS',
 	'EQL',
@@ -55,6 +53,7 @@ KEYS = [
 	'QUOT',
 	'GRV',
 	'COMM',
+	'DOT',
 	'SLSH',
 	'CAPS',
 	'F1',
@@ -242,6 +241,21 @@ KEYS = [
 	'FN30',
 	'FN31'
 ];
+
+SYMBOLS = {
+	'':  'TRNS',
+	'`': 'GRV',
+	'-': 'MINS',
+	'=': 'EQL',
+	'[': 'LBRC',
+	']': 'RBRC',
+	'\\':'BSLS',
+	';': 'SCLN',
+	'\'':'QUOT',
+	',': 'COMM',
+	'.': 'DOT',
+	'/': 'SLSH'
+};
 
 // List of all possible pins.
 PINS = [

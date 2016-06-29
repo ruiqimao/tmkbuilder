@@ -59,6 +59,12 @@ h4 {
 	max-width:500px;
 }
 
+p {
+	font-family:Hind;
+	font-size:1rem;
+	color:#444444;
+}
+
 input[type="text"] {
 	display:inline-block;
 	outline:none;
@@ -155,7 +161,7 @@ button.block {
 	border:1px solid rgba(0,0,0,0.1);
 	border-radius:0.2rem;
 	width:100%;
-	max-width:500px;
+	max-width:600px;
 	box-sizing:border-box;
 	margin:1rem auto;
 }
@@ -246,6 +252,10 @@ button.block {
 	border:1px solid rgba(0,0,0,0.2);
 	border-radius:0.2rem;
 	cursor:pointer;
+	font-family:Hind;
+	font-size:0.9rem;
+	line-height:3rem;
+	overflow:hidden;
 }
 
 .key-inner:hover {
@@ -303,3 +313,9 @@ button.block {
 
 
 /*** CONFIG - FIRMWARE ***/
+
+#config-key-value {
+	width:5rem;
+	text-align:center;
+	text-transform:uppercase;
+}

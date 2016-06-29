@@ -90,9 +90,8 @@ function createKeyboardUI() {
 function setConfigMode(mode) {
 	_configMode = mode;
 
-	// Hide elements according to the mode.
 	if (mode == MODE_WIRE) {
-		$('.config-firmware').hide(); // Firmware config panel.
+		hideFirmwareMode();
 
 		// Show the pin config panel.
 		$('.config-pin').show();
@@ -100,9 +99,13 @@ function setConfigMode(mode) {
 		// Draw wires.
 		drawWires();
 	} else {
-		$('.config-wire').hide(); // Wire config panel.
-		$('.config-pin').hide(); // Pin config panel.
-		hideWires(); // Wire display.
+		hideWireMode();
+
+		// Show the layer config panel.
+		$('.config-layer').show();
+
+		// Draw all the keys.
+		drawKeys();
 	}
 
 	// If the active key has been set, reload the config.

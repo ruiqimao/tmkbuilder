@@ -2,7 +2,7 @@
  * Prototype for Key.
  */
 function Key() {
-	this.codes = new Array(32).fill(0);
+	this.codes = new Array(32).fill('TRNS');
 
 	this.width = 1;
 	this.height = 1;

@@ -44,6 +44,15 @@ function loadWireConfig() {
 }
 
 /*
+ * Hide all wire config items.
+ */
+function hideWireMode() {
+	$('.config-wire').hide();
+	$('.config-pin').hide();
+	hideWires();
+}
+
+/*
  * Gets the position of a key given its ID.
  *
  * @param id The id of the key.

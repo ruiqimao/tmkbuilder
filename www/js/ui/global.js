@@ -2,6 +2,7 @@
 
 var _keyboard; // The current keyboard object.
 var _activeId; // The current active key id.
+var _activeLayer = 0; // The current active layer.
 var _configMode = MODE_WIRE; // The current config mode.
 
 var _keys = []; // List of key elements on the keyboard.

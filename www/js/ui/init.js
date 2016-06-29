@@ -33,6 +33,9 @@ $('#kle-import').click(function() {
  * Initialize the editor.
  */
 function init() {
+	// Hide errors.
+	$('#err').hide();
+
 	// Reset and show the config screen.
 	resetConfig();
 	showScreen('config');
