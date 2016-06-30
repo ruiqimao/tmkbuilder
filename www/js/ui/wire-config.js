@@ -225,10 +225,12 @@ function setPinConfig() {
 	// Add fields for each row and column.
 	for (var row = 0; row < _keyboard.rows; row ++) {
 		var selector = createPinSelector(0, row);
+		selector.find('option[value=' + _keyboard.rowPins[row] + ']').prop('selected', true);
 		$('#config-pin-rows').append(selector);
 	}
 	for (var col = 0; col < _keyboard.cols; col ++) {
 		var selector = createPinSelector(1, col);
+		selector.find('option[value=' + _keyboard.colPins[col] + ']').prop('selected', true);
 		$('#config-pin-cols').append(selector);
 	}
 }
