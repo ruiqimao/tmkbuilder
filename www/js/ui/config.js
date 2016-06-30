@@ -1,5 +1,14 @@
 /*** CONFIG ***/
 
+// Download configuration.
+$('#download-config').click(function() {
+	// Stringify the keyboard.
+	var json = JSON.stringify(_keyboard);
+
+	// Download the file.
+	download(json, 'configuration.json', 'application/json');
+});
+
 // Wire mode.
 $('#config-wire').click(function() {
 	setConfigMode(MODE_WIRE);
