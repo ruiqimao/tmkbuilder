@@ -404,3 +404,13 @@ button.block {
 	width:23%;
 	margin:0 1%;
 }
+
+/*** FOOTER ***/
+
+.footer {
+	font-family:Lato;
+	font-size:0.9rem;
+	line-height:1.5rem;
+	color:#444444;
+	margin:2rem 0;
+}
