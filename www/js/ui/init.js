@@ -53,4 +53,7 @@ function init() {
 
 	// Add a key chooser to key config.
 	$('.config-key').append(createChooser(setKeycode));
+
+	// Add a key chooser to macro editor.
+	$('.config-macro-selector').append(createChooser(addMacroAction));
 }

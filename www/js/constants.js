@@ -319,3 +319,9 @@ UI_KEY_SIZE = 3.7;
 // Config modes.
 MODE_WIRE = 0;
 MODE_FIRMWARE = 1;
+
+// Macro modes.
+MACRO_DOWN = 'D';
+MACRO_TYPE = 'T';
+MACRO_UP = 'U';
+MACRO_WAIT = 'W';

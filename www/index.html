@@ -75,6 +75,33 @@
 				</div>
 				<div class="config-key config-panel panel">
 					<h2>Key Config</h2>
+					<button class="config-key-btn" id="config-key-clear">Clear Key</button>
+					<br><br>
+				</div>
+				<div class="config-macro config-panel panel">
+					<h2>Macro Editor</h2>
+					<div class="input">
+						<label>Edit Macro</label>
+						<input type="number" id="config-macro-value" value="0" min="0" max="7">
+						<br><br>
+						<h3>Actions</h3>
+						<div id="config-macro-list">
+							<h4 class="config-macro-list-empty">This macro doesn't do anything yet! Add commands using the buttons below.</h4>
+						</div>
+						<br>
+						<div class="clearfix radio-group">
+							<button class="config-macro-btn float-left active" id="config-macro-d">Add Downstroke</button>
+							<button class="config-macro-btn float-left active" id="config-macro-t">Add Keystroke</button>
+							<button class="config-macro-btn float-left active" id="config-macro-u">Add Upstroke</button>
+							<button class="config-macro-btn float-left active" id="config-macro-w">Add 100ms Delay</button>
+						</div>
+						<div class="config-macro-selector">
+							<br>
+							<hr>
+							<button class="config-key-btn" id="config-macro-cancel">Cancel</button>
+							<br><br>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

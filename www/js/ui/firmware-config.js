@@ -5,7 +5,7 @@ $('#config-layer-value').change(function() {
 	// Get and clamp the value.
 	var value = $(this).val();
 	if (isNaN(value)) value = 0;
-	value = Math.min(Math.max(value, 0), 31);
+	value = Math.min(Math.max(value, 0), 7);
 
 	// Set the value to the clamped value.
 	$(this).val(value);
@@ -18,6 +18,77 @@ $('#config-layer-value').change(function() {
 
 	// If a key is selected, reload the config.
 	if (_activeId !== undefined) loadFirmwareConfig();
+});
+
+// Clear Key button.
+$('#config-key-clear').click(function() {
+	// Set the active key to TRNS.
+	setKeycode('TRNS');
+});
+
+// Macro selector.
+$('#config-macro-value').change(function() {
+	// Get and clamp the value.
+	var value = $(this).val();
+	if (isNaN(value)) value = 0;
+	value = Math.min(Math.max(value, 0), 7);
+
+	// Set the value to the clamped value.
+	$(this).val(value);
+
+	// Set the active macro.
+	_activeMacro = value;
+
+	// Update the macro list.
+	loadMacroConfig();
+});
+
+// Cancel macro button.
+$('#config-macro-cancel').click(function() {
+	// Set all macro action buttons to active.
+	$('.config-macro-btn').addClass('active');
+
+	// Hide the selector.
+	$('.config-macro-selector').hide();
+});
+
+// Downstroke button.
+$('#config-macro-d').click(function() {
+	// Set the macro mode.
+	_macroMode = MACRO_DOWN;
+
+	// Show the selector.
+	$('.config-macro-selector').show();
+});
+
+// Keystroke button.
+$('#config-macro-t').click(function() {
+	// Set the macro mode.
+	_macroMode = MACRO_TYPE;
+
+	// Show the selector.
+	$('.config-macro-selector').show();
+});
+
+// Upstroke button.
+$('#config-macro-u').click(function() {
+	// Set the macro mode.
+	_macroMode = MACRO_UP;
+
+	// Show the selector.
+	$('.config-macro-selector').show();
+});
+
+// Delay button.
+$('#config-macro-w').click(function() {
+	// Add the action to the macro.
+	_keyboard.macros[_activeMacro].push(['W', 100]);
+
+	// Re-enable all buttons.
+	$('.config-macro-btn').addClass('active');
+
+	// Redraw the macro list.
+	loadMacroConfig();
 });
 
 /*
@@ -34,7 +105,7 @@ function loadFirmwareConfig() {
 function hideFirmwareMode() {
 	$('.config-key').hide();
 	$('.config-layer').hide();
-	$('.config-fn').hide();
+	$('.config-macro').hide();
 	$('.key-inner').text('');
 }
 
@@ -102,4 +173,81 @@ function getKeyValue(value) {
 
 	// Return the closest value.
 	return closest;
+}
+
+/*
+ * Loads the macro config.
+ */
+function loadMacroConfig() {
+	// Clear the macro list.
+	$('#config-macro-list').find('.config-macro-entry').remove();
+
+	// Hide the empty message.
+	$('.config-macro-list-empty').hide();
+
+	// Get the macro.
+	var macro = _keyboard.macros[_activeMacro];
+
+	// Iterate through all the actions.
+	for (var i in macro) {
+		var action = macro[i];
+
+		// Create the macro action entry.
+		var entry = $('<div class="config-macro-entry"></div>');
+
+		// Set the action text.
+		if (action[0] == MACRO_DOWN) {
+			entry.append('Press ');
+		}
+		if (action[0] == MACRO_TYPE) {
+			entry.append('Type ');
+		}
+		if (action[0] == MACRO_UP) {
+			entry.append('Release ');
+		}
+		if (action[0] == MACRO_WAIT) {
+			entry.append('Wait ');
+		}
+
+		// Set the action key.
+		var value = action[1];
+		for (var j in SYMBOLS) {
+			if (SYMBOLS[j] == value) value = j;
+		}
+		entry.append('<span>' + value + '</span>');
+		if (action[0] == MACRO_WAIT) entry.append(' milliseconds');
+
+		// Add the remove button.
+		var remove = $('<div class="config-macro-remove">&times;</div>');
+		remove.click(function() {
+			// Remove the action from the macro.
+			_keyboard.macros[_activeMacro].splice(this.index, 1);
+
+			// Redraw the list.
+			loadMacroConfig();
+		}.bind({ index: i }));
+		entry.append(remove);
+
+		// Append the entry.
+		$('#config-macro-list').append(entry);
+	}
+
+	// If there are no entries, show the empty message.
+	if (macro.length == 0) $('.config-macro-list-empty').show();
+}
+
+/*
+ * Adds a macro action.
+ *
+ * @param keycode The keycode corresponding to this action.
+ */
+function addMacroAction(keycode) {
+	// Add the action to the macro.
+	_keyboard.macros[_activeMacro].push([_macroMode, getKeyValue(keycode)]);
+
+	// Redraw the macro list.
+	loadMacroConfig();
+
+	// Hide the selector.
+	$('#config-macro-cancel').click();
 }

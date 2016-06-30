@@ -104,6 +104,10 @@ function setConfigMode(mode) {
 		// Show the layer config panel.
 		$('.config-layer').show();
 
+		// Show the macro editor.
+		$('.config-macro').show();
+		loadMacroConfig();
+
 		// Draw all the keys.
 		drawKeys();
 	}

@@ -19,7 +19,7 @@ function Key() {
  */
 function Keyboard() {
 	this.keys = [];
-	this.fn = [];
+	this.macros = [[], [], [], [], [], [], [], []];
 
 	this.rowPins = [];
 	this.colPins = [];
