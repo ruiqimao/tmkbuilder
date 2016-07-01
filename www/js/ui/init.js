@@ -6,7 +6,7 @@ $('#tfb-upload').click(function() {
 	readFile(function(json) {
 		try {
 			_keyboard = JSON.parse(json);
-			if (_keyboard.rows == 0 || _keyboard.cols == 0) throw 'invalid layout';
+			if (_keyboard.isKeyboard != 'thisIsAKeyboard') throw 'invalid layout';
 			init();
 		} catch (e) {
 			console.error(e);
@@ -23,7 +23,6 @@ $('#kle-import').click(function() {
 	// Attempt to create the keyboard.
 	try {
 		_keyboard = fromKLE(json);
-		if (_keyboard.rows == 0 || _keyboard.cols == 0) throw 'invalid layout';
 		init();
 	} catch (e) {
 		console.error(e);

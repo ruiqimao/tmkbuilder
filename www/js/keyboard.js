@@ -29,6 +29,9 @@ function Keyboard() {
 
 	this.rows = 0;
 	this.cols = 0;
+
+	// Used to verify a valid keyboard layout.
+	this.isKeyboard = 'thisIsAKeyboard';
 }
 
 /*
@@ -80,6 +83,13 @@ function fromKLE(json) {
 
 				// Get the actual key.
 				kleKey = row[++ c];
+			}
+
+			// Validate the input.
+			if (isNaN(width) || width == 0 ||
+				isNaN(height) || height == 0 ||
+				isNaN(x) || isNaN(y)) {
+				throw 'invalid layout';
 			}
 
 			// Create the new key and set its properties.
@@ -146,6 +156,9 @@ function fromKLE(json) {
 	// Add all the pins to the keyboard.
 	keyboard.rowPins = new Array(keyboard.rows).fill(0);
 	keyboard.colPins = new Array(keyboard.cols).fill(0);
+
+	// Verify the keyboard.
+	if (keyboard.rows == 0 || keyboard.cols == 0) throw 'invalid layout';
 
 	// Return the keyboard.
 	return keyboard;

@@ -85,18 +85,10 @@ input[type="text"] {
 	font-size:1rem;
 }
 
-input[type="number"] {
-	display:inline-block;
-	outline:none;
-	background:#ffffff;
-	border:1px solid #f0f0f0;
-	border-radius:0.2rem;
-	line-height:1.7rem;
-	padding:0 0.5rem;
-	font-family:Lato;
-	font-size:0.9rem;
+input[type="text"].number {
+	width:2rem;
 	text-align:center;
-	width:5rem;
+	vertical-align:middle;
 }
 
 label {
@@ -132,6 +124,18 @@ button {
 	font-size:0.9rem;
 	color:#ffffff;
 	cursor:pointer;
+}
+
+button.small {
+	line-height:1.7rem;
+	padding:0 0.5rem;
+	font-size:0.7rem;
+	box-sizing:border-box;
+	vertical-align:middle;
+}
+
+button.number-sm, button.number-lg {
+	width:2rem;
 }
 
 .radio-group button:not(.active) {
