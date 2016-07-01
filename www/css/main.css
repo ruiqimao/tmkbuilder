@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Hind:400,300,500,700,600);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Cousine);
 
 /*** GLOBAL STYLES ***/
 
@@ -200,7 +201,8 @@ button.block {
 	box-sizing:border-box;
 	border-radius:0.2rem;
 	margin-bottom:1rem;
-	font-family:monospace;
+	font-family:Cousine;
+	font-size: 0.8rem;
 }
 
 #err {
@@ -228,7 +230,8 @@ button.block {
 #kle {
 	width:500px;
 	height:200px;
-	font-family:monospace;
+	font-family:Cousine;
+	font-size: 0.8rem;
 	text-align:left;
 	resize:none;
 }
@@ -266,6 +269,7 @@ button.block {
 	font-size:0.75rem;
 	line-height:3rem;
 	overflow:hidden;
+	word-wrap:break-word;
 }
 
 .key-inner:hover {
@@ -300,8 +304,8 @@ button.block {
 
 .keyboard-row-indicator, .keyboard-col-indicator {
 	position:absolute;
-	font-family:monospace;
-	font-size:0.9rem;
+	font-family:Cousine;
+	font-size:0.7rem;
 	font-weight:500;
 }
 
@@ -354,7 +358,8 @@ button.block {
 }
 
 .config-macro-entry span {
-	font-family:monospace;
+	font-family:Cousine;
+	font-size: 0.8rem;
 	display:inline-block;
 	padding:0.2rem;
 	background:#fafafa;

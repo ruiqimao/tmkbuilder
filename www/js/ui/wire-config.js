@@ -38,9 +38,6 @@ function loadWireConfig() {
 	// Set the row and column selector values.
 	$('#config-wire-row').val(key.row);
 	$('#config-wire-col').val(key.col);
-
-	// Redraw the wires.
-	drawWires();
 }
 
 /*

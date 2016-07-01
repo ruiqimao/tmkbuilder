@@ -50,9 +50,6 @@ function readFile(callback) {
 	var input = $(document.createElement('input'));
 	input.attr('type', 'file');
 
-	// Click the object.
-	input.trigger('click');
-
 	// Catch the change.
 	input.change(function() {
 		// Grab the file.
@@ -71,6 +68,9 @@ function readFile(callback) {
 			reader.readAsText(file, 'utf-8');
 		}
 	}.bind({ input: input, callback: callback }));
+
+	// Click the object.
+	input.trigger('click');
 }
 
 /*

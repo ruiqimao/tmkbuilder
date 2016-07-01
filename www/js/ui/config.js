@@ -105,7 +105,10 @@ function setConfigMode(mode) {
 		// Show the pin config panel.
 		$('.config-pin').show();
 
-		// Draw wires.
+		// Set the pin config.
+		setPinConfig();
+
+		// Draw the wires.
 		drawWires();
 	} else {
 		hideWireMode();
