@@ -45,6 +45,9 @@ function init() {
 	// Show the wire config.
 	setConfigMode(MODE_WIRE);
 
+	// Set the pin config.
+	setPinConfig();
+
 	// Add a key chooser to key config.
 	$('.config-key').append(createChooser(setKeycode));
 
