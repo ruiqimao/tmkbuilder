@@ -309,12 +309,12 @@ button.block {
 .keyboard-row-indicator, .keyboard-col-indicator {
 	position:absolute;
 	font-family:Cousine;
-	font-size:0.7rem;
+	font-size:0.8rem;
 	font-weight:500;
 }
 
 .keyboard-row-indicator {
-	left:-3.8rem;
+	left:-4rem;
 	color:#c0392b;
 }
 
