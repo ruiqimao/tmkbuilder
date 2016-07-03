@@ -153,8 +153,8 @@ function drawWires() {
 		}
 
 		// Show the pin assignments on the indicators.
-		_rowInds[key.row].html('(' + PINS[_keyboard.rowPins[key.row]] + ') ' + key.row);
-		_colInds[key.col].html('(' + PINS[_keyboard.colPins[key.col]] + ')<br>' + key.col);
+		_rowInds[key.row].html('(' + _keyboard.rowPins[key.row] + ') ' + key.row);
+		_colInds[key.col].html('(' + _keyboard.colPins[key.col] + ')<br>' + key.col);
 
 		// Show the indicators.
 		_rowInds[key.row].show();
@@ -194,12 +194,24 @@ function setPinConfig() {
 		var label = $('<label style="width:1rem; text-align:left;"></label>');
 		var select = $('<select></select>');
 
+		// If the type is an LED.
+		if (type > 1) {
+			// Add an unset value for LEDs.
+			var option = $('<option></option>');
+			option.text('No LED');
+			option.val('');
+			select.append(option);
+
+			// Make the label wider.
+			label.css('width', '5rem');
+		}
+
 		// Set the values.
 		label.text(pinNum);
 		for (var i in PINS) {
 			var option = $('<option></option>');
 			option.text(PINS[i]);
-			option.val(i);
+			option.val(PINS[i]);
 			select.append(option);
 		}
 
@@ -210,15 +222,34 @@ function setPinConfig() {
 		// Change event.
 		element.change(function() {
 			// Change the pin.
-			var value = parseInt(this.select.val());
-			if (this.type == 0) {
-				_keyboard.rowPins[this.pinNum] = value;
-			} else {
-				_keyboard.colPins[this.pinNum] = value;
+			var value = this.select.val();
+			switch (this.type) {
+				case 0: {
+					_keyboard.rowPins[this.pinNum] = value;
+					break;
+				}
+				case 1: {
+					_keyboard.colPins[this.pinNum] = value;
+					break;
+				}
+				case 2: {
+					_keyboard.ledPins[0] = value;
+					break;
+				}
+				case 3: {
+					_keyboard.ledPins[1] = value;
+					break;
+				}
+				case 4: {
+					_keyboard.ledPins[2] = value;
+					break;
+				}
 			}
 
-		// Redraw the wires.
-		drawWires();
+			if (this.type == 0 | this.type == 1) {
+				// Redraw the wires.
+				drawWires();
+			}
 		}.bind({ type: type, pinNum: pinNum, select: select }));
 
 		return element;
@@ -235,4 +266,15 @@ function setPinConfig() {
 		selector.find('option[value=' + _keyboard.colPins[col] + ']').prop('selected', true);
 		$('#config-pin-cols').append(selector);
 	}
+
+	// Add fields for LEDs.
+	var selector = createPinSelector(2, 'Caps Lock');
+	selector.find('option[value="' + _keyboard.ledPins[0] + '"]').prop('selected', true);
+	$('#config-pin-leds').append(selector);
+	selector = createPinSelector(3, 'Scroll Lock');
+	selector.find('option[value="' + _keyboard.ledPins[1] + '"]').prop('selected', true);
+	$('#config-pin-leds').append(selector);
+	selector = createPinSelector(4, 'Num Lock');
+	selector.find('option[value="' + _keyboard.ledPins[2] + '"]').prop('selected', true);
+	$('#config-pin-leds').append(selector);
 }

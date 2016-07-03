@@ -23,6 +23,7 @@ function Keyboard() {
 
 	this.rowPins = [];
 	this.colPins = [];
+	this.ledPins = ['', '', ''];
 
 	this.width = 0;
 	this.height = 0;
@@ -154,8 +155,8 @@ function fromKLE(json) {
 	}
 
 	// Add all the pins to the keyboard.
-	keyboard.rowPins = new Array(keyboard.rows).fill(0);
-	keyboard.colPins = new Array(keyboard.cols).fill(0);
+	keyboard.rowPins = new Array(keyboard.rows).fill(PINS[0]);
+	keyboard.colPins = new Array(keyboard.cols).fill(PINS[0]);
 
 	// Verify the keyboard.
 	if (keyboard.rows == 0 || keyboard.cols == 0) throw 'invalid layout';

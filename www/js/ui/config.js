@@ -6,7 +6,8 @@ $('#download-config').click(function() {
 	var json = JSON.stringify(_keyboard);
 
 	// Download the file.
-	download(json, 'configuration.json', 'application/json');
+	var blob = new Blob([json], { type: 'text/plain;charset=utf-8' });
+	saveAs(blob, 'configuration.json');
 });
 
 // Wire mode.
