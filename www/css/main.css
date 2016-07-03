@@ -303,6 +303,20 @@ button.block {
 	display:none;
 }
 
+.btn-unset-key {
+	float:right;
+	margin:0 -0.5rem;
+	font-family:Lato;
+	font-weight:400;
+	color:#888888;
+	font-size:1rem;
+	cursor:pointer;
+}
+
+.btn-unset-key:hover {
+	color:#444444;
+}
+
 
 /*** CONFIG - WIRE ***/
 

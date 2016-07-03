@@ -19,6 +19,11 @@ $('#config-firmware').click(function() {
 	setConfigMode(MODE_FIRMWARE);
 });
 
+// Close config button.
+$('.btn-unset-key').click(function() {
+	setActiveKey(undefined);
+});
+
 
 /*
  * Reset the config.
@@ -143,17 +148,21 @@ function getActiveKey() {
 /*
  * Set the active key.
  *
- * @param key The UI key to set to be active.
+ * @param key The UI key to set to be active. undefined if the key is to be unset.
  */
 function setActiveKey(key) {
-	// Set the active ID.
-	_activeId = parseInt(key.data('id'));
-
 	// Erase the active class from all keys.
 	$('.key').removeClass('active');
 
-	// Set the current key to be active.
-	key.addClass('active');
+	if (key !== undefined) {
+		// Set the active ID.
+		_activeId = parseInt(key.data('id'));
+
+		// Set the current key to be active.
+		key.addClass('active');
+	} else {
+		_activeId = undefined;
+	}
 
 	// Reload key config data.
 	reloadKeyConfig();

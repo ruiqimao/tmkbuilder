@@ -95,8 +95,13 @@ $('#config-macro-w').click(function() {
  * Load the firmware config.
  */
 function loadFirmwareConfig() {
-	// Show the panel.
-	$('.config-key').show();
+	if (_activeId !== undefined) {
+		// Show the panel.
+		$('.config-key').show();
+	} else {
+		// Hide the panel.
+		$('.config-key').hide();
+	}
 }
 
 /*

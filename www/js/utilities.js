@@ -74,7 +74,57 @@ function readFile(callback) {
 }
 
 /*
+ * Left pad.
+ *
+ * @param input The input string.
+ * @param length The target length.
+ * @param fill The character to fill the empty space with.
+ *
+ * @return The padded string.
+ */
+function leftPad(input, length, fill) {
+	// Make sure fill is a single character.
+	fill = fill[0];
+
+	// Find the number of times the filler needs to be repeated.
+	var times = length - input.length;
+
+	// Validate.
+	if (times < 0) return input;
+
+	// Return.
+	return fill.repeat(times) + input;
+}
+
+/*
+ * Right pad.
+ *
+ * @param input The input string.
+ * @param length The target length.
+ * @param fill The character to fill the empty space with.
+ *
+ * @return The padded string.
+ */
+function rightPad(input, length, fill) {
+	// Make sure fill is a single character.
+	fill = fill[0];
+
+	// Find the number of times the filler needs to be repeated.
+	var times = length - input.length;
+
+	// Validate.
+	if (times < 0) return input;
+
+	// Return.
+	return input + fill.repeat(times);
+}
+
+/*
  * Levenstein edit distance.
+ *
+ * @param The string to compare against.
+ *
+ * @return The edit distance between the two strings.
  */
 String.prototype.levenstein = function(string) {
 	var a = this, b = string + "", m = [], i, j, min = Math.min;

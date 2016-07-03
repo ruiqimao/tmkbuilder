@@ -25,19 +25,24 @@ $('#config-wire-row, #config-wire-col').change(function() {
  * Load the wire config.
  */
 function loadWireConfig() {
-	// Show the panel.
-	$('.config-wire').show();
+	if (_activeId !== undefined) {
+		// Show the panel.
+		$('.config-wire').show();
 
-	// Set the maximum and minimum values for the row and column selectors.
-	$('#config-wire-row').prop('max', _keyboard.rows - 1);
-	$('#config-wire-col').prop('max', _keyboard.cols - 1);
+		// Set the maximum and minimum values for the row and column selectors.
+		$('#config-wire-row').prop('max', _keyboard.rows - 1);
+		$('#config-wire-col').prop('max', _keyboard.cols - 1);
 
-	// Get the currently active key.
-	var key = getActiveKey();
+		// Get the currently active key.
+		var key = getActiveKey();
 
-	// Set the row and column selector values.
-	$('#config-wire-row').val(key.row);
-	$('#config-wire-col').val(key.col);
+		// Set the row and column selector values.
+		$('#config-wire-row').val(key.row);
+		$('#config-wire-col').val(key.col);
+	} else {
+		// Hide the panel.
+		$('.config-wire').hide();
+	}
 }
 
 /*
