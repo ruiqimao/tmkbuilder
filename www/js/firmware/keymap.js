@@ -71,7 +71,7 @@ function generateBaseKeymap() {
  */
 function generateKeymaps() {
 	// Define and start the keymaps.
-	var keymaps = 'const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {\n';
+	var keymaps = 'const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {\n';
 
 	// Get the associations.
 	var associations = getKeymapAssociations();
