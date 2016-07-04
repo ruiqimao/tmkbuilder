@@ -325,3 +325,6 @@ MACRO_DOWN = 'D';
 MACRO_TYPE = 'T';
 MACRO_UP = 'U';
 MACRO_WAIT = 'W';
+
+// API server.
+API_SERVER = 'http://localhost:5000';

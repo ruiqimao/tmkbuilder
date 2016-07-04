@@ -1,0 +1,463 @@
+   1               		.file	"suspend.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               		.section	.text.suspend_idle,"ax",@progbits
+  11               	.global	suspend_idle
+  13               	suspend_idle:
+  14               	.LFB104:
+  15               		.file 1 "../tmk_core/common/avr/suspend.c"
+   1:../tmk_core/common/avr/suspend.c **** #include <stdbool.h>
+   2:../tmk_core/common/avr/suspend.c **** #include <avr/sleep.h>
+   3:../tmk_core/common/avr/suspend.c **** #include <avr/wdt.h>
+   4:../tmk_core/common/avr/suspend.c **** #include <avr/interrupt.h>
+   5:../tmk_core/common/avr/suspend.c **** #include "matrix.h"
+   6:../tmk_core/common/avr/suspend.c **** #include "action.h"
+   7:../tmk_core/common/avr/suspend.c **** #include "backlight.h"
+   8:../tmk_core/common/avr/suspend.c **** #include "suspend_avr.h"
+   9:../tmk_core/common/avr/suspend.c **** #include "suspend.h"
+  10:../tmk_core/common/avr/suspend.c **** #include "timer.h"
+  11:../tmk_core/common/avr/suspend.c **** #ifdef PROTOCOL_LUFA
+  12:../tmk_core/common/avr/suspend.c **** #include "lufa.h"
+  13:../tmk_core/common/avr/suspend.c **** #endif
+  14:../tmk_core/common/avr/suspend.c **** 
+  15:../tmk_core/common/avr/suspend.c **** 
+  16:../tmk_core/common/avr/suspend.c **** #define wdt_intr_enable(value)   \
+  17:../tmk_core/common/avr/suspend.c **** __asm__ __volatile__ (  \
+  18:../tmk_core/common/avr/suspend.c ****     "in __tmp_reg__,__SREG__" "\n\t"    \
+  19:../tmk_core/common/avr/suspend.c ****     "cli" "\n\t"    \
+  20:../tmk_core/common/avr/suspend.c ****     "wdr" "\n\t"    \
+  21:../tmk_core/common/avr/suspend.c ****     "sts %0,%1" "\n\t"  \
+  22:../tmk_core/common/avr/suspend.c ****     "out __SREG__,__tmp_reg__" "\n\t"   \
+  23:../tmk_core/common/avr/suspend.c ****     "sts %0,%2" "\n\t" \
+  24:../tmk_core/common/avr/suspend.c ****     : /* no outputs */  \
+  25:../tmk_core/common/avr/suspend.c ****     : "M" (_SFR_MEM_ADDR(_WD_CONTROL_REG)), \
+  26:../tmk_core/common/avr/suspend.c ****     "r" (_BV(_WD_CHANGE_BIT) | _BV(WDE)), \
+  27:../tmk_core/common/avr/suspend.c ****     "r" ((uint8_t) ((value & 0x08 ? _WD_PS3_MASK : 0x00) | \
+  28:../tmk_core/common/avr/suspend.c ****         _BV(WDIE) | (value & 0x07)) ) \
+  29:../tmk_core/common/avr/suspend.c ****     : "r0"  \
+  30:../tmk_core/common/avr/suspend.c **** )
+  31:../tmk_core/common/avr/suspend.c **** 
+  32:../tmk_core/common/avr/suspend.c **** 
+  33:../tmk_core/common/avr/suspend.c **** void suspend_idle(uint8_t time)
+  34:../tmk_core/common/avr/suspend.c **** {
+  16               		.loc 1 34 0
+  17               		.cfi_startproc
+  18               	.LVL0:
+  19               	/* prologue: function */
+  20               	/* frame size = 0 */
+  21               	/* stack size = 0 */
+  22               	.L__stack_usage = 0
+  35:../tmk_core/common/avr/suspend.c ****     cli();
+  23               		.loc 1 35 0
+  24               	/* #APP */
+  25               	 ;  35 "../tmk_core/common/avr/suspend.c" 1
+  26 0000 F894      		cli
+  27               	 ;  0 "" 2
+  36:../tmk_core/common/avr/suspend.c ****     set_sleep_mode(SLEEP_MODE_IDLE);
+  28               		.loc 1 36 0
+  29               	/* #NOAPP */
+  30 0002 83B7      		in r24,0x33
+  31               	.LVL1:
+  32 0004 817F      		andi r24,lo8(-15)
+  33 0006 83BF      		out 0x33,r24
+  37:../tmk_core/common/avr/suspend.c ****     sleep_enable();
+  34               		.loc 1 37 0
+  35 0008 83B7      		in r24,0x33
+  36 000a 8160      		ori r24,lo8(1)
+  37 000c 83BF      		out 0x33,r24
+  38:../tmk_core/common/avr/suspend.c ****     sei();
+  38               		.loc 1 38 0
+  39               	/* #APP */
+  40               	 ;  38 "../tmk_core/common/avr/suspend.c" 1
+  41 000e 7894      		sei
+  42               	 ;  0 "" 2
+  39:../tmk_core/common/avr/suspend.c ****     sleep_cpu();
+  43               		.loc 1 39 0
+  44               	 ;  39 "../tmk_core/common/avr/suspend.c" 1
+  45 0010 8895      		sleep
+  46               		
+  47               	 ;  0 "" 2
+  40:../tmk_core/common/avr/suspend.c ****     sleep_disable();
+  48               		.loc 1 40 0
+  49               	/* #NOAPP */
+  50 0012 83B7      		in r24,0x33
+  51 0014 8E7F      		andi r24,lo8(-2)
+  52 0016 83BF      		out 0x33,r24
+  53 0018 0895      		ret
+  54               		.cfi_endproc
+  55               	.LFE104:
+  57               		.section	.text.suspend_power_down,"ax",@progbits
+  58               	.global	suspend_power_down
+  60               	suspend_power_down:
+  61               	.LFB106:
+  41:../tmk_core/common/avr/suspend.c **** }
+  42:../tmk_core/common/avr/suspend.c **** 
+  43:../tmk_core/common/avr/suspend.c **** /* Power down MCU with watchdog timer
+  44:../tmk_core/common/avr/suspend.c ****  * wdto: watchdog timer timeout defined in <avr/wdt.h>
+  45:../tmk_core/common/avr/suspend.c ****  *          WDTO_15MS
+  46:../tmk_core/common/avr/suspend.c ****  *          WDTO_30MS
+  47:../tmk_core/common/avr/suspend.c ****  *          WDTO_60MS
+  48:../tmk_core/common/avr/suspend.c ****  *          WDTO_120MS
+  49:../tmk_core/common/avr/suspend.c ****  *          WDTO_250MS
+  50:../tmk_core/common/avr/suspend.c ****  *          WDTO_500MS
+  51:../tmk_core/common/avr/suspend.c ****  *          WDTO_1S
+  52:../tmk_core/common/avr/suspend.c ****  *          WDTO_2S
+  53:../tmk_core/common/avr/suspend.c ****  *          WDTO_4S
+  54:../tmk_core/common/avr/suspend.c ****  *          WDTO_8S
+  55:../tmk_core/common/avr/suspend.c ****  */
+  56:../tmk_core/common/avr/suspend.c **** static uint8_t wdt_timeout = 0;
+  57:../tmk_core/common/avr/suspend.c **** static void power_down(uint8_t wdto)
+  58:../tmk_core/common/avr/suspend.c **** {
+  59:../tmk_core/common/avr/suspend.c **** #ifdef PROTOCOL_LUFA
+  60:../tmk_core/common/avr/suspend.c ****     if (USB_DeviceState == DEVICE_STATE_Configured) return;
+  61:../tmk_core/common/avr/suspend.c **** #endif
+  62:../tmk_core/common/avr/suspend.c ****     wdt_timeout = wdto;
+  63:../tmk_core/common/avr/suspend.c **** 
+  64:../tmk_core/common/avr/suspend.c ****     // Watchdog Interrupt Mode
+  65:../tmk_core/common/avr/suspend.c ****     wdt_intr_enable(wdto);
+  66:../tmk_core/common/avr/suspend.c **** 
+  67:../tmk_core/common/avr/suspend.c ****     // TODO: more power saving
+  68:../tmk_core/common/avr/suspend.c ****     // See PicoPower application note
+  69:../tmk_core/common/avr/suspend.c ****     // - I/O port input with pullup
+  70:../tmk_core/common/avr/suspend.c ****     // - prescale clock
+  71:../tmk_core/common/avr/suspend.c ****     // - BOD disable
+  72:../tmk_core/common/avr/suspend.c ****     // - Power Reduction Register PRR
+  73:../tmk_core/common/avr/suspend.c ****     set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+  74:../tmk_core/common/avr/suspend.c ****     sleep_enable();
+  75:../tmk_core/common/avr/suspend.c ****     sei();
+  76:../tmk_core/common/avr/suspend.c ****     sleep_cpu();
+  77:../tmk_core/common/avr/suspend.c ****     sleep_disable();
+  78:../tmk_core/common/avr/suspend.c **** 
+  79:../tmk_core/common/avr/suspend.c ****     // Disable watchdog after sleep
+  80:../tmk_core/common/avr/suspend.c ****     wdt_disable();
+  81:../tmk_core/common/avr/suspend.c **** }
+  82:../tmk_core/common/avr/suspend.c **** 
+  83:../tmk_core/common/avr/suspend.c **** void suspend_power_down(void)
+  84:../tmk_core/common/avr/suspend.c **** {
+  62               		.loc 1 84 0
+  63               		.cfi_startproc
+  64               	/* prologue: function */
+  65               	/* frame size = 0 */
+  66               	/* stack size = 0 */
+  67               	.L__stack_usage = 0
+  68               	.LVL2:
+  69               	.LBB4:
+  70               	.LBB5:
+  60:../tmk_core/common/avr/suspend.c **** #endif
+  71               		.loc 1 60 0
+  72 0000 8091 0000 		lds r24,USB_DeviceState
+  73 0004 8430      		cpi r24,lo8(4)
+  74 0006 01F0      		breq .L2
+  62:../tmk_core/common/avr/suspend.c **** 
+  75               		.loc 1 62 0
+  76 0008 1092 0000 		sts wdt_timeout,__zero_reg__
+  65:../tmk_core/common/avr/suspend.c **** 
+  77               		.loc 1 65 0
+  78 000c 20E4      		ldi r18,lo8(64)
+  79 000e 88E1      		ldi r24,lo8(24)
+  80 0010 90E0      		ldi r25,0
+  81               	/* #APP */
+  82               	 ;  65 "../tmk_core/common/avr/suspend.c" 1
+  83 0012 0FB6      		in __tmp_reg__,__SREG__
+  84 0014 F894      		cli
+  85 0016 A895      		wdr
+  86 0018 8093 6000 		sts 96,r24
+  87 001c 0FBE      		out __SREG__,__tmp_reg__
+  88 001e 2093 6000 		sts 96,r18
+  89               		
+  90               	 ;  0 "" 2
+  73:../tmk_core/common/avr/suspend.c ****     sleep_enable();
+  91               		.loc 1 73 0
+  92               	/* #NOAPP */
+  93 0022 83B7      		in r24,0x33
+  94 0024 817F      		andi r24,lo8(-15)
+  95 0026 8460      		ori r24,lo8(4)
+  96 0028 83BF      		out 0x33,r24
+  74:../tmk_core/common/avr/suspend.c ****     sei();
+  97               		.loc 1 74 0
+  98 002a 83B7      		in r24,0x33
+  99 002c 8160      		ori r24,lo8(1)
+ 100 002e 83BF      		out 0x33,r24
+  75:../tmk_core/common/avr/suspend.c ****     sleep_cpu();
+ 101               		.loc 1 75 0
+ 102               	/* #APP */
+ 103               	 ;  75 "../tmk_core/common/avr/suspend.c" 1
+ 104 0030 7894      		sei
+ 105               	 ;  0 "" 2
+  76:../tmk_core/common/avr/suspend.c ****     sleep_disable();
+ 106               		.loc 1 76 0
+ 107               	 ;  76 "../tmk_core/common/avr/suspend.c" 1
+ 108 0032 8895      		sleep
+ 109               		
+ 110               	 ;  0 "" 2
+  77:../tmk_core/common/avr/suspend.c **** 
+ 111               		.loc 1 77 0
+ 112               	/* #NOAPP */
+ 113 0034 83B7      		in r24,0x33
+ 114 0036 8E7F      		andi r24,lo8(-2)
+ 115 0038 83BF      		out 0x33,r24
+  80:../tmk_core/common/avr/suspend.c **** }
+ 116               		.loc 1 80 0
+ 117 003a 88E1      		ldi r24,lo8(24)
+ 118               	/* #APP */
+ 119               	 ;  80 "../tmk_core/common/avr/suspend.c" 1
+ 120 003c 0FB6      		in __tmp_reg__, __SREG__
+ 121 003e F894      		cli
+ 122 0040 8093 6000 		sts 96, r24
+ 123 0044 1092 6000 		sts 96, __zero_reg__
+ 124 0048 0FBE      		out __SREG__,__tmp_reg__
+ 125               		
+ 126               	 ;  0 "" 2
+ 127               	/* #NOAPP */
+ 128               	.L2:
+ 129 004a 0895      		ret
+ 130               	.LBE5:
+ 131               	.LBE4:
+ 132               		.cfi_endproc
+ 133               	.LFE106:
+ 135               		.section	.text.matrix_power_up,"ax",@progbits
+ 136               		.weak	matrix_power_up
+ 138               	matrix_power_up:
+ 139               	.LFB107:
+  85:../tmk_core/common/avr/suspend.c ****     power_down(WDTO_15MS);
+  86:../tmk_core/common/avr/suspend.c **** }
+  87:../tmk_core/common/avr/suspend.c **** 
+  88:../tmk_core/common/avr/suspend.c **** __attribute__ ((weak)) void matrix_power_up(void) {}
+ 140               		.loc 1 88 0
+ 141               		.cfi_startproc
+ 142               	/* prologue: function */
+ 143               	/* frame size = 0 */
+ 144               	/* stack size = 0 */
+ 145               	.L__stack_usage = 0
+ 146 0000 0895      		ret
+ 147               		.cfi_endproc
+ 148               	.LFE107:
+ 150               		.section	.text.matrix_power_down,"ax",@progbits
+ 151               		.weak	matrix_power_down
+ 153               	matrix_power_down:
+ 154               	.LFB108:
+  89:../tmk_core/common/avr/suspend.c **** __attribute__ ((weak)) void matrix_power_down(void) {}
+ 155               		.loc 1 89 0
+ 156               		.cfi_startproc
+ 157               	/* prologue: function */
+ 158               	/* frame size = 0 */
+ 159               	/* stack size = 0 */
+ 160               	.L__stack_usage = 0
+ 161 0000 0895      		ret
+ 162               		.cfi_endproc
+ 163               	.LFE108:
+ 165               		.section	.text.suspend_wakeup_condition,"ax",@progbits
+ 166               	.global	suspend_wakeup_condition
+ 168               	suspend_wakeup_condition:
+ 169               	.LFB109:
+  90:../tmk_core/common/avr/suspend.c **** bool suspend_wakeup_condition(void)
+  91:../tmk_core/common/avr/suspend.c **** {
+ 170               		.loc 1 91 0
+ 171               		.cfi_startproc
+ 172               		.loc 1 91 0
+ 173 0000 CF93      		push r28
+ 174               	.LCFI0:
+ 175               		.cfi_def_cfa_offset 3
+ 176               		.cfi_offset 28, -2
+ 177               	/* prologue: function */
+ 178               	/* frame size = 0 */
+ 179               	/* stack size = 1 */
+ 180               	.L__stack_usage = 1
+  92:../tmk_core/common/avr/suspend.c ****     matrix_power_up();
+ 181               		.loc 1 92 0
+ 182 0002 0E94 0000 		call matrix_power_up
+ 183               	.LVL3:
+  93:../tmk_core/common/avr/suspend.c ****     matrix_scan();
+ 184               		.loc 1 93 0
+ 185 0006 0E94 0000 		call matrix_scan
+ 186               	.LVL4:
+  94:../tmk_core/common/avr/suspend.c ****     matrix_power_down();
+ 187               		.loc 1 94 0
+ 188 000a 0E94 0000 		call matrix_power_down
+ 189               	.LVL5:
+ 190               	.LBB6:
+  95:../tmk_core/common/avr/suspend.c ****     for (uint8_t r = 0; r < MATRIX_ROWS; r++) {
+ 191               		.loc 1 95 0
+ 192 000e C0E0      		ldi r28,0
+ 193               	.LVL6:
+ 194               	.L12:
+  96:../tmk_core/common/avr/suspend.c ****         if (matrix_get_row(r)) return true;
+ 195               		.loc 1 96 0
+ 196 0010 8C2F      		mov r24,r28
+ 197 0012 0E94 0000 		call matrix_get_row
+ 198               	.LVL7:
+ 199 0016 892B      		or r24,r25
+ 200 0018 01F4      		brne .L13
+  95:../tmk_core/common/avr/suspend.c ****     for (uint8_t r = 0; r < MATRIX_ROWS; r++) {
+ 201               		.loc 1 95 0 discriminator 2
+ 202 001a CF5F      		subi r28,lo8(-(1))
+ 203               	.LVL8:
+ 204 001c C530      		cpi r28,lo8(5)
+ 205 001e 01F4      		brne .L12
+ 206               	.LBE6:
+  97:../tmk_core/common/avr/suspend.c ****     }
+  98:../tmk_core/common/avr/suspend.c ****     return false;
+ 207               		.loc 1 98 0
+ 208 0020 80E0      		ldi r24,0
+ 209               	.LBB7:
+ 210 0022 00C0      		rjmp .L11
+ 211               	.L13:
+  96:../tmk_core/common/avr/suspend.c ****         if (matrix_get_row(r)) return true;
+ 212               		.loc 1 96 0
+ 213 0024 81E0      		ldi r24,lo8(1)
+ 214               	.L11:
+ 215               	/* epilogue start */
+ 216               	.LBE7:
+  99:../tmk_core/common/avr/suspend.c **** }
+ 217               		.loc 1 99 0
+ 218 0026 CF91      		pop r28
+ 219               	.LVL9:
+ 220 0028 0895      		ret
+ 221               		.cfi_endproc
+ 222               	.LFE109:
+ 224               		.section	.text.suspend_wakeup_init,"ax",@progbits
+ 225               	.global	suspend_wakeup_init
+ 227               	suspend_wakeup_init:
+ 228               	.LFB110:
+ 100:../tmk_core/common/avr/suspend.c **** 
+ 101:../tmk_core/common/avr/suspend.c **** // run immediately after wakeup
+ 102:../tmk_core/common/avr/suspend.c **** void suspend_wakeup_init(void)
+ 103:../tmk_core/common/avr/suspend.c **** {
+ 229               		.loc 1 103 0
+ 230               		.cfi_startproc
+ 231               	/* prologue: function */
+ 232               	/* frame size = 0 */
+ 233               	/* stack size = 0 */
+ 234               	.L__stack_usage = 0
+ 104:../tmk_core/common/avr/suspend.c ****     // clear keyboard state
+ 105:../tmk_core/common/avr/suspend.c ****     clear_keyboard();
+ 235               		.loc 1 105 0
+ 236 0000 0C94 0000 		jmp clear_keyboard
+ 237               	.LVL10:
+ 238               		.cfi_endproc
+ 239               	.LFE110:
+ 241               		.section	.text.__vector_12,"ax",@progbits
+ 242               	.global	__vector_12
+ 244               	__vector_12:
+ 245               	.LFB111:
+ 106:../tmk_core/common/avr/suspend.c **** #ifdef BACKLIGHT_ENABLE
+ 107:../tmk_core/common/avr/suspend.c ****     backlight_init();
+ 108:../tmk_core/common/avr/suspend.c **** #endif
+ 109:../tmk_core/common/avr/suspend.c **** }
+ 110:../tmk_core/common/avr/suspend.c **** 
+ 111:../tmk_core/common/avr/suspend.c **** #ifndef NO_SUSPEND_POWER_DOWN
+ 112:../tmk_core/common/avr/suspend.c **** /* watchdog timeout */
+ 113:../tmk_core/common/avr/suspend.c **** ISR(WDT_vect)
+ 114:../tmk_core/common/avr/suspend.c **** {
+ 246               		.loc 1 114 0
+ 247               		.cfi_startproc
+ 248 0000 1F92      		push r1
+ 249               	.LCFI1:
+ 250               		.cfi_def_cfa_offset 3
+ 251               		.cfi_offset 1, -2
+ 252 0002 0F92      		push r0
+ 253               	.LCFI2:
+ 254               		.cfi_def_cfa_offset 4
+ 255               		.cfi_offset 0, -3
+ 256 0004 0FB6      		in r0,__SREG__
+ 257 0006 0F92      		push r0
+ 258 0008 1124      		clr __zero_reg__
+ 259 000a 8F93      		push r24
+ 260               	.LCFI3:
+ 261               		.cfi_def_cfa_offset 5
+ 262               		.cfi_offset 24, -4
+ 263 000c 9F93      		push r25
+ 264               	.LCFI4:
+ 265               		.cfi_def_cfa_offset 6
+ 266               		.cfi_offset 25, -5
+ 267 000e AF93      		push r26
+ 268               	.LCFI5:
+ 269               		.cfi_def_cfa_offset 7
+ 270               		.cfi_offset 26, -6
+ 271 0010 BF93      		push r27
+ 272               	.LCFI6:
+ 273               		.cfi_def_cfa_offset 8
+ 274               		.cfi_offset 27, -7
+ 275               	/* prologue: Signal */
+ 276               	/* frame size = 0 */
+ 277               	/* stack size = 7 */
+ 278               	.L__stack_usage = 7
+ 115:../tmk_core/common/avr/suspend.c ****     // compensate timer for sleep
+ 116:../tmk_core/common/avr/suspend.c ****     switch (wdt_timeout) {
+ 279               		.loc 1 116 0
+ 280 0012 8091 0000 		lds r24,wdt_timeout
+ 281 0016 8111      		cpse r24,__zero_reg__
+ 282 0018 00C0      		rjmp .L16
+ 117:../tmk_core/common/avr/suspend.c ****         case WDTO_15MS:
+ 118:../tmk_core/common/avr/suspend.c ****             timer_count += 15 + 2;  // WDTO_15MS + 2(from observation)
+ 283               		.loc 1 118 0
+ 284 001a 8091 0000 		lds r24,timer_count
+ 285 001e 9091 0000 		lds r25,timer_count+1
+ 286 0022 A091 0000 		lds r26,timer_count+2
+ 287 0026 B091 0000 		lds r27,timer_count+3
+ 288 002a 4196      		adiw r24,17
+ 289 002c A11D      		adc r26,__zero_reg__
+ 290 002e B11D      		adc r27,__zero_reg__
+ 291 0030 8093 0000 		sts timer_count,r24
+ 292 0034 9093 0000 		sts timer_count+1,r25
+ 293 0038 A093 0000 		sts timer_count+2,r26
+ 294 003c B093 0000 		sts timer_count+3,r27
+ 295               	.L16:
+ 296               	/* epilogue start */
+ 119:../tmk_core/common/avr/suspend.c ****             break;
+ 120:../tmk_core/common/avr/suspend.c ****         default:
+ 121:../tmk_core/common/avr/suspend.c ****             ;
+ 122:../tmk_core/common/avr/suspend.c ****     }
+ 123:../tmk_core/common/avr/suspend.c **** }
+ 297               		.loc 1 123 0
+ 298 0040 BF91      		pop r27
+ 299 0042 AF91      		pop r26
+ 300 0044 9F91      		pop r25
+ 301 0046 8F91      		pop r24
+ 302 0048 0F90      		pop r0
+ 303 004a 0FBE      		out __SREG__,r0
+ 304 004c 0F90      		pop r0
+ 305 004e 1F90      		pop r1
+ 306 0050 1895      		reti
+ 307               		.cfi_endproc
+ 308               	.LFE111:
+ 310               		.section	.bss.wdt_timeout,"aw",@nobits
+ 313               	wdt_timeout:
+ 314 0000 00        		.zero	1
+ 315               		.text
+ 316               	.Letext0:
+ 317               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 318               		.file 3 "../tmk_core/common/matrix.h"
+ 319               		.file 4 "../tmk_core/common/timer.h"
+ 320               		.file 5 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.h"
+ 321               		.file 6 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../Device.h"
+ 322               		.file 7 "../tmk_core/common/action.h"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 suspend.c
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:2      *ABS*:000000000000003e __SP_H__
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:3      *ABS*:000000000000003d __SP_L__
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:4      *ABS*:000000000000003f __SREG__
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:5      *ABS*:0000000000000000 __tmp_reg__
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:6      *ABS*:0000000000000001 __zero_reg__
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:13     .text.suspend_idle:0000000000000000 suspend_idle
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:60     .text.suspend_power_down:0000000000000000 suspend_power_down
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:313    .bss.wdt_timeout:0000000000000000 wdt_timeout
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:138    .text.matrix_power_up:0000000000000000 matrix_power_up
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:153    .text.matrix_power_down:0000000000000000 matrix_power_down
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:168    .text.suspend_wakeup_condition:0000000000000000 suspend_wakeup_condition
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:227    .text.suspend_wakeup_init:0000000000000000 suspend_wakeup_init
+/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccREw6lP.s:244    .text.__vector_12:0000000000000000 __vector_12
+
+UNDEFINED SYMBOLS
+USB_DeviceState
+matrix_scan
+matrix_get_row
+clear_keyboard
+timer_count
+__do_clear_bss

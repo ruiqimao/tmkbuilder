@@ -16,7 +16,7 @@ $('#download-source').click(function() {
 	$('#download-source').prop('disabled', true);
 
 	// Get firmware.zip.
-	JSZipUtils.getBinaryContent('firmware/firmware.zip', function(err, data) {
+	JSZipUtils.getBinaryContent('/firmware/firmware.zip', function(err, data) {
 		if (err) {
 			showError('Unable to grab source .zip');
 			$('#download-source').prop('disabled', false);
@@ -52,6 +52,49 @@ $('#download-source').click(function() {
 			showError('Unable to load source .zip');
 			$('#download-source').prop('disabled', false);
 			return;
+		}
+	});
+});
+
+// Download hex.
+$('#download-hex').click(function() {
+	// Disable the button.
+	$('#download-hex').prop('disabled', true);
+
+	// Generate the source files.
+	var keymapCommonH = generateKeymapCommonH();
+	var keymapC = generateKeymapC();
+	var ledC = generateLedC();
+	var matrixC = generateMatrixC();
+
+	// Make the request to the server.
+	$.ajax({
+		url: API_SERVER + '/build',
+		data: {
+			keymapCommonH: keymapCommonH,
+			keymapC: keymapC,
+			ledC: ledC,
+			matrixC: matrixC
+		},
+		method: 'POST',
+		dataType: 'json',
+		success: function(data) {
+			// Re-enable the button.
+			$('#download-hex').prop('disabled', false);
+
+			// Check if there was an error.
+			if (data.error) {
+				showError(data.error);
+				return;
+			}
+
+			// Downlaod the .hex file.
+			var blob = new Blob([data.hex], { type: 'application/octet-stream' });
+			saveAs(blob, 'firmware.hex');
+		},
+		error: function(error) {
+			showError('Could not communicate with API server.');
+			$('#download-hex').prop('disabled', false);
 		}
 	});
 });
