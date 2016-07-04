@@ -5,7 +5,7 @@
  */
 function generateLedSet() {
 	// Begin the function.
-	var func = 'static void led_set(uint8_t usb_led) {\n';
+	var func = 'void led_set(uint8_t usb_led) {\n';
 
 	// Iterate through the LED pins.
 	for (var i in _keyboard.ledPins) {

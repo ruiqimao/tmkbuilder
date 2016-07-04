@@ -144,7 +144,7 @@ function generateUnselectRows() {
  */
 function generateSelectRow() {
 	// Begin the function.
-	var func = 'static void select_rows(uint8_t row) {\n';
+	var func = 'static void select_row(uint8_t row) {\n';
 	func += '    switch (row) {\n';
 
 	// Iterate through the rows.

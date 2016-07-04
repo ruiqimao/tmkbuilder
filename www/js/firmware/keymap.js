@@ -61,7 +61,7 @@ function generateBaseKeymap() {
 	}
 
 	// Assemble and return the keymap.
-	return '#define KEYMAP ( \\\n' + keymap1 + ') { \\\n' + keymap2 + '}';
+	return '#define KEYMAP( \\\n' + keymap1 + ') { \\\n' + keymap2 + '}';
 }
 
 /*

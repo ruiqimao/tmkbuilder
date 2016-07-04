@@ -10,6 +10,49 @@ $('#download-config').click(function() {
 	saveAs(blob, 'configuration.json');
 });
 
+// Download source.
+$('#download-source').click(function() {
+	// Disable the button.
+	$('#download-source').prop('disabled', true);
+
+	// Get firmware.zip.
+	JSZipUtils.getBinaryContent('firmware/firmware.zip', function(err, data) {
+		if (err) {
+			showError('Unable to grab source .zip');
+			$('#download-source').prop('disabled', false);
+			return;
+		}
+
+		try {
+			JSZip.loadAsync(data)
+			.then(function(zip) {
+				// Generate the source files.
+				var keymapCommonH = generateKeymapCommonH();
+				var keymapC = generateKeymapC();
+				var ledC = generateLedC();
+				var matrixC = generateMatrixC();
+
+				// Insert the files into the zip file.
+				zip.file('tmk_keyboard/keyboard/keymap_common.h', keymapCommonH);
+				zip.file('tmk_keyboard/keyboard/keymap.c', keymapC);
+				zip.file('tmk_keyboard/keyboard/led.c', ledC);
+				zip.file('tmk_keyboard/keyboard/matrix.c', matrixC);
+
+				// Download the file.
+				zip.generateAsync({ type: 'blob' })
+				.then(function(blob) {
+					saveAs(blob, 'source.zip');
+				});
+			})
+		} catch (e) {
+			console.error(e);
+			showError('Unable to load source .zip');
+			$('#download-source').prop('disabled', false);
+			return;
+		}
+	});
+});
+
 // Wire mode.
 $('#config-wire').click(function() {
 	setConfigMode(MODE_WIRE);

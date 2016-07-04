@@ -152,7 +152,7 @@ button:active {
 }
 
 button:disabled {
-	background:#566b7f;
+	background:#566b7f !important;
 	cursor:initial;
 }
 
