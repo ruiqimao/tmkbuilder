@@ -37,6 +37,15 @@ $('#kle-import').click(function() {
 	}
 });
 
+// Preset button.
+$('.preset-btn').click(function() {
+	// Get the id.
+	var id = $(this).data('id');
+
+	// Load the preset.
+	loadPreset(id);
+});
+
 /*
  * Initialize the editor.
  */

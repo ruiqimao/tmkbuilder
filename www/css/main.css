@@ -156,6 +156,16 @@ button:disabled {
 	cursor:initial;
 }
 
+button.light {
+	background:#ffffff;
+	border:1px solid #dddddd;
+	color:#444444;
+}
+
+button.light:hover {
+	background:#fcfcfc !important;
+}
+
 button.block {
 	display:block;
 	width:100%;
@@ -238,6 +248,10 @@ button.block {
 	font-size: 0.8rem;
 	text-align:left;
 	resize:none;
+}
+
+.preset-btn {
+	margin-bottom:0.5rem !important;
 }
 
 

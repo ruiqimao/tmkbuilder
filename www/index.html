@@ -18,11 +18,14 @@
 			<div class="screen" id="screen-initial">
 				<h4>Upload TMK Firmware Builder configuration</h4>
 				<button class="block" id="tfb-upload">Upload</button>
-				<br>
-				<br>
+				<br><br>
 				<h4>Or import from keyboard-layout-editor.com</h4>
 				<textarea id="kle" placeholder="Paste layout here..."></textarea>
 				<button class="block" id="kle-import">Import</button>
+				<br><br>
+				<h4>Or choose a preset layout</h4>
+				<button class="block light preset-btn" data-id="gh60-1">GH60 (rev. 1)</button>
+				<button class="block light preset-btn" data-id="gh60-2">GH60 (rev. 2)</button>
 			</div>
 
 			<!-- CONFIG -->
@@ -157,6 +160,9 @@
 		<script src="js/ui/config.js"></script>
 		<script src="js/ui/wire-config.js"></script>
 		<script src="js/ui/firmware-config.js"></script>
+
+		<!-- PRESET -->
+		<script src="js/presets/presets.js"></script>
 
 		<!-- FIRMWARE -->
 		<script src="js/firmware/keymap.js"></script>
