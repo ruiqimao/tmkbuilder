@@ -120,6 +120,19 @@ $('.btn-unset-key').click(function() {
 	setActiveKey(undefined);
 });
 
+// Keyboard input.
+$(window).keydown(function(e) {
+	if (_keyboardInput) {
+		// Assign key based on keyboard event.
+		assignKeyPress(e);
+	}
+});
+
+// Remove keyboard input focus.
+$(window).click(function() {
+	_keyboardInput = false;
+});
+
 
 /*
  * Reset the config.
@@ -163,9 +176,15 @@ function createKeyboardUI() {
 		uiKey.data('id', i);
 
 		// Register the key's click event.
-		uiKey.click(function() {
+		uiKey.click(function(e) {
 			// Set the active key.
 			setActiveKey($(this));
+
+			// If the mode is firmware, enable keyboard input.
+			if (_configMode == MODE_FIRMWARE) {
+				e.stopPropagation();
+				_keyboardInput = true;
+			}
 		});
 
 		// Add the key to the keyboard.

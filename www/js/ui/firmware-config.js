@@ -150,6 +150,34 @@ function setKeycode(code) {
 }
 
 /*
+ * Assigns a keycode based on a keypress.
+ *
+ * @param e The event keypress event that occurred.
+ */
+function assignKeyPress(e) {
+	// If there is no active key, do nothing.
+	if (_activeId == undefined) return;
+
+	// Prevent the keypress from doing anything.
+	e.preventDefault();
+
+	// Get the keycode.
+	var code = KEYCODES[e.which];
+	if (code === undefined) return;
+	if (code == 'CTL' || code == 'SFT' || code == 'ALT') {
+		// Assign a side to these keys.
+		if (_keyboard.keys[_activeId].col < _keyboard.cols / 2) {
+			code = 'L' + code;
+		} else {
+			code = 'R' + code;
+		}
+	}
+
+	// Assign the keycode.
+	setKeycode(code);
+}
+
+/*
  * Gets the closest match to a valid key.
  *
  * @param value The raw value.
