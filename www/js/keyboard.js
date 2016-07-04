@@ -102,6 +102,7 @@ function fromKLE(json) {
 			key.x = x;
 			key.y = y;
 			key.row = r;
+			key.codes[0] = getKeyValue(kleKey);
 
 			// Add the key to the keyboard.
 			keyboard.keys.push(key);

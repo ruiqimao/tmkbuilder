@@ -185,10 +185,17 @@ function assignKeyPress(e) {
  * @return The best guess for the keycode value.
  */
 function getKeyValue(value) {
+	// Capitalize the value.
+	value = value.toUpperCase();
+
 	// Special values.
 	for (var i in SYMBOLS) {
 		if (value == i) return SYMBOLS[i];
 	}
+
+	// Other special values.
+	if (value == 'SHIFT') value = 'LSFT';
+	if (value == 'WIN') value = 'LGUI';
 
 	// Keep track of which key is closest and by how much.
 	var closest = '';
@@ -203,6 +210,9 @@ function getKeyValue(value) {
 			closestDist = distance;
 		}
 	}
+
+	// If the closest value is NO, then return TRNS.
+	if (closest == 'NO') closest = 'TRNS';
 
 	// Return the closest value.
 	return closest;
