@@ -42,6 +42,9 @@ $('#download-source').click(function() {
 				zip.generateAsync({ type: 'blob' })
 				.then(function(blob) {
 					saveAs(blob, 'source.zip');
+
+					// Re-enable the button.
+					$('#download-source').prop('disabled', false);
 				});
 			})
 		} catch (e) {

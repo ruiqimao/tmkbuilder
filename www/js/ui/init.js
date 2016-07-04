@@ -1,5 +1,12 @@
 /*** INITIAL SETUP ***/
 
+// Safari and IE warning.
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+var isIE = false || !!document.documentMode;
+if (isSafari || isIE) {
+	showError('You are using an unsupported browser. Most features will work, but some may not.');
+}
+
 // Upload button.
 $('#tfb-upload').click(function() {
 	// Get the file.
