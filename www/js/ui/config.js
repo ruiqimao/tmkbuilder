@@ -1,5 +1,11 @@
 /*** CONFIG ***/
 
+// Layout name.
+$('#config-name').change(function() {
+	// Set the layout name.
+	_keyboard.name = $(this).val();
+});
+
 // Download configuration.
 $('#download-config').click(function() {
 	// Stringify the keyboard.
@@ -7,7 +13,7 @@ $('#download-config').click(function() {
 
 	// Download the file.
 	var blob = new Blob([json], { type: 'text/plain;charset=utf-8' });
-	saveAs(blob, 'configuration.json');
+	saveAs(blob, getLayoutFileName() + '.json');
 });
 
 // Download source.
@@ -41,7 +47,7 @@ $('#download-source').click(function() {
 				// Download the file.
 				zip.generateAsync({ type: 'blob' })
 				.then(function(blob) {
-					saveAs(blob, 'source.zip');
+					saveAs(blob, getLayoutFileName() + '.zip');
 
 					// Re-enable the button.
 					$('#download-source').prop('disabled', false);
@@ -90,7 +96,7 @@ $('#download-hex').click(function() {
 
 			// Downlaod the .hex file.
 			var blob = new Blob([data.hex], { type: 'application/octet-stream' });
-			saveAs(blob, 'firmware.hex');
+			saveAs(blob, getLayoutFileName() + '.hex');
 		},
 		error: function(error) {
 			showError('Could not communicate with API server.');
@@ -269,4 +275,13 @@ function reloadKeyConfig() {
 		// Otherwise, load firmware config.
 		loadFirmwareConfig();
 	}
+}
+
+/*
+ * Get the layout name in a file-friendly format.
+ *
+ * @return The sanitized layout name.
+ */
+function getLayoutFileName() {
+	return _keyboard.name.replace(/[^a-z0-9]/gi, '').toLowerCase();
 }

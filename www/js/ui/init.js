@@ -53,6 +53,9 @@ function init() {
 	// Hide errors.
 	$('#err').hide();
 
+	// Set the layout name.
+	$('#config-name').val(_keyboard.name);
+
 	// Reset and show the config screen.
 	resetConfig();
 	showScreen('config');

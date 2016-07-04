@@ -18,6 +18,8 @@ function Key() {
  * Prototype for Keyboard.
  */
 function Keyboard() {
+	this.name = 'custom keyboard';
+
 	this.keys = [];
 	this.macros = [[], [], [], [], [], [], [], []];
 
