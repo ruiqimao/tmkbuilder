@@ -298,6 +298,10 @@ button.block {
 	border:1px solid rgba(0,0,100,0.5);
 }
 
+.key.active2 .key-inner {
+	border:1px solid rgba(100,0,0,0.5);
+};
+
 .key-pad {
 	position:absolute;
 	top:50%;

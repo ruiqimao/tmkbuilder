@@ -131,6 +131,7 @@ $(window).keydown(function(e) {
 // Remove keyboard input focus.
 $(window).click(function() {
 	_keyboardInput = false;
+	$('.key.active').removeClass('active2');
 });
 
 
@@ -179,6 +180,7 @@ function createKeyboardUI() {
 		uiKey.click(function(e) {
 			// Set the active key.
 			setActiveKey($(this));
+			$(this).addClass('active2');
 
 			// If the mode is firmware, enable keyboard input.
 			if (_configMode == MODE_FIRMWARE) {
@@ -268,6 +270,7 @@ function getActiveKey() {
 function setActiveKey(key) {
 	// Erase the active class from all keys.
 	$('.key').removeClass('active');
+	$('.key').removeClass('active2');
 
 	if (key !== undefined) {
 		// Set the active ID.

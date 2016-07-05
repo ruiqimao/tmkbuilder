@@ -175,6 +175,10 @@ function assignKeyPress(e) {
 
 	// Assign the keycode.
 	setKeycode(code);
+
+	// Deactivate keyboard input.
+	_keyboardInput = false;
+	$('.active2').removeClass('active2');
 }
 
 /*
