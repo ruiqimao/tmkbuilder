@@ -300,7 +300,7 @@ button.block {
 
 .key.active2 .key-inner {
 	border:1px solid rgba(100,0,0,0.5);
-};
+}
 
 .key-pad {
 	position:absolute;
