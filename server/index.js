@@ -34,7 +34,7 @@ app.post('/build', function(req, res) {
 			// Copy the firmware files to a temporary directory.
 			this.temp = '/tmp/tmk-' + crypto.randomBytes(16).toString('hex');
 			exec('cp -r firmware/tmk_keyboard ' + this.temp, function(error, stdout, stderr) {
-				if (error) return sendError(this.res);
+				if (error) return sendError(this);
 
 				this.callback();
 			}.bind(this));
@@ -46,7 +46,7 @@ app.post('/build', function(req, res) {
 
 			// Copy keymap_common.h.
 			fs.writeFile(this.temp + '/keyboard/keymap_common.h', this.keymapCommonH, function(err) {
-				if (err) return sendError(this.res);
+				if (err) return sendError(this);
 
 				this.callback();
 			}.bind(this));
@@ -58,7 +58,7 @@ app.post('/build', function(req, res) {
 
 			// Copy keymap.c.
 			fs.writeFile(this.temp + '/keyboard/keymap.c', this.keymapC, function(err) {
-				if (err) return sendError(this.res);
+				if (err) return sendError(this);
 
 				this.callback();
 			}.bind(this));
@@ -70,7 +70,7 @@ app.post('/build', function(req, res) {
 
 			// Copy led.c.
 			fs.writeFile(this.temp + '/keyboard/led.c', this.ledC, function(err) {
-				if (err) return sendError(this.res);
+				if (err) return sendError(this);
 
 				this.callback();
 			}.bind(this));
@@ -82,7 +82,7 @@ app.post('/build', function(req, res) {
 
 			// Copy matrix.c.
 			fs.writeFile(this.temp + '/keyboard/matrix.c', this.matrixC, function(err) {
-				if (err) return sendError(this.res);
+				if (err) return sendError(this);
 
 				this.callback();
 			}.bind(this));
@@ -94,7 +94,7 @@ app.post('/build', function(req, res) {
 
 			// Make the firmware.
 			exec('cd ' + this.temp + '/keyboard && make', function(error, stdout, stderr) {
-				if (error) return sendError(this.res);
+				if (error) return sendError(this);
 
 				this.callback();
 			}.bind(this));
@@ -106,7 +106,7 @@ app.post('/build', function(req, res) {
 
 			// Read the firmware.hex file.
 			fs.readFile(this.temp + '/keyboard/firmware.hex', 'utf8', function(err, data) {
-				if (err) return sendError(this.res);
+				if (err) return sendError(this);
 
 				this.hex = data;
 				this.callback();
@@ -114,20 +114,13 @@ app.post('/build', function(req, res) {
 
 		}.bind(attributes),
 
-		function(callback) {
-			this.callback = callback;
+		function() {
 
 			// Send the .hex file over.
 			this.res.json({ hex: this.hex });
 
-			this.callback();
-		}.bind(attributes),
-
-		function() {
-
 			// Clean up.
-			exec('rm -rf ' + this.temp);
-
+			cleanUp(this);
 		}.bind(attributes)
 	]);
 });
@@ -139,8 +132,20 @@ app.listen(constants.PORT, function() {
 /*
  * Send an API server error back to the client.
  *
- * @param res The response object.
+ * @param attr Object with all attributes of the request.
  */
-function sendError(res) {
-	res.json({ error: 'API server error.' });
+function sendError(attr) {
+	attr.res.json({ error: 'API server error.' });
+	cleanUp(attr);
+}
+
+/*
+ * Cleans up.
+ *
+ * @param attr Object with all attributes of the request.
+ */
+function cleanUp(attr) {
+	if (attr.temp) {
+		exec('rm -rf ' + attr.temp);
+	}
 }
