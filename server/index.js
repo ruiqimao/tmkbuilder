@@ -21,6 +21,7 @@ app.post('/build', function(req, res) {
 	res.header('Access-Control-Allow-Headers', 'X-Requested-With');
 
 	// Get the files.
+	attributes.configH = req.body.configH;
 	attributes.keymapCommonH = req.body.keymapCommonH;
 	attributes.keymapC = req.body.keymapC;
 	attributes.ledC = req.body.ledC;
@@ -35,6 +36,18 @@ app.post('/build', function(req, res) {
 			this.temp = '/tmp/tmk-' + crypto.randomBytes(16).toString('hex');
 			exec('cp -r firmware/tmk_keyboard ' + this.temp, function(error, stdout, stderr) {
 				if (error) return sendError(this);
+
+				this.callback();
+			}.bind(this));
+
+		}.bind(attributes),
+
+		function(callback) {
+			this.callback = callback;
+
+			// Copy config.h.
+			fs.writeFile(this.temp + '/keyboard/config.h', this.configH, function(err) {
+				if (err) return sendError(this);
 
 				this.callback();
 			}.bind(this));

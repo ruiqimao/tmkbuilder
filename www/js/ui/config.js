@@ -33,12 +33,14 @@ $('#download-source').click(function() {
 			JSZip.loadAsync(data)
 			.then(function(zip) {
 				// Generate the source files.
+				var configH = generateConfigH();
 				var keymapCommonH = generateKeymapCommonH();
 				var keymapC = generateKeymapC();
 				var ledC = generateLedC();
 				var matrixC = generateMatrixC();
 
 				// Insert the files into the zip file.
+				zip.file('tmk_keyboard/keyboard/config.h', configH);
 				zip.file('tmk_keyboard/keyboard/keymap_common.h', keymapCommonH);
 				zip.file('tmk_keyboard/keyboard/keymap.c', keymapC);
 				zip.file('tmk_keyboard/keyboard/led.c', ledC);
@@ -68,6 +70,7 @@ $('#download-hex').click(function() {
 	$('#download-hex').prop('disabled', true);
 
 	// Generate the source files.
+	var configH = generateConfigH();
 	var keymapCommonH = generateKeymapCommonH();
 	var keymapC = generateKeymapC();
 	var ledC = generateLedC();
@@ -77,6 +80,7 @@ $('#download-hex').click(function() {
 	$.ajax({
 		url: API_SERVER + '/build',
 		data: {
+			configH: configH,
 			keymapCommonH: keymapCommonH,
 			keymapC: keymapC,
 			ledC: ledC,
