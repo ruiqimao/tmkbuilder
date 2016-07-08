@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // Set up the /build route.
-app.post('/build', function(req, res) {
+app.post('/api/build', function(req, res) {
 	var attributes = { req: req, res: res };
 	// Allow cross-origin requests.
 	res.header('Access-Control-Allow-Origin', '*');

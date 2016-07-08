@@ -429,4 +429,4 @@ MACRO_UP = 'U';
 MACRO_WAIT = 'W';
 
 // API server.
-API_SERVER = 'http://kb.sized.io:5000';
+API_SERVER = '/api';
