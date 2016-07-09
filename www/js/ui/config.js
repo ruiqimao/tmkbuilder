@@ -1,5 +1,11 @@
 /*** CONFIG ***/
 
+// Flip checkbox.
+$('#config-flip').click(function() {
+	// Set the keyboard flip.
+	setFlip($(this).is(':checked'));
+});
+
 // Wire mode.
 $('#config-wire').click(function() {
 	setConfigMode(MODE_WIRE);
@@ -39,8 +45,18 @@ $(window).click(function() {
  * Reset the config.
  */
 function resetConfig() {
+	_keys = [];
+	_colInds = [];
+	_rowInds = [];
+
 	// Create the new keyboard UI.
 	createKeyboardUI();
+
+	// Reload the config.
+	setConfigMode(_configMode);
+
+	// Set the active key.
+	setActiveKey(_keys[_activeId]);
 }
 
 /*
@@ -66,7 +82,8 @@ function createKeyboardUI() {
 		uiKey.css('height', key.height * UI_KEY_SIZE + 'rem');
 
 		// Set the key's position.
-		uiKey.css('left', key.x * UI_KEY_SIZE + 'rem');
+		var x = (_displayFlip ? _keyboard.cols - key.width - key.x + 1 : key.x);
+		uiKey.css('left', x * UI_KEY_SIZE + 'rem');
 		uiKey.css('top', key.y * UI_KEY_SIZE + 'rem');
 
 		// Set the size of the keyboard.
@@ -111,6 +128,16 @@ function createKeyboardUI() {
 	// Set the size of the keyboard.
 	$('#keyboard').css('width', width * UI_KEY_SIZE + 'rem');
 	$('#keyboard').css('height', height * UI_KEY_SIZE + 'rem');
+}
+
+/*
+ * Sets the keyboard flip.
+ *
+ * @param flip Whether to flip the keyboard.
+ */
+function setFlip(flip) {
+	_displayFlip = flip;
+	resetConfig();
 }
 
 /*
