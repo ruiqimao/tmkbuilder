@@ -103,7 +103,7 @@ label {
 	margin-right:0.5rem;
 	display:inline-block;
 	text-align:right;
-	vertical-align:middle;
+	vertical-align:bottom;
 }
 
 input[type="checkbox"] + label {
