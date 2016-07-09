@@ -16,6 +16,7 @@ function createChooser(callback) {
 				<button class="config-key-tab" id="config-key-keypad">Keypad</button>
 				<button class="config-key-tab" id="config-key-system">System</button>
 				<button class="config-key-tab" id="config-key-layer">Fn</button>
+				<button class="config-key-tab" id="config-key-other">Other</button>
 			</div>
 			<br>
 			<div class="config-key-pane" id="config-key-primary" style="display:block;">
@@ -191,6 +192,12 @@ function createChooser(callback) {
 				<button class="config-key-btn">M6</button>
 				<button class="config-key-btn">M7</button>
 			</div>
+			<div class="config-key-pane" id="config-key-other">
+				<h3>Other Keycode</h3>
+				<div class="input">
+					<input type="text" class="config-key-field">
+				</div>
+			</div>
 		</div>`;
 
 	// Create the element.
@@ -216,6 +223,19 @@ function createChooser(callback) {
 		$(this).click(function() {
 			this.callback(this.btn.text());
 		}.bind({ btn: $(this), callback: callback }));
+	});
+
+	// Field.
+	chooser.find('.config-key-field').each(function() {
+		// Select all on click.
+		$(this).click(function() {
+			$(this).select();
+		});
+
+		// Set value on change.
+		$(this).change(function() {
+			this.callback(this.field.val());
+		}.bind({ field: $(this), callback: callback }));
 	});
 
 	// Return the element.

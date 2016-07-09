@@ -98,6 +98,24 @@ function loadFirmwareConfig() {
 	if (_activeId !== undefined) {
 		// Show the panel.
 		$('.config-key').show();
+
+		// Get the current keycode.
+		var currentCode = _keyboard.keys[_activeId].codes[_activeLayer];
+
+		// Set the active button.
+		$('.config-key .config-key-btn').removeClass('active');
+		$('.config-key .config-key-btn').each(function() {
+			var value = $(this).text();
+			for (var i in SYMBOLS) {
+				if (value == i) value = SYMBOLS[i];
+			}
+			if (currentCode == value) {
+				$(this).addClass('active');
+			}
+		});
+
+		// Set the keycode field.
+		$('.config-key .config-key-field').val(currentCode);
 	} else {
 		// Hide the panel.
 		$('.config-key').hide();
@@ -147,6 +165,9 @@ function setKeycode(code) {
 
 	// Redraw the keys.
 	drawKeys();
+
+	// Reload the config panel.
+	loadFirmwareConfig();
 }
 
 /*

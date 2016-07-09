@@ -425,6 +425,16 @@ select {
 	margin:0.2rem 0;
 }
 
+.config-key-btn.active {
+	border:1px solid #bbbbbb;
+}
+
+.config-key-field {
+	width:5rem;
+	text-transform:uppercase;
+	text-align:center;
+}
+
 .config-key-btn:hover {
 	background:#fafafa !important;
 }
