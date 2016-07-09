@@ -82,7 +82,7 @@ function createKeyboardUI() {
 		uiKey.css('height', key.height * UI_KEY_SIZE + 'rem');
 
 		// Set the key's position.
-		var x = (_displayFlip ? _keyboard.cols - key.width - key.x + 1 : key.x);
+		var x = (_displayFlip ? _keyboard.width - key.width - key.x : key.x);
 		uiKey.css('left', x * UI_KEY_SIZE + 'rem');
 		uiKey.css('top', key.y * UI_KEY_SIZE + 'rem');
 
