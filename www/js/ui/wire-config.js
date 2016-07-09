@@ -190,7 +190,7 @@ function setPinConfig() {
 
 	function createPinSelector(type, pinNum) {
 		// Create the elements.
-		var element = $('<div></div>');
+		var element = $('<div class="input"></div>');
 		var label = $('<label style="width:1rem; text-align:left;"></label>');
 		var select = $('<select></select>');
 

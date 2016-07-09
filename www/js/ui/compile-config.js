@@ -4,6 +4,16 @@ $('#config-name').change(function() {
 	_keyboard.name = $(this).val();
 });
 
+// Diode direction.
+$('#config-settings-diode').change(function() {
+	// Set whether the diodes are reversed.
+	if ($(this).val() == 0) {
+		_keyboard.reversed = false;
+	} else {
+		_keyboard.reversed = true;
+	}
+});
+
 // Download configuration.
 $('#download-config').click(function() {
 	// Stringify the keyboard.
@@ -110,7 +120,17 @@ $('#download-hex').click(function() {
 /*
  * Load the compile config.
  */
-function loadCompileConfig() { }
+function loadCompileConfig() {
+	// Set the layout name.
+	$('#config-name').val(_keyboard.name);
+
+	// Set the diode direction.
+	if (_keyboard.reversed) {
+		$('#config-settings-diode').val(1);
+	} else {
+		$('#config-settings-diode').val(0);
+	}
+}
 
 /*
  * Hide all compile config items.

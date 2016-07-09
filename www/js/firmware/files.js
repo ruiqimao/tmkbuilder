@@ -143,6 +143,26 @@ static uint8_t debouncing = DEBOUNCE;
 static matrix_row_t matrix[MATRIX_ROWS];
 static matrix_row_t matrix_debouncing[MATRIX_ROWS];
 
+`
+
+	// If the keyboard is reversed.
+	var s_row = 'row';
+	var s_ROW = 'ROW';
+	var s_col = 'col';
+	var s_COL = 'COL';
+	var s_reversed = '';
+	if (_keyboard.reversed) {
+		s_row = 'col';
+		s_ROW = 'COL';
+		s_col = 'row';
+		s_COL = 'ROW';
+		s_reversed = '_reversed';
+		file += `static matrix_row_t matrix_reversed[MATRIX_COLS];
+static matrix_row_t matrix_reversed_debouncing[MATRIX_COLS];
+`
+	}
+
+file += `
 static matrix_row_t read_cols(void);
 static void init_cols(void);
 static void unselect_rows(void);
@@ -176,12 +196,12 @@ void matrix_init(void)
 
 uint8_t matrix_scan(void)
 {
-    for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
+    for (uint8_t i = 0; i < MATRIX_` + s_ROW + `S; i++) {
         select_row(i);
         _delay_us(30);  // without this wait read unstable value.
-        matrix_row_t cols = read_cols();
-        if (matrix_debouncing[i] != cols) {
-            matrix_debouncing[i] = cols;
+        matrix_row_t ` + s_col + `s = read_cols();
+        if (matrix` + s_reversed + `_debouncing[i] != ` + s_col + `s) {
+            matrix` + s_reversed + `_debouncing[i] = ` + s_col + `s;
             if (debouncing) {
                 debug("bounce!: "); debug_hex(debouncing); debug("\\n");
             }
@@ -194,12 +214,27 @@ uint8_t matrix_scan(void)
         if (--debouncing) {
             _delay_ms(1);
         } else {
-            for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
-                matrix[i] = matrix_debouncing[i];
+            for (uint8_t i = 0; i < MATRIX_` + s_ROW + `S; i++) {
+                matrix` + s_reversed + `[i] = matrix` + s_reversed + `_debouncing[i];
             }
         }
     }
+`
 
+	// If keyboard is reversed.
+	if (_keyboard.reversed) {
+		file += `
+    for (uint8_t y = 0; y < MATRIX_ROWS; y++) {
+        matrix_row_t row = 0;
+        for (uint8_t x = 0; x < MATRIX_COLS; x++) {
+            row |= ((matrix_reversed[x] & (1<<y)) >> y) << x;
+        }
+        matrix[y] = row;
+    }
+`
+	}
+
+	file += `
     return 1;
 }
 

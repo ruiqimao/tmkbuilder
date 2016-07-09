@@ -53,8 +53,8 @@ function init() {
 	// Hide errors.
 	$('#err').hide();
 
-	// Set the layout name.
-	$('#config-name').val(_keyboard.name);
+	// Load settings.
+	loadCompileConfig();
 
 	// Reset and show the config screen.
 	resetConfig();

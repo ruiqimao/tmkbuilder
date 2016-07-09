@@ -79,10 +79,10 @@ input[type="text"] {
 	background:#ffffff;
 	border:1px solid #f0f0f0;
 	border-radius:0.2rem;
-	line-height:1.7rem;
-	padding:0 0.5rem;
+	padding:0.4rem 0.5rem;
 	font-family:Lato;
-	font-size:1rem;
+	font-size:0.9rem;
+	vertical-align:middle;
 }
 
 input[type="text"].number {
@@ -99,6 +99,7 @@ label {
 	margin-right:0.5rem;
 	display:inline-block;
 	text-align:right;
+	vertical-align:bottom;
 }
 
 textarea {
@@ -128,7 +129,7 @@ button {
 
 button.small {
 	line-height:1.7rem;
-	padding:0 0.5rem;
+	padding:0 0.6rem;
 	font-size:0.7rem;
 	box-sizing:border-box;
 	vertical-align:middle;
@@ -171,6 +172,26 @@ button.block {
 	width:100%;
 	max-width:500px;
 	margin:auto;
+}
+
+select {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+	background-image:url(../images/dropdown.png);
+	background-position:right;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-color:#ffffff;
+	font-family:Lato;
+	font-size:0.9rem;
+	border:1px solid #f0f0f0;
+	outline:none;
+	border-radius:0.2rem;
+	padding:0.4rem 1.8rem 0.4rem 0.5rem;
+	vertical-align:middle;
+	margin:0;
 }
 
 .input {
@@ -444,6 +465,18 @@ button.block {
 .config-macro-btn {
 	width:23%;
 	margin:0 1%;
+}
+
+/*** CONFIG - SETTINGS ***/
+
+.config-settings label {
+	width:7rem;
+	text-align:left;
+}
+
+.config-settings input, .config-settings select {
+	width:10rem;
+	box-sizing:border-box;
 }
 
 /*** FOOTER ***/

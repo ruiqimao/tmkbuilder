@@ -9,9 +9,10 @@ function generateInitCols() {
 
 	// Associate the letters with numbers from column pin data.
 	var associations = {};
-	for (var i in _keyboard.colPins) {
-		var letter = _keyboard.colPins[i][0];
-		var number = _keyboard.colPins[i][1];
+	var pins = _keyboard.reversed ? _keyboard.rowPins : _keyboard.colPins;
+	for (var i in pins) {
+		var letter = pins[i][0];
+		var number = pins[i][1];
 
 		if (associations[letter] !== undefined) {
 			associations[letter].push(number);
@@ -55,21 +56,22 @@ function generateReadCols() {
 	var func = 'static matrix_row_t read_cols(void) {\n    return\n';
 
 	// Get the maximum column index width.
-	var colWidth = (_keyboard.cols - 1).toString().length;
+	var colWidth = ((_keyboard.reversed ? _keyboard.rows : _keyboard.cols) - 1).toString().length;
 
 	// Create a list of lines.
 	var lines = [];
 
 	// Iterate through the column pins.
-	for (var i in _keyboard.colPins) {
-		var letter = _keyboard.colPins[i][0];
-		var number = _keyboard.colPins[i][1];
+	var pins = _keyboard.reversed ? _keyboard.rowPins : _keyboard.colPins;
+	for (var i in pins) {
+		var letter = pins[i][0];
+		var number = pins[i][1];
 
 		// Create the line.
 		var line = '        (PIN'
 			+ letter
 			+ ' & (1 << ' + number
-			+ ') ? 0 : (1UL << ' + leftPad(i, colWidth, ' ') 
+			+ ') ? 0 : (1UL << ' + leftPad(i, colWidth, ' ')
 			+ '))';
 
 		// Add the line to the list.
@@ -95,9 +97,10 @@ function generateUnselectRows() {
 
 	// Associate the letters with numbers from row pin data.
 	var associations = {};
-	for (var i in _keyboard.rowPins) {
-		var letter = _keyboard.rowPins[i][0];
-		var number = _keyboard.rowPins[i][1];
+	var pins = _keyboard.reversed ? _keyboard.colPins : _keyboard.rowPins;
+	for (var i in pins) {
+		var letter = pins[i][0];
+		var number = pins[i][1];
 
 		if (associations[letter] !== undefined) {
 			associations[letter].push(number);
@@ -148,9 +151,10 @@ function generateSelectRow() {
 	func += '    switch (row) {\n';
 
 	// Iterate through the rows.
-	for (var i in _keyboard.rowPins) {
-		var letter = _keyboard.rowPins[i][0];
-		var number = _keyboard.rowPins[i][1];
+	var pins = _keyboard.reversed ? _keyboard.colPins : _keyboard.rowPins;
+	for (var i in pins) {
+		var letter = pins[i][0];
+		var number = pins[i][1];
 
 		// Add the case.
 		func += '        case ' + i + ':\n';
