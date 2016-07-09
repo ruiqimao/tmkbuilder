@@ -454,7 +454,7 @@ select {
 	top:-1px;
 }
 
-.config-macro-entry span {
+.config-macro-entry span, #config-compile-warning-keys span {
 	font-family:Cousine;
 	font-size: 0.8rem;
 	display:inline-block;
@@ -517,6 +517,17 @@ select {
 .config-settings input, .config-settings select {
 	width:10rem;
 	box-sizing:border-box;
+}
+
+#config-compile-warning {
+	margin-top:1rem;
+	font-family:Hind;
+	display:none;
+}
+
+#config-compile-warning-keys {
+	display:inline-block;
+	margin:0 0 0.5rem 0;
 }
 
 /*** FOOTER ***/

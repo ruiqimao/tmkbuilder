@@ -30,7 +30,7 @@
 
 			<!-- CONFIG -->
 			<div class="screen" id="screen-config">
-				<br>
+				<br><br>
 				<div class="keyboard-wrapper">
 					<div id="keyboard"></div>
 					<div id="wires"></div>
@@ -149,9 +149,18 @@
 						<button id="download-source">Download .zip</button>
 						<button id="download-hex">Download .hex</button>
 					</div>
+					<div class="input" id="config-compile-warning">
+						Your keymap does not have the following keys:
+						<br>
+						<span id="config-compile-warning-keys"></span>
+						<br>
+						<button class="light" id="config-compile-warning-continue">Continue Anyways</button>
+						<button class="light" id="config-compile-warning-cancel">Cancel</button>
+					</div>
 				</div>
 			</div>
 
+			<!-- FOOTER -->
 			<div class="footer">
 				TMK Firmware Builder by <a href="http://www.ruiqimao.com/" target="_blank">Ruiqi Mao</a>
 				<br>

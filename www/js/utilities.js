@@ -7,6 +7,9 @@ function showError(error) {
 	$('#err').text(error);
 	$('#msg').hide();
 	$('#err').show();
+
+	// Scroll up to the error.
+	$("html, body").animate({ scrollTop: $('#err').offset().top - 40 }, 400);
 }
 
 /*
@@ -18,6 +21,9 @@ function showMessage(message) {
 	$('#msg').text(message);
 	$('#err').hide();
 	$('#msg').show();
+
+	// Scroll up to the message.
+	$("html, body").animate({ scrollTop: $('#msg').offset().top - 40 }, 400);
 }
 
 /*

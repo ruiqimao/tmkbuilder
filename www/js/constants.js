@@ -406,6 +406,13 @@ KEYCODES = {
 	222: 'QUOT'
 };
 
+// Keys to sanity check for.
+CHECK_KEYS = [
+	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+	'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+	'SPC'
+];
+
 // List of all possible pins.
 PINS = [
 	'B0', 'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7',
