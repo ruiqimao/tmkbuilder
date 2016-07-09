@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
-// Set up the /build route.
+// Set up the /api/build route.
 app.post('/api/build', function(req, res) {
 	var attributes = { req: req, res: res };
 	// Allow cross-origin requests.

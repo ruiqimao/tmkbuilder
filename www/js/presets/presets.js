@@ -14,5 +14,7 @@ function loadPreset(id) {
 
 		// Set the default screen to firmware mode.
 		setConfigMode(MODE_FIRMWARE);
+		$('#config-wire').removeClass('active');
+		$('#config-firmware').addClass('active');
 	});
 }

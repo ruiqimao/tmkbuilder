@@ -30,17 +30,7 @@
 
 			<!-- CONFIG -->
 			<div class="screen" id="screen-config">
-				<div class="input">
-					<label>Layout Name</label>
-					<input type="text" id="config-name" value="custom keyboard">
-				</div>
 				<br>
-				<div>
-					<button id="download-config">Download Configuration</button>
-					<button id="download-source">Download .zip (Source)</button>
-					<button id="download-hex">Download .hex (Compiled)</button>
-				</div>
-				<br><br><br><br>
 				<div class="keyboard-wrapper">
 					<div id="keyboard"></div>
 					<div id="wires"></div>
@@ -50,8 +40,9 @@
 
 				<div class="config-display">
 					<div class="radio-group">
-						<button class="active" id="config-wire">Wire Mode</button>
-						<button id="config-firmware">Firmware Mode</button>
+						<button class="active" id="config-wire">Wiring</button>
+						<button id="config-firmware">Keymap</button>
+						<button id="config-compile">Settings / Compile</button>
 					</div>
 				</div>
 
@@ -129,6 +120,25 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="config-settings config-panel panel">
+					<h2>Settings</h2>
+					<div class="input">
+						<label>Layout Name</label>
+						<input type="text" id="config-name" value="Custom Keyboard">
+					</div>
+					<br>
+					<div class="input">
+						<button id="download-config">Download Configuration</button>
+					</div>
+				</div>
+				<div class="config-compile config-panel panel">
+					<h2>Compile</h2>
+					<div class="input">
+						<button id="download-source">Download .zip</button>
+						<button id="download-hex">Download .hex</button>
+					</div>
+				</div>
 			</div>
 
 			<div class="footer">
@@ -165,6 +175,7 @@
 		<script src="js/ui/config.js"></script>
 		<script src="js/ui/wire-config.js"></script>
 		<script src="js/ui/firmware-config.js"></script>
+		<script src="js/ui/compile-config.js"></script>
 
 		<!-- PRESET -->
 		<script src="js/presets/presets.js"></script>

@@ -421,6 +421,7 @@ UI_KEY_SIZE = 3.7;
 // Config modes.
 MODE_WIRE = 0;
 MODE_FIRMWARE = 1;
+MODE_COMPILE = 2;
 
 // Macro modes.
 MACRO_DOWN = 'D';
