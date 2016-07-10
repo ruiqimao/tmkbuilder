@@ -24,10 +24,8 @@
 				<button class="block" id="kle-import">Import</button>
 				<br><br>
 				<h4>Or choose a preset layout</h4>
-				<button class="block light preset-btn" data-id="gh60-1">GH60 (rev. 1)</button>
-				<button class="block light preset-btn" data-id="gh60-2">GH60 (rev. 2)</button>
-				<!--<button class="block light preset-btn" data-id="phantom-ansi">Phantom TKL (ANSI)</button>-->
-				<!--<button class="block light preset-btn" data-id="phantom-iso">Phantom TKL (ISO)</button>-->
+				<button class="block light preset-btn" data-id="gh60-pok3r">GH60 (POK3R)</button>
+				<button class="block light preset-btn" data-id="gh60-hhkb">GH60 (HHKB)</button>
 				<button class="block light preset-btn" data-id="s60x-ansi">S60-X (ANSI)</button>
 				<button class="block light preset-btn" data-id="s60x-iso">S60-X (ISO)</button>
 			</div>
@@ -76,10 +74,16 @@
 					<h2>Pin Config</h2>
 					<div class="config-pin-column">
 						<h3>Rows</h3>
+						<button class="small number-sm" data-for="config-pin-rows-c"><i class="fa fa-chevron-left"></i></button>
+						<input type="text" class="number" id="config-pin-rows-c" value="0" min="1" max="99">
+						<button class="small number-lg" data-for="config-pin-rows-c"><i class="fa fa-chevron-right"></i></button>
 						<div id="config-pin-rows"></div>
 					</div>
 					<div class="config-pin-column">
 						<h3>Columns</h3>
+						<button class="small number-sm" data-for="config-pin-cols-c"><i class="fa fa-chevron-left"></i></button>
+						<input type="text" class="number" id="config-pin-cols-c" value="0" min="1" max="99">
+						<button class="small number-lg" data-for="config-pin-cols-c"><i class="fa fa-chevron-right"></i></button>
 						<div id="config-pin-cols"></div>
 					</div>
 					<h3>LEDs</h3>

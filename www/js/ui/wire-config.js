@@ -21,6 +21,55 @@ $('#config-wire-row, #config-wire-col').change(function() {
 	drawWires();
 });
 
+// Pin row and col count.
+$('#config-pin-rows-c, #config-pin-cols-c').change(function() {
+	// Get and clamp the value.
+	var value = $(this).val();
+	if (isNaN(value)) value = 0;
+	value = Math.min(Math.max(value, 0), $(this).prop('max'));
+
+	// Set the value to the clamped value.
+	$(this).val(value);
+
+	// Get the row and column counts.
+	var rows = parseInt($('#config-pin-rows-c').val());
+	var cols = parseInt($('#config-pin-cols-c').val());
+	_keyboard.rows = rows;
+	_keyboard.cols = cols;
+
+	// Resize the pin arrays.
+	while (_keyboard.rowPins.length != rows) {
+		if (_keyboard.rowPins.length > rows) {
+			// Take one off the end if too long.
+			_keyboard.rowPins.pop();
+		} else {
+			// Add one to the end if too short.
+			_keyboard.rowPins.push(PINS[0]);
+		}
+	}
+	while (_keyboard.colPins.length != cols) {
+		if (_keyboard.colPins.length > cols) {
+			// Take one off the end if too long.
+			_keyboard.colPins.pop();
+		} else {
+			// Add one to the end if too short.
+			_keyboard.colPins.push(PINS[0]);
+		}
+	}
+
+	// Reassign rows and pins that are now out of bounds.
+	for (var i in _keyboard.keys) {
+		var key = _keyboard.keys[i];
+		while (key.row >= rows) key.row --;
+		while (key.col >= cols) key.col --;
+	}
+
+	// Reload everything.
+	loadWireConfig();
+	setPinConfig();
+	drawWires();
+});
+
 /*
  * Load the wire config.
  */
@@ -255,6 +304,11 @@ function setPinConfig() {
 		return element;
 	}
 
+	// Empty the containers.
+	$('#config-pin-rows').empty();
+	$('#config-pin-cols').empty();
+	$('#config-pin-leds').empty();
+
 	// Add fields for each row and column.
 	for (var row = 0; row < _keyboard.rows; row ++) {
 		var selector = createPinSelector(0, row);
@@ -277,4 +331,8 @@ function setPinConfig() {
 	selector = createPinSelector(4, 'Num Lock');
 	selector.find('option[value="' + _keyboard.ledPins[2] + '"]').prop('selected', true);
 	$('#config-pin-leds').append(selector);
+
+	// Set the row and column counts.
+	$('#config-pin-rows-c').val(_keyboard.rows);
+	$('#config-pin-cols-c').val(_keyboard.cols);
 }
