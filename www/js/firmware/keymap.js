@@ -112,8 +112,20 @@ function generateKeymaps() {
 			for (var col = 0; col < _keyboard.cols; col ++) {
 				var key = row + ',' + col;
 				if (associations[key] !== undefined) {
-					keymaps += leftPad(associations[key][layer], codeWidth, ' ') +
-						((row < _keyboard.rows - 1 || col < _keyboard.cols - 1) ? ', ' : '  ');
+
+					// Determine if this is the last character in the map.
+					var last = false;
+					if (row == _keyboard.rows - 1) {
+						last = true;
+						for (var col2 = col + 1; col2 < _keyboard.cols; col2 ++) {
+							if (associations[row + ',' + col2] !== undefined) {
+								last = false;
+								break;
+							}
+						}
+					}
+
+					keymaps += leftPad(associations[key][layer], codeWidth, ' ') + (last ? '  ' : ', ');
 				} else {
 					keymaps += ' '.repeat(codeWidth + 2);
 				}
