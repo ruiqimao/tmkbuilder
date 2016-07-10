@@ -65,9 +65,8 @@ $('#config-pin-rows-c, #config-pin-cols-c').change(function() {
 	}
 
 	// Reload everything.
-	loadWireConfig();
 	setPinConfig();
-	drawWires();
+	resetConfig();
 });
 
 /*
