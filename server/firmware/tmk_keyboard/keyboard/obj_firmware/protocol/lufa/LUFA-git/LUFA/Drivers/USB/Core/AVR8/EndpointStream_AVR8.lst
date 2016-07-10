@@ -2318,7 +2318,7 @@
   71:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c **** 			TEMPLATE_BUFFER_MOVE(DataStream, 1);
  1447               		.loc 3 71 0
  1448 0070 CE01      		movw r24,r28
- 1449 0072 0E94 0000 		call __eerd_byte_m32u4
+ 1449 0072 0E94 0000 		call eeprom_read_byte
  1450               	.LVL159:
  1451               	.LBB322:
  1452               	.LBB323:
@@ -2514,7 +2514,7 @@
   71:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c **** 			TEMPLATE_BUFFER_MOVE(DataStream, 1);
  1624               		.loc 3 71 0
  1625 007a CE01      		movw r24,r28
- 1626 007c 0E94 0000 		call __eerd_byte_m32u4
+ 1626 007c 0E94 0000 		call eeprom_read_byte
  1627               	.LVL181:
  1628               	.LBB328:
  1629               	.LBB329:
@@ -2704,7 +2704,7 @@
   71:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c **** 			TEMPLATE_BUFFER_MOVE(DataStream, 1);
  1795               		.loc 3 71 0
  1796 0074 CE01      		movw r24,r28
- 1797 0076 0E94 0000 		call __eeupd_byte_m32u4
+ 1797 0076 0E94 0000 		call eeprom_update_byte
  1798               	.LVL198:
   72:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c **** 			Length--;
  1799               		.loc 3 72 0
@@ -2899,7 +2899,7 @@
   71:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c **** 			TEMPLATE_BUFFER_MOVE(DataStream, 1);
  1971               		.loc 3 71 0
  1972 007e CE01      		movw r24,r28
- 1973 0080 0E94 0000 		call __eeupd_byte_m32u4
+ 1973 0080 0E94 0000 		call eeprom_update_byte
  1974               	.LVL219:
   72:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c **** 			Length--;
  1975               		.loc 3 72 0
@@ -4571,7 +4571,7 @@
  3306 0084 00F4      		brsh .L328
   63:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_W.c **** 				TEMPLATE_BUFFER_MOVE(DataStream, 1);
  3307               		.loc 4 63 0 is_stmt 1
- 3308 0086 0E94 0000 		call __eerd_byte_m32u4
+ 3308 0086 0E94 0000 		call eeprom_read_byte
  3309               	.LVL326:
  3310               	.LBB471:
  3311               	.LBB472:
@@ -4874,7 +4874,7 @@
  3575 008e 00F4      		brsh .L355
   63:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_W.c **** 				TEMPLATE_BUFFER_MOVE(DataStream, 1);
  3576               		.loc 4 63 0 is_stmt 1
- 3577 0090 0E94 0000 		call __eerd_byte_m32u4
+ 3577 0090 0E94 0000 		call eeprom_read_byte
  3578               	.LVL348:
  3579               	.LBB495:
  3580               	.LBB496:
@@ -5119,7 +5119,7 @@
   56:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_R.c **** 				TEMPLATE_BUFFER_MOVE(DataStream, 1);
  3789               		.loc 5 56 0
  3790 004e C801      		movw r24,r16
- 3791 0050 0E94 0000 		call __eeupd_byte_m32u4
+ 3791 0050 0E94 0000 		call eeprom_update_byte
  3792               	.LVL366:
   57:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_R.c **** 				Length--;
  3793               		.loc 5 57 0
@@ -5325,7 +5325,7 @@
   56:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_R.c **** 				TEMPLATE_BUFFER_MOVE(DataStream, 1);
  3968               		.loc 5 56 0
  3969 0056 C801      		movw r24,r16
- 3970 0058 0E94 0000 		call __eeupd_byte_m32u4
+ 3970 0058 0E94 0000 		call eeprom_update_byte
  3971               	.LVL378:
   57:../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_R.c **** 				Length--;
  3972               		.loc 5 57 0
@@ -5403,45 +5403,45 @@
  4033               	.LFE106:
  4035               		.text
  4036               	.Letext0:
- 4037               		.file 6 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 4037               		.file 6 "/usr/lib/avr/include/stdint.h"
  4038               		.file 7 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../StdRequestType.h
  4039               		.file 8 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../Device.h"
  4040               		.file 9 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../EndpointStream.h
  4041               		.file 10 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../USBTask.h"
- 4042               		.file 11 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/avr/eeprom.h"
+ 4042               		.file 11 "/usr/lib/avr/include/avr/eeprom.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 EndpointStream_AVR8.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:13     .text.Endpoint_Discard_Stream:0000000000000000 Endpoint_Discard_Stream
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:156    .text.Endpoint_Null_Stream:0000000000000000 Endpoint_Null_Stream
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:298    .text.Endpoint_Write_Stream_LE:0000000000000000 Endpoint_Write_Stream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:464    .text.Endpoint_Write_Stream_BE:0000000000000000 Endpoint_Write_Stream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:638    .text.Endpoint_Read_Stream_LE:0000000000000000 Endpoint_Read_Stream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:801    .text.Endpoint_Read_Stream_BE:0000000000000000 Endpoint_Read_Stream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:973    .text.Endpoint_Write_PStream_LE:0000000000000000 Endpoint_Write_PStream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:1148   .text.Endpoint_Write_PStream_BE:0000000000000000 Endpoint_Write_PStream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:1330   .text.Endpoint_Write_EStream_LE:0000000000000000 Endpoint_Write_EStream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:1497   .text.Endpoint_Write_EStream_BE:0000000000000000 Endpoint_Write_EStream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:1672   .text.Endpoint_Read_EStream_LE:0000000000000000 Endpoint_Read_EStream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:1838   .text.Endpoint_Read_EStream_BE:0000000000000000 Endpoint_Read_EStream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:2012   .text.Endpoint_Write_Control_Stream_LE:0000000000000000 Endpoint_Write_Control_Stream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:2221   .text.Endpoint_Write_Control_Stream_BE:0000000000000000 Endpoint_Write_Control_Stream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:2435   .text.Endpoint_Read_Control_Stream_LE:0000000000000000 Endpoint_Read_Control_Stream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:2581   .text.Endpoint_Read_Control_Stream_BE:0000000000000000 Endpoint_Read_Control_Stream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:2729   .text.Endpoint_Write_Control_PStream_LE:0000000000000000 Endpoint_Write_Control_PStream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:2941   .text.Endpoint_Write_Control_PStream_BE:0000000000000000 Endpoint_Write_Control_PStream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:3162   .text.Endpoint_Write_Control_EStream_LE:0000000000000000 Endpoint_Write_Control_EStream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:3425   .text.Endpoint_Write_Control_EStream_BE:0000000000000000 Endpoint_Write_Control_EStream_BE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:3695   .text.Endpoint_Read_Control_EStream_LE:0000000000000000 Endpoint_Read_Control_EStream_LE
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccXe01f5.s:3868   .text.Endpoint_Read_Control_EStream_BE:0000000000000000 Endpoint_Read_Control_EStream_BE
+     /tmp/ccjRrkBO.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccjRrkBO.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccjRrkBO.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccjRrkBO.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccjRrkBO.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccjRrkBO.s:13     .text.Endpoint_Discard_Stream:0000000000000000 Endpoint_Discard_Stream
+     /tmp/ccjRrkBO.s:156    .text.Endpoint_Null_Stream:0000000000000000 Endpoint_Null_Stream
+     /tmp/ccjRrkBO.s:298    .text.Endpoint_Write_Stream_LE:0000000000000000 Endpoint_Write_Stream_LE
+     /tmp/ccjRrkBO.s:464    .text.Endpoint_Write_Stream_BE:0000000000000000 Endpoint_Write_Stream_BE
+     /tmp/ccjRrkBO.s:638    .text.Endpoint_Read_Stream_LE:0000000000000000 Endpoint_Read_Stream_LE
+     /tmp/ccjRrkBO.s:801    .text.Endpoint_Read_Stream_BE:0000000000000000 Endpoint_Read_Stream_BE
+     /tmp/ccjRrkBO.s:973    .text.Endpoint_Write_PStream_LE:0000000000000000 Endpoint_Write_PStream_LE
+     /tmp/ccjRrkBO.s:1148   .text.Endpoint_Write_PStream_BE:0000000000000000 Endpoint_Write_PStream_BE
+     /tmp/ccjRrkBO.s:1330   .text.Endpoint_Write_EStream_LE:0000000000000000 Endpoint_Write_EStream_LE
+     /tmp/ccjRrkBO.s:1497   .text.Endpoint_Write_EStream_BE:0000000000000000 Endpoint_Write_EStream_BE
+     /tmp/ccjRrkBO.s:1672   .text.Endpoint_Read_EStream_LE:0000000000000000 Endpoint_Read_EStream_LE
+     /tmp/ccjRrkBO.s:1838   .text.Endpoint_Read_EStream_BE:0000000000000000 Endpoint_Read_EStream_BE
+     /tmp/ccjRrkBO.s:2012   .text.Endpoint_Write_Control_Stream_LE:0000000000000000 Endpoint_Write_Control_Stream_LE
+     /tmp/ccjRrkBO.s:2221   .text.Endpoint_Write_Control_Stream_BE:0000000000000000 Endpoint_Write_Control_Stream_BE
+     /tmp/ccjRrkBO.s:2435   .text.Endpoint_Read_Control_Stream_LE:0000000000000000 Endpoint_Read_Control_Stream_LE
+     /tmp/ccjRrkBO.s:2581   .text.Endpoint_Read_Control_Stream_BE:0000000000000000 Endpoint_Read_Control_Stream_BE
+     /tmp/ccjRrkBO.s:2729   .text.Endpoint_Write_Control_PStream_LE:0000000000000000 Endpoint_Write_Control_PStream_LE
+     /tmp/ccjRrkBO.s:2941   .text.Endpoint_Write_Control_PStream_BE:0000000000000000 Endpoint_Write_Control_PStream_BE
+     /tmp/ccjRrkBO.s:3162   .text.Endpoint_Write_Control_EStream_LE:0000000000000000 Endpoint_Write_Control_EStream_LE
+     /tmp/ccjRrkBO.s:3425   .text.Endpoint_Write_Control_EStream_BE:0000000000000000 Endpoint_Write_Control_EStream_BE
+     /tmp/ccjRrkBO.s:3695   .text.Endpoint_Read_Control_EStream_LE:0000000000000000 Endpoint_Read_Control_EStream_LE
+     /tmp/ccjRrkBO.s:3868   .text.Endpoint_Read_Control_EStream_BE:0000000000000000 Endpoint_Read_Control_EStream_BE
 
 UNDEFINED SYMBOLS
 Endpoint_WaitUntilReady
-__eerd_byte_m32u4
-__eeupd_byte_m32u4
+eeprom_read_byte
+eeprom_update_byte
 USB_ControlRequest
 USB_DeviceState

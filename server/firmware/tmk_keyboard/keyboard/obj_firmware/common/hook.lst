@@ -169,21 +169,21 @@
  131               	.LFE8:
  133               		.text
  134               	.Letext0:
- 135               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 135               		.file 2 "/usr/lib/avr/include/stdint.h"
  136               		.file 3 "../tmk_core/common/keyboard.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 hook.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:13     .text.hook_keyboard_loop:0000000000000000 hook_keyboard_loop
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:29     .text.hook_matrix_change:0000000000000000 hook_matrix_change
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:71     .text.hook_default_layer_change:0000000000000000 hook_default_layer_change
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:87     .text.hook_layer_change:0000000000000000 hook_layer_change
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:103    .text.hook_keyboard_leds_change:0000000000000000 hook_keyboard_leds_change
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccwkTWge.s:121    .text.hook_bootmagic:0000000000000000 hook_bootmagic
+     /tmp/cch95AGt.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cch95AGt.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cch95AGt.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cch95AGt.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cch95AGt.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cch95AGt.s:13     .text.hook_keyboard_loop:0000000000000000 hook_keyboard_loop
+     /tmp/cch95AGt.s:29     .text.hook_matrix_change:0000000000000000 hook_matrix_change
+     /tmp/cch95AGt.s:71     .text.hook_default_layer_change:0000000000000000 hook_default_layer_change
+     /tmp/cch95AGt.s:87     .text.hook_layer_change:0000000000000000 hook_layer_change
+     /tmp/cch95AGt.s:103    .text.hook_keyboard_leds_change:0000000000000000 hook_keyboard_leds_change
+     /tmp/cch95AGt.s:121    .text.hook_bootmagic:0000000000000000 hook_bootmagic
 
 UNDEFINED SYMBOLS
 keyboard_set_leds

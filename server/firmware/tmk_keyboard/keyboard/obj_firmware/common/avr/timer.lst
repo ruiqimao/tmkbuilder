@@ -487,22 +487,22 @@
  386 0000 0000 0000 		.zero	4
  387               		.text
  388               	.Letext0:
- 389               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 389               		.file 2 "/usr/lib/avr/include/stdint.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 timer.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:13     .text.timer_init:0000000000000000 timer_init
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:40     .text.timer_clear:0000000000000000 timer_clear
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:385    .bss.timer_count:0000000000000000 timer_count
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:71     .text.timer_read:0000000000000000 timer_read
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:103    .text.timer_read32:0000000000000000 timer_read32
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:136    .text.timer_elapsed:0000000000000000 timer_elapsed
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:226    .text.timer_elapsed32:0000000000000000 timer_elapsed32
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccCLHh4z.s:320    .text.__vector_21:0000000000000000 __vector_21
+     /tmp/ccE1uvuD.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccE1uvuD.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccE1uvuD.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccE1uvuD.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccE1uvuD.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccE1uvuD.s:13     .text.timer_init:0000000000000000 timer_init
+     /tmp/ccE1uvuD.s:40     .text.timer_clear:0000000000000000 timer_clear
+     /tmp/ccE1uvuD.s:385    .bss.timer_count:0000000000000000 timer_count
+     /tmp/ccE1uvuD.s:71     .text.timer_read:0000000000000000 timer_read
+     /tmp/ccE1uvuD.s:103    .text.timer_read32:0000000000000000 timer_read32
+     /tmp/ccE1uvuD.s:136    .text.timer_elapsed:0000000000000000 timer_elapsed
+     /tmp/ccE1uvuD.s:226    .text.timer_elapsed32:0000000000000000 timer_elapsed32
+     /tmp/ccE1uvuD.s:320    .text.__vector_21:0000000000000000 __vector_21
 
 UNDEFINED SYMBOLS
 __do_clear_bss

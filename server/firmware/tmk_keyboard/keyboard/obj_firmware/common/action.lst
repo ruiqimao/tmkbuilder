@@ -2839,7 +2839,7 @@
  2067               	.LFE114:
  2069               		.text
  2070               	.Letext0:
- 2071               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 2071               		.file 3 "/usr/lib/avr/include/stdint.h"
  2072               		.file 4 "../tmk_core/common/keycode.h"
  2073               		.file 5 "../tmk_core/common/action_code.h"
  2074               		.file 6 "../tmk_core/common/action_macro.h"
@@ -2854,23 +2854,23 @@
  2083               		.file 15 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 action.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:13     .text.action_exec:0000000000000000 action_exec
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:122    .text.register_code:0000000000000000 register_code
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:453    .text.unregister_code:0000000000000000 unregister_code
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:588    .text.register_mods:0000000000000000 register_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:614    .text.unregister_mods:0000000000000000 unregister_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:640    .text.process_action:0000000000000000 process_action
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:1843   .text.clear_keyboard_but_mods:0000000000000000 clear_keyboard_but_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:1882   .text.clear_keyboard:0000000000000000 clear_keyboard
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:1902   .text.is_tap_key:0000000000000000 is_tap_key
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:1973   .text.debug_event:0000000000000000 debug_event
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:2014   .text.debug_record:0000000000000000 debug_record
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccqbFsas.s:2056   .text.debug_action:0000000000000000 debug_action
+     /tmp/cclC9LZG.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cclC9LZG.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cclC9LZG.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cclC9LZG.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cclC9LZG.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cclC9LZG.s:13     .text.action_exec:0000000000000000 action_exec
+     /tmp/cclC9LZG.s:122    .text.register_code:0000000000000000 register_code
+     /tmp/cclC9LZG.s:453    .text.unregister_code:0000000000000000 unregister_code
+     /tmp/cclC9LZG.s:588    .text.register_mods:0000000000000000 register_mods
+     /tmp/cclC9LZG.s:614    .text.unregister_mods:0000000000000000 unregister_mods
+     /tmp/cclC9LZG.s:640    .text.process_action:0000000000000000 process_action
+     /tmp/cclC9LZG.s:1843   .text.clear_keyboard_but_mods:0000000000000000 clear_keyboard_but_mods
+     /tmp/cclC9LZG.s:1882   .text.clear_keyboard:0000000000000000 clear_keyboard
+     /tmp/cclC9LZG.s:1902   .text.is_tap_key:0000000000000000 is_tap_key
+     /tmp/cclC9LZG.s:1973   .text.debug_event:0000000000000000 debug_event
+     /tmp/cclC9LZG.s:2014   .text.debug_record:0000000000000000 debug_record
+     /tmp/cclC9LZG.s:2056   .text.debug_action:0000000000000000 debug_action
 
 UNDEFINED SYMBOLS
 action_tapping_process

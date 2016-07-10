@@ -1663,27 +1663,27 @@
  1136      0000 
  1137               		.text
  1138               	.Letext0:
- 1139               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 1139               		.file 3 "/usr/lib/avr/include/stdint.h"
  1140               		.file 4 "../tmk_core/common/keycode.h"
  1141               		.file 5 "../tmk_core/common/action_code.h"
  1142               		.file 6 "../tmk_core/common/action.h"
  1143               		.file 7 "../tmk_core/common/action_layer.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 action_tapping.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:12     .text.debug_waiting_buffer:0000000000000000 debug_waiting_buffer
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:1120   .bss.waiting_buffer_tail:0000000000000000 waiting_buffer_tail
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:1125   .bss.waiting_buffer_head:0000000000000000 waiting_buffer_head
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:1130   .bss.waiting_buffer:0000000000000000 waiting_buffer
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:82     .text.debug_tapping_key:0000000000000000 debug_tapping_key
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:1135   .bss.tapping_key:0000000000000000 tapping_key
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:104    .text.waiting_buffer_scan_tap:0000000000000000 waiting_buffer_scan_tap
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:231    .text.process_tapping:0000000000000000 process_tapping
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc0f4j52.s:890    .text.action_tapping_process:0000000000000000 action_tapping_process
+     /tmp/ccbWiUcV.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccbWiUcV.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccbWiUcV.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccbWiUcV.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccbWiUcV.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccbWiUcV.s:12     .text.debug_waiting_buffer:0000000000000000 debug_waiting_buffer
+     /tmp/ccbWiUcV.s:1120   .bss.waiting_buffer_tail:0000000000000000 waiting_buffer_tail
+     /tmp/ccbWiUcV.s:1125   .bss.waiting_buffer_head:0000000000000000 waiting_buffer_head
+     /tmp/ccbWiUcV.s:1130   .bss.waiting_buffer:0000000000000000 waiting_buffer
+     /tmp/ccbWiUcV.s:82     .text.debug_tapping_key:0000000000000000 debug_tapping_key
+     /tmp/ccbWiUcV.s:1135   .bss.tapping_key:0000000000000000 tapping_key
+     /tmp/ccbWiUcV.s:104    .text.waiting_buffer_scan_tap:0000000000000000 waiting_buffer_scan_tap
+     /tmp/ccbWiUcV.s:231    .text.process_tapping:0000000000000000 process_tapping
+     /tmp/ccbWiUcV.s:890    .text.action_tapping_process:0000000000000000 action_tapping_process
 
 UNDEFINED SYMBOLS
 debug_record

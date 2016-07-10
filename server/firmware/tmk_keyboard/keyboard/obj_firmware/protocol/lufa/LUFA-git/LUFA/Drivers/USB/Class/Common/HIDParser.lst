@@ -2099,10 +2099,10 @@
  1601               		2:
  1602 0068 6A95      		dec r22
  1603 006a 02F4      		brpl 1b
- 1604 006c AA24      		clr r10
- 1605 006e 97FC      		sbrc r9,7
- 1606 0070 A094      		com r10
- 1607 0072 BA2C      		mov r11,r10
+ 1604 006c 092C      		mov __tmp_reg__,r9
+ 1605 006e 000C      		lsl r0
+ 1606 0070 AA08      		sbc r10,r10
+ 1607 0072 BB08      		sbc r11,r11
  1608 0074 42A0      		ldd r4,Z+34
  1609 0076 53A0      		ldd r5,Z+35
  1610 0078 64A0      		ldd r6,Z+36
@@ -2260,20 +2260,20 @@
  1742               	.LFE19:
  1744               		.text
  1745               	.Letext0:
- 1746               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 1746               		.file 2 "/usr/lib/avr/include/stdint.h"
  1747               		.file 3 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDClassCommon.h"
  1748               		.file 4 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 HIDParser.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:13     .text.USB_ProcessHIDReport:0000000000000000 USB_ProcessHIDReport
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:1308   .text.USB_GetHIDReportItemInfo:0000000000000000 USB_GetHIDReportItemInfo
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:1479   .text.USB_SetHIDReportItemInfo:0000000000000000 USB_SetHIDReportItemInfo
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc44nKhR.s:1670   .text.USB_GetHIDReportSize:0000000000000000 USB_GetHIDReportSize
+     /tmp/cc0I1NJy.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc0I1NJy.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc0I1NJy.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc0I1NJy.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc0I1NJy.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cc0I1NJy.s:13     .text.USB_ProcessHIDReport:0000000000000000 USB_ProcessHIDReport
+     /tmp/cc0I1NJy.s:1308   .text.USB_GetHIDReportItemInfo:0000000000000000 USB_GetHIDReportItemInfo
+     /tmp/cc0I1NJy.s:1479   .text.USB_SetHIDReportItemInfo:0000000000000000 USB_SetHIDReportItemInfo
+     /tmp/cc0I1NJy.s:1670   .text.USB_GetHIDReportSize:0000000000000000 USB_GetHIDReportSize
 
 UNDEFINED SYMBOLS
 CALLBACK_HIDParser_FilterHIDReportItem

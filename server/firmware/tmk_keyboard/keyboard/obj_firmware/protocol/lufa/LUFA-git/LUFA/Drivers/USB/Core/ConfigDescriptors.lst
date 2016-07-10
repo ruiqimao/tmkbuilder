@@ -856,19 +856,19 @@
  442               	.LFE91:
  444               		.text
  445               	.Letext0:
- 446               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 446               		.file 3 "/usr/lib/avr/include/stdint.h"
  447               		.file 4 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../StdDescriptors.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 ConfigDescriptors.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:12     .text.USB_GetNextDescriptor:0000000000000000 USB_GetNextDescriptor
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:74     .text.USB_GetNextDescriptorOfType:0000000000000000 USB_GetNextDescriptorOfType
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:158    .text.USB_GetNextDescriptorOfTypeBefore:0000000000000000 USB_GetNextDescriptorOfTypeBefore
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:251    .text.USB_GetNextDescriptorOfTypeAfter:0000000000000000 USB_GetNextDescriptorOfTypeAfter
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKMPzXw.s:328    .text.USB_GetNextDescriptorComp:0000000000000000 USB_GetNextDescriptorComp
+     /tmp/ccCro83l.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccCro83l.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccCro83l.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccCro83l.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccCro83l.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccCro83l.s:12     .text.USB_GetNextDescriptor:0000000000000000 USB_GetNextDescriptor
+     /tmp/ccCro83l.s:74     .text.USB_GetNextDescriptorOfType:0000000000000000 USB_GetNextDescriptorOfType
+     /tmp/ccCro83l.s:158    .text.USB_GetNextDescriptorOfTypeBefore:0000000000000000 USB_GetNextDescriptorOfTypeBefore
+     /tmp/ccCro83l.s:251    .text.USB_GetNextDescriptorOfTypeAfter:0000000000000000 USB_GetNextDescriptorOfTypeAfter
+     /tmp/ccCro83l.s:328    .text.USB_GetNextDescriptorComp:0000000000000000 USB_GetNextDescriptorComp
 
 NO UNDEFINED SYMBOLS

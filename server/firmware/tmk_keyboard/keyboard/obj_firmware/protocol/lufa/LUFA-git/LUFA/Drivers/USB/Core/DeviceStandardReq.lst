@@ -2367,7 +2367,7 @@
  699               		.comm	USB_Device_ConfigurationNumber,1,1
  700               		.text
  701               	.Letext0:
- 702               		.file 5 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 702               		.file 5 "/usr/lib/avr/include/stdint.h"
  703               		.file 6 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/StdDescriptors.h"
  704               		.file 7 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/StdRequestType.h"
  705               		.file 8 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../Device.h"
@@ -2376,12 +2376,12 @@
  708               		.file 11 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 DeviceStandardReq.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccawDsTF.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccawDsTF.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccawDsTF.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccawDsTF.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccawDsTF.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccawDsTF.s:13     .text.USB_Device_ProcessControlRequest:0000000000000000 USB_Device_ProcessControlRequest
+     /tmp/ccUIlREu.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccUIlREu.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccUIlREu.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccUIlREu.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccUIlREu.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccUIlREu.s:13     .text.USB_Device_ProcessControlRequest:0000000000000000 USB_Device_ProcessControlRequest
                             *COM*:0000000000000001 USB_Device_CurrentlySelfPowered
                             *COM*:0000000000000001 USB_Device_RemoteWakeupEnabled
                             *COM*:0000000000000001 USB_Device_ConfigurationNumber

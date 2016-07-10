@@ -500,14 +500,14 @@
   59               	.LFE85:
   61               		.text
   62               	.Letext0:
-  63               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+  63               		.file 3 "/usr/lib/avr/include/stdint.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 Device_AVR8.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccoTmk5L.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccoTmk5L.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccoTmk5L.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccoTmk5L.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccoTmk5L.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccoTmk5L.s:13     .text.USB_Device_SendRemoteWakeup:0000000000000000 USB_Device_SendRemoteWakeup
+     /tmp/ccgYyZ8K.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccgYyZ8K.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccgYyZ8K.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccgYyZ8K.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccgYyZ8K.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccgYyZ8K.s:13     .text.USB_Device_SendRemoteWakeup:0000000000000000 USB_Device_SendRemoteWakeup
 
 NO UNDEFINED SYMBOLS

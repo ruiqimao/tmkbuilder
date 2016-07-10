@@ -180,8 +180,8 @@
  130 002a 80FF      		sbrs r24,0
  131 002c 00C0      		rjmp .L10
  132               		.loc 1 57 0 is_stmt 0 discriminator 1
- 133 002e 80E0      		ldi r24,lo8(__c.4495)
- 134 0030 90E0      		ldi r25,hi8(__c.4495)
+ 133 002e 80E0      		ldi r24,lo8(__c.4439)
+ 134 0030 90E0      		ldi r25,hi8(__c.4439)
  135 0032 0E94 0000 		call xputs
  136               	.LVL4:
  137               	.L10:
@@ -193,9 +193,9 @@
   58:../tmk_core/common/host.c ****         for (uint8_t i = 0; i < KEYBOARD_REPORT_SIZE; i++) {
   59:../tmk_core/common/host.c ****             dprintf("%02X ", report->raw[i]);
  142               		.loc 1 59 0 discriminator 1
- 143 003a 80E0      		ldi r24,lo8(__c.4498)
+ 143 003a 80E0      		ldi r24,lo8(__c.4442)
  144 003c E82E      		mov r14,r24
- 145 003e 80E0      		ldi r24,hi8(__c.4498)
+ 145 003e 80E0      		ldi r24,hi8(__c.4442)
  146 0040 F82E      		mov r15,r24
  147               	.LVL5:
  148               	.L12:
@@ -242,8 +242,8 @@
  186 006c 80FF      		sbrs r24,0
  187 006e 00C0      		rjmp .L6
  188               		.loc 1 61 0 is_stmt 0 discriminator 1
- 189 0070 80E0      		ldi r24,lo8(__c.4503)
- 190 0072 90E0      		ldi r25,hi8(__c.4503)
+ 189 0070 80E0      		ldi r24,lo8(__c.4447)
+ 190 0072 90E0      		ldi r25,hi8(__c.4447)
  191               	/* epilogue start */
   62:../tmk_core/common/host.c ****     }
   63:../tmk_core/common/host.c **** }
@@ -434,15 +434,15 @@
  351 0008 0895      		ret
  352               		.cfi_endproc
  353               	.LFE108:
- 355               		.section	.progmem.data.__c.4503,"a",@progbits
- 358               	__c.4503:
+ 355               		.section	.progmem.data.__c.4447,"a",@progbits
+ 358               	__c.4447:
  359 0000 0A00      		.string	"\n"
- 360               		.section	.progmem.data.__c.4498,"a",@progbits
- 363               	__c.4498:
+ 360               		.section	.progmem.data.__c.4442,"a",@progbits
+ 363               	__c.4442:
  364 0000 2530 3258 		.string	"%02X "
  364      2000 
- 365               		.section	.progmem.data.__c.4495,"a",@progbits
- 368               	__c.4495:
+ 365               		.section	.progmem.data.__c.4439,"a",@progbits
+ 368               	__c.4439:
  369 0000 6B65 7962 		.string	"keyboard_report: "
  369      6F61 7264 
  369      5F72 6570 
@@ -463,7 +463,7 @@
  390 0000 01        		.byte	1
  391               		.text
  392               	.Letext0:
- 393               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 393               		.file 2 "/usr/lib/avr/include/stdint.h"
  394               		.file 3 "../tmk_core/common/report.h"
  395               		.file 4 "../tmk_core/common/host_driver.h"
  396               		.file 5 "../tmk_core/common/debug.h"
@@ -471,27 +471,27 @@
  398               		.file 7 "../tmk_core/common/avr/xprintf.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 host.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:13     .text.host_set_driver:0000000000000000 host_set_driver
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:383    .bss.driver:0000000000000000 driver
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:33     .text.host_get_driver:0000000000000000 host_get_driver
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:51     .text.host_keyboard_leds:0000000000000000 host_keyboard_leds
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:80     .text.host_keyboard_send:0000000000000000 host_keyboard_send
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:368    .progmem.data.__c.4495:0000000000000000 __c.4495
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:363    .progmem.data.__c.4498:0000000000000000 __c.4498
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:358    .progmem.data.__c.4503:0000000000000000 __c.4503
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:220    .text.host_mouse_send:0000000000000000 host_mouse_send
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:248    .text.host_system_send:0000000000000000 host_system_send
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:378    .bss.last_system_report:0000000000000000 last_system_report
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:285    .text.host_consumer_send:0000000000000000 host_consumer_send
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:373    .bss.last_consumer_report:0000000000000000 last_consumer_report
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:322    .text.host_last_sysytem_report:0000000000000000 host_last_sysytem_report
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:340    .text.host_last_consumer_report:0000000000000000 host_last_consumer_report
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWcSqMO.s:389    .data.keyboard_nkro:0000000000000000 keyboard_nkro
+     /tmp/ccxHO7eG.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccxHO7eG.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccxHO7eG.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccxHO7eG.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccxHO7eG.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccxHO7eG.s:13     .text.host_set_driver:0000000000000000 host_set_driver
+     /tmp/ccxHO7eG.s:383    .bss.driver:0000000000000000 driver
+     /tmp/ccxHO7eG.s:33     .text.host_get_driver:0000000000000000 host_get_driver
+     /tmp/ccxHO7eG.s:51     .text.host_keyboard_leds:0000000000000000 host_keyboard_leds
+     /tmp/ccxHO7eG.s:80     .text.host_keyboard_send:0000000000000000 host_keyboard_send
+     /tmp/ccxHO7eG.s:368    .progmem.data.__c.4439:0000000000000000 __c.4439
+     /tmp/ccxHO7eG.s:363    .progmem.data.__c.4442:0000000000000000 __c.4442
+     /tmp/ccxHO7eG.s:358    .progmem.data.__c.4447:0000000000000000 __c.4447
+     /tmp/ccxHO7eG.s:220    .text.host_mouse_send:0000000000000000 host_mouse_send
+     /tmp/ccxHO7eG.s:248    .text.host_system_send:0000000000000000 host_system_send
+     /tmp/ccxHO7eG.s:378    .bss.last_system_report:0000000000000000 last_system_report
+     /tmp/ccxHO7eG.s:285    .text.host_consumer_send:0000000000000000 host_consumer_send
+     /tmp/ccxHO7eG.s:373    .bss.last_consumer_report:0000000000000000 last_consumer_report
+     /tmp/ccxHO7eG.s:322    .text.host_last_sysytem_report:0000000000000000 host_last_sysytem_report
+     /tmp/ccxHO7eG.s:340    .text.host_last_consumer_report:0000000000000000 host_last_consumer_report
+     /tmp/ccxHO7eG.s:389    .data.keyboard_nkro:0000000000000000 keyboard_nkro
 
 UNDEFINED SYMBOLS
 debug_config

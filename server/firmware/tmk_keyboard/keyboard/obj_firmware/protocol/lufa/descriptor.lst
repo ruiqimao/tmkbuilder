@@ -846,9 +846,9 @@
  223               	ManufacturerString:
  224 0000 08        		.byte	8
  225 0001 03        		.byte	3
- 226 0002 5400      		.string	"T"
- 227 0004 4D00      		.string	"M"
- 228 0006 4B00      		.string	"K"
+ 226 0002 7400      		.string	"t"
+ 227 0004 6D00      		.string	"m"
+ 228 0006 6B00      		.string	"k"
  229 0008 00        		.string	""
  230 0009 00        		.string	""
  231               	.global	LanguageString
@@ -1304,33 +1304,33 @@
  697 003f C0        		.byte	-64
  698               		.text
  699               	.Letext0:
- 700               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
- 701               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/lib/gcc/avr/4.9.3/include/stddef.h"
+ 700               		.file 2 "/usr/lib/avr/include/stdint.h"
+ 701               		.file 3 "/usr/lib/gcc/avr/4.9.2/include/stddef.h"
  702               		.file 4 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../StdDescriptors.h"
  703               		.file 5 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Device/../Common/HIDClassCommon
  704               		.file 6 "../tmk_core/protocol/lufa/descriptor.h"
  705               		.file 7 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 descriptor.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:13     .text.CALLBACK_USB_GetDescriptor:0000000000000000 CALLBACK_USB_GetDescriptor
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:243    .progmem.data.ConfigurationDescriptor:0000000000000000 ConfigurationDescriptor
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:372    .progmem.data.DeviceDescriptor:0000000000000000 DeviceDescriptor
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:235    .progmem.data.LanguageString:0000000000000000 LanguageString
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:223    .progmem.data.ManufacturerString:0000000000000000 ManufacturerString
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:199    .progmem.data.ProductString:0000000000000000 ProductString
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:189    .rodata.CSWTCH.1:0000000000000000 CSWTCH.1
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:180    .rodata.CSWTCH.2:0000000000000000 CSWTCH.2
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:171    .rodata.CSWTCH.3:0000000000000000 CSWTCH.3
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:633    .progmem.data.KeyboardReport:0000000000000000 KeyboardReport
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:551    .progmem.data.MouseReport:0000000000000000 MouseReport
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:492    .progmem.data.ExtrakeyReport:0000000000000000 ExtrakeyReport
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:453    .progmem.data.ConsoleReport:0000000000000000 ConsoleReport
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccWspF0m.s:391    .progmem.data.NKROReport:0000000000000000 NKROReport
+     /tmp/ccqXSyft.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccqXSyft.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccqXSyft.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccqXSyft.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccqXSyft.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccqXSyft.s:13     .text.CALLBACK_USB_GetDescriptor:0000000000000000 CALLBACK_USB_GetDescriptor
+     /tmp/ccqXSyft.s:243    .progmem.data.ConfigurationDescriptor:0000000000000000 ConfigurationDescriptor
+     /tmp/ccqXSyft.s:372    .progmem.data.DeviceDescriptor:0000000000000000 DeviceDescriptor
+     /tmp/ccqXSyft.s:235    .progmem.data.LanguageString:0000000000000000 LanguageString
+     /tmp/ccqXSyft.s:223    .progmem.data.ManufacturerString:0000000000000000 ManufacturerString
+     /tmp/ccqXSyft.s:199    .progmem.data.ProductString:0000000000000000 ProductString
+     /tmp/ccqXSyft.s:189    .rodata.CSWTCH.1:0000000000000000 CSWTCH.1
+     /tmp/ccqXSyft.s:180    .rodata.CSWTCH.2:0000000000000000 CSWTCH.2
+     /tmp/ccqXSyft.s:171    .rodata.CSWTCH.3:0000000000000000 CSWTCH.3
+     /tmp/ccqXSyft.s:633    .progmem.data.KeyboardReport:0000000000000000 KeyboardReport
+     /tmp/ccqXSyft.s:551    .progmem.data.MouseReport:0000000000000000 MouseReport
+     /tmp/ccqXSyft.s:492    .progmem.data.ExtrakeyReport:0000000000000000 ExtrakeyReport
+     /tmp/ccqXSyft.s:453    .progmem.data.ConsoleReport:0000000000000000 ConsoleReport
+     /tmp/ccqXSyft.s:391    .progmem.data.NKROReport:0000000000000000 NKROReport
 
 UNDEFINED SYMBOLS
 __do_copy_data

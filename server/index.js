@@ -35,7 +35,7 @@ app.post('/api/build', function(req, res) {
 
 			// Copy the firmware files to a temporary directory.
 			this.temp = '/tmp/tmk-' + crypto.randomBytes(16).toString('hex');
-			exec('cp -r firmware/tmk_keyboard ' + this.temp, function(error, stdout, stderr) {
+			exec('cp -rp firmware/tmk_keyboard ' + this.temp, function(error, stdout, stderr) {
 				if (error) return sendError(this);
 
 				this.callback();

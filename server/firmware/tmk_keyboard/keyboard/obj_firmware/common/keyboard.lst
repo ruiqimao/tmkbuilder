@@ -250,9 +250,9 @@
  147               		.loc 1 110 0
  148 0028 0E94 0000 		call matrix_scan
  149               	.LVL5:
- 150 002c 90E0      		ldi r25,lo8(matrix_prev.4840)
+ 150 002c 90E0      		ldi r25,lo8(matrix_prev.4784)
  151 002e C92E      		mov r12,r25
- 152 0030 90E0      		ldi r25,hi8(matrix_prev.4840)
+ 152 0030 90E0      		ldi r25,hi8(matrix_prev.4784)
  153 0032 D92E      		mov r13,r25
  154 0034 00E0      		ldi r16,0
  155 0036 10E0      		ldi r17,0
@@ -442,8 +442,8 @@
  285 00e6 111F      		rol r17
  286               	.LVL21:
  287 00e8 F801      		movw r30,r16
- 288 00ea E050      		subi r30,lo8(-(matrix_prev.4840))
- 289 00ec F040      		sbci r31,hi8(-(matrix_prev.4840))
+ 288 00ea E050      		subi r30,lo8(-(matrix_prev.4784))
+ 289 00ec F040      		sbci r31,hi8(-(matrix_prev.4784))
  290 00ee 8081      		ld r24,Z
  291 00f0 9181      		ldd r25,Z+1
  292 00f2 E826      		eor r14,r24
@@ -459,7 +459,7 @@
  302               	.LBE4:
  130:../tmk_core/common/keyboard.c ****                 if (matrix_change & ((matrix_row_t)1<<c)) {
  303               		.loc 1 130 0 discriminator 2
- 304 0100 2E30      		cpi r18,14
+ 304 0100 2F30      		cpi r18,15
  305 0102 3105      		cpc r19,__zero_reg__
  306 0104 01F4      		brne .L12
  307 0106 00C0      		rjmp .L13
@@ -498,7 +498,7 @@
  171:../tmk_core/common/keyboard.c ****     // update LED
  172:../tmk_core/common/keyboard.c ****     if (led_status != host_keyboard_leds()) {
  318               		.loc 1 172 0
- 319 0110 1091 0000 		lds r17,led_status.4841
+ 319 0110 1091 0000 		lds r17,led_status.4785
  320 0114 0E94 0000 		call host_keyboard_leds
  321               	.LVL27:
  322 0118 1817      		cp r17,r24
@@ -507,7 +507,7 @@
  324               		.loc 1 173 0
  325 011c 0E94 0000 		call host_keyboard_leds
  326               	.LVL28:
- 327 0120 8093 0000 		sts led_status.4841,r24
+ 327 0120 8093 0000 		sts led_status.4785,r24
  174:../tmk_core/common/keyboard.c ****         if (debug_keyboard) dprintf("LED: %02X\n", led_status);
  328               		.loc 1 174 0
  329 0124 9091 0000 		lds r25,debug_config
@@ -519,8 +519,8 @@
  335               		.loc 1 174 0 discriminator 2
  336 0130 1F92      		push __zero_reg__
  337 0132 8F93      		push r24
- 338 0134 80E0      		ldi r24,lo8(__c.4858)
- 339 0136 90E0      		ldi r25,hi8(__c.4858)
+ 338 0134 80E0      		ldi r24,lo8(__c.4802)
+ 339 0136 90E0      		ldi r25,hi8(__c.4802)
  340 0138 9F93      		push r25
  341 013a 8F93      		push r24
  342 013c 0E94 0000 		call __xprintf
@@ -532,7 +532,7 @@
  348               	.L15:
  175:../tmk_core/common/keyboard.c ****         hook_keyboard_leds_change(led_status);
  349               		.loc 1 175 0 is_stmt 1
- 350 0148 8091 0000 		lds r24,led_status.4841
+ 350 0148 8091 0000 		lds r24,led_status.4785
  351               	/* epilogue start */
  176:../tmk_core/common/keyboard.c ****     }
  177:../tmk_core/common/keyboard.c **** }
@@ -609,22 +609,22 @@
  419               	.LVL34:
  420               		.cfi_endproc
  421               	.LFE107:
- 423               		.section	.progmem.data.__c.4858,"a",@progbits
- 426               	__c.4858:
+ 423               		.section	.progmem.data.__c.4802,"a",@progbits
+ 426               	__c.4802:
  427 0000 4C45 443A 		.string	"LED: %02X\n"
  427      2025 3032 
  427      580A 00
- 428               		.section	.bss.led_status.4841,"aw",@nobits
- 431               	led_status.4841:
+ 428               		.section	.bss.led_status.4785,"aw",@nobits
+ 431               	led_status.4785:
  432 0000 00        		.zero	1
- 433               		.section	.bss.matrix_prev.4840,"aw",@nobits
- 436               	matrix_prev.4840:
+ 433               		.section	.bss.matrix_prev.4784,"aw",@nobits
+ 436               	matrix_prev.4784:
  437 0000 0000 0000 		.zero	10
  437      0000 0000 
  437      0000 
  438               		.text
  439               	.Letext0:
- 440               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 440               		.file 2 "/usr/lib/avr/include/stdint.h"
  441               		.file 3 "../tmk_core/common/keyboard.h"
  442               		.file 4 "../tmk_core/common/matrix.h"
  443               		.file 5 "../tmk_core/common/debug.h"
@@ -639,19 +639,19 @@
  452               		.file 14 "../tmk_core/common/led.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 keyboard.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:13     .text.matrix_setup:0000000000000000 matrix_setup
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:29     .text.keyboard_setup:0000000000000000 keyboard_setup
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:46     .text.keyboard_init:0000000000000000 keyboard_init
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:69     .text.keyboard_task:0000000000000000 keyboard_task
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:436    .bss.matrix_prev.4840:0000000000000000 matrix_prev.4840
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:431    .bss.led_status.4841:0000000000000000 led_status.4841
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:426    .progmem.data.__c.4858:0000000000000000 __c.4858
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc2dqbQh.s:408    .text.keyboard_set_leds:0000000000000000 keyboard_set_leds
+     /tmp/cczEQDTN.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cczEQDTN.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cczEQDTN.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cczEQDTN.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cczEQDTN.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cczEQDTN.s:13     .text.matrix_setup:0000000000000000 matrix_setup
+     /tmp/cczEQDTN.s:29     .text.keyboard_setup:0000000000000000 keyboard_setup
+     /tmp/cczEQDTN.s:46     .text.keyboard_init:0000000000000000 keyboard_init
+     /tmp/cczEQDTN.s:69     .text.keyboard_task:0000000000000000 keyboard_task
+     /tmp/cczEQDTN.s:436    .bss.matrix_prev.4784:0000000000000000 matrix_prev.4784
+     /tmp/cczEQDTN.s:431    .bss.led_status.4785:0000000000000000 led_status.4785
+     /tmp/cczEQDTN.s:426    .progmem.data.__c.4802:0000000000000000 __c.4802
+     /tmp/cczEQDTN.s:408    .text.keyboard_set_leds:0000000000000000 keyboard_set_leds
 
 UNDEFINED SYMBOLS
 timer_init

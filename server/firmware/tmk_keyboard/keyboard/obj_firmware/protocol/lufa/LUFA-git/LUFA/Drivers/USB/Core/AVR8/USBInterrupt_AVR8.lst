@@ -2551,22 +2551,22 @@
  673               	.LFE88:
  675               		.text
  676               	.Letext0:
- 677               		.file 7 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 677               		.file 7 "/usr/lib/avr/include/stdint.h"
  678               		.file 8 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../AVR8/../Device.h
  679               		.file 9 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../AVR8/../DeviceSt
  680               		.file 10 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../AVR8/../USBTask
  681               		.file 11 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../Events.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 USBInterrupt_AVR8.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:13     .text.USB_INT_DisableAllInterrupts:0000000000000000 USB_INT_DisableAllInterrupts
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:37     .text.USB_INT_ClearAllInterrupts:0000000000000000 USB_INT_ClearAllInterrupts
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:56     .text.__vector_10:0000000000000000 __vector_10
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cclr3D2n.s:495    .text.__vector_11:0000000000000000 __vector_11
+     /tmp/ccqAzm9i.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccqAzm9i.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccqAzm9i.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccqAzm9i.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccqAzm9i.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccqAzm9i.s:13     .text.USB_INT_DisableAllInterrupts:0000000000000000 USB_INT_DisableAllInterrupts
+     /tmp/ccqAzm9i.s:37     .text.USB_INT_ClearAllInterrupts:0000000000000000 USB_INT_ClearAllInterrupts
+     /tmp/ccqAzm9i.s:56     .text.__vector_10:0000000000000000 __vector_10
+     /tmp/ccqAzm9i.s:495    .text.__vector_11:0000000000000000 __vector_11
 
 UNDEFINED SYMBOLS
 EVENT_USB_Device_StartOfFrame

@@ -380,8 +380,8 @@
   86 0060 8F93      		push r24
   87               	.LCFI1:
   88               		.cfi_def_cfa_offset 4
-  89 0062 80E0      		ldi r24,lo8(__c.4638)
-  90 0064 90E0      		ldi r25,hi8(__c.4638)
+  89 0062 80E0      		ldi r24,lo8(__c.4582)
+  90 0064 90E0      		ldi r25,hi8(__c.4582)
   91               	.LVL4:
   92 0066 9F93      		push r25
   93               	.LCFI2:
@@ -546,8 +546,8 @@
  235 0062 8F93      		push r24
  236               	.LCFI6:
  237               		.cfi_def_cfa_offset 4
- 238 0064 80E0      		ldi r24,lo8(__c.4643)
- 239 0066 90E0      		ldi r25,hi8(__c.4643)
+ 238 0064 80E0      		ldi r24,lo8(__c.4587)
+ 239 0066 90E0      		ldi r25,hi8(__c.4587)
  240               	.LVL18:
  241 0068 9F93      		push r25
  242               	.LCFI7:
@@ -1073,15 +1073,15 @@
  738 004e 0895      		ret
  739               		.cfi_endproc
  740               	.LFE118:
- 742               		.section	.progmem.data.__c.4643,"a",@progbits
- 745               	__c.4643:
+ 742               		.section	.progmem.data.__c.4587,"a",@progbits
+ 745               	__c.4587:
  746 0000 6465 6C5F 		.string	"del_key_bit: can't del: %02X\n"
  746      6B65 795F 
  746      6269 743A 
  746      2063 616E 
  746      2774 2064 
- 747               		.section	.progmem.data.__c.4638,"a",@progbits
- 750               	__c.4638:
+ 747               		.section	.progmem.data.__c.4582,"a",@progbits
+ 750               	__c.4582:
  751 0000 6164 645F 		.string	"add_key_bit: can't add: %02X\n"
  751      6B65 795F 
  751      6269 743A 
@@ -1108,7 +1108,7 @@
  777 0000 00        		.zero	1
  778               		.text
  779               	.Letext0:
- 780               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 780               		.file 2 "/usr/lib/avr/include/stdint.h"
  781               		.file 3 "../tmk_core/common/report.h"
  782               		.file 4 "../tmk_core/common/debug.h"
  783               		.file 5 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.h"
@@ -1117,37 +1117,37 @@
  786               		.file 8 "../tmk_core/common/util.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 action_util.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:13     .text.add_key:0000000000000000 add_key
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:761    .data.keyboard_report:0000000000000000 keyboard_report
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:750    .progmem.data.__c.4638:0000000000000000 __c.4638
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:162    .text.del_key:0000000000000000 del_key
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:745    .progmem.data.__c.4643:0000000000000000 __c.4643
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:289    .text.clear_keys:0000000000000000 clear_keys
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:327    .text.get_mods:0000000000000000 get_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:776    .bss.real_mods:0000000000000000 real_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:344    .text.add_mods:0000000000000000 add_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:365    .text.del_mods:0000000000000000 del_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:388    .text.set_mods:0000000000000000 set_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:406    .text.clear_mods:0000000000000000 clear_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:423    .text.get_weak_mods:0000000000000000 get_weak_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:771    .bss.weak_mods:0000000000000000 weak_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:440    .text.add_weak_mods:0000000000000000 add_weak_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:461    .text.del_weak_mods:0000000000000000 del_weak_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:484    .text.set_weak_mods:0000000000000000 set_weak_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:502    .text.clear_weak_mods:0000000000000000 clear_weak_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:519    .text.set_oneshot_mods:0000000000000000 set_oneshot_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:755    .bss.oneshot_mods:0000000000000000 oneshot_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:537    .text.clear_oneshot_mods:0000000000000000 clear_oneshot_mods
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:554    .text.has_anykey:0000000000000000 has_anykey
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:600    .text.send_keyboard_report:0000000000000000 send_keyboard_report
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:652    .text.has_anymod:0000000000000000 has_anymod
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:670    .text.get_first_key:0000000000000000 get_first_key
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc6ncKKt.s:766    .bss.__compound_literal.0:0000000000000000 __compound_literal.0
+     /tmp/cc14KoWd.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc14KoWd.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc14KoWd.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc14KoWd.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc14KoWd.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cc14KoWd.s:13     .text.add_key:0000000000000000 add_key
+     /tmp/cc14KoWd.s:761    .data.keyboard_report:0000000000000000 keyboard_report
+     /tmp/cc14KoWd.s:750    .progmem.data.__c.4582:0000000000000000 __c.4582
+     /tmp/cc14KoWd.s:162    .text.del_key:0000000000000000 del_key
+     /tmp/cc14KoWd.s:745    .progmem.data.__c.4587:0000000000000000 __c.4587
+     /tmp/cc14KoWd.s:289    .text.clear_keys:0000000000000000 clear_keys
+     /tmp/cc14KoWd.s:327    .text.get_mods:0000000000000000 get_mods
+     /tmp/cc14KoWd.s:776    .bss.real_mods:0000000000000000 real_mods
+     /tmp/cc14KoWd.s:344    .text.add_mods:0000000000000000 add_mods
+     /tmp/cc14KoWd.s:365    .text.del_mods:0000000000000000 del_mods
+     /tmp/cc14KoWd.s:388    .text.set_mods:0000000000000000 set_mods
+     /tmp/cc14KoWd.s:406    .text.clear_mods:0000000000000000 clear_mods
+     /tmp/cc14KoWd.s:423    .text.get_weak_mods:0000000000000000 get_weak_mods
+     /tmp/cc14KoWd.s:771    .bss.weak_mods:0000000000000000 weak_mods
+     /tmp/cc14KoWd.s:440    .text.add_weak_mods:0000000000000000 add_weak_mods
+     /tmp/cc14KoWd.s:461    .text.del_weak_mods:0000000000000000 del_weak_mods
+     /tmp/cc14KoWd.s:484    .text.set_weak_mods:0000000000000000 set_weak_mods
+     /tmp/cc14KoWd.s:502    .text.clear_weak_mods:0000000000000000 clear_weak_mods
+     /tmp/cc14KoWd.s:519    .text.set_oneshot_mods:0000000000000000 set_oneshot_mods
+     /tmp/cc14KoWd.s:755    .bss.oneshot_mods:0000000000000000 oneshot_mods
+     /tmp/cc14KoWd.s:537    .text.clear_oneshot_mods:0000000000000000 clear_oneshot_mods
+     /tmp/cc14KoWd.s:554    .text.has_anykey:0000000000000000 has_anykey
+     /tmp/cc14KoWd.s:600    .text.send_keyboard_report:0000000000000000 send_keyboard_report
+     /tmp/cc14KoWd.s:652    .text.has_anymod:0000000000000000 has_anymod
+     /tmp/cc14KoWd.s:670    .text.get_first_key:0000000000000000 get_first_key
+     /tmp/cc14KoWd.s:766    .bss.__compound_literal.0:0000000000000000 __compound_literal.0
 
 UNDEFINED SYMBOLS
 keyboard_protocol

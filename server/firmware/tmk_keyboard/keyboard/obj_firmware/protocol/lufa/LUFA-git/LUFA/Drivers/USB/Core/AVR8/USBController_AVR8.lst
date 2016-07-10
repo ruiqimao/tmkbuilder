@@ -1546,21 +1546,21 @@
  284               	.LFE85:
  286               		.text
  287               	.Letext0:
- 288               		.file 6 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 288               		.file 6 "/usr/lib/avr/include/stdint.h"
  289               		.file 7 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../USBController.h"
  290               		.file 8 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../Device.h"
  291               		.file 9 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../DeviceStandardRe
  292               		.file 10 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../USBTask.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 USBController_AVR8.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:13     .text.USB_Disable:0000000000000000 USB_Disable
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:82     .text.USB_ResetInterface:0000000000000000 USB_ResetInterface
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccvJyxYn.s:246    .text.USB_Init:0000000000000000 USB_Init
+     /tmp/ccLt1Nld.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccLt1Nld.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccLt1Nld.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccLt1Nld.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccLt1Nld.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccLt1Nld.s:13     .text.USB_Disable:0000000000000000 USB_Disable
+     /tmp/ccLt1Nld.s:82     .text.USB_ResetInterface:0000000000000000 USB_ResetInterface
+     /tmp/ccLt1Nld.s:246    .text.USB_Init:0000000000000000 USB_Init
 
 UNDEFINED SYMBOLS
 USB_INT_DisableAllInterrupts

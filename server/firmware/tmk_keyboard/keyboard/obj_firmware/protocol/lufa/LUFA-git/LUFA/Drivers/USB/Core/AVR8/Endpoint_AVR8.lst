@@ -1449,23 +1449,23 @@
  541               	.LFE89:
  543               		.text
  544               	.Letext0:
- 545               		.file 4 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 545               		.file 4 "/usr/lib/avr/include/stdint.h"
  546               		.file 5 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../Endpoint.h"
  547               		.file 6 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../AVR8/../StdReque
  548               		.file 7 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../AVR8/../Device.h
  549               		.file 8 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../AVR8/../USBTask.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 Endpoint_AVR8.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:13     .text.Endpoint_ConfigureEndpoint_Prv:0000000000000000 Endpoint_ConfigureEndpoint_Prv
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:139    .text.Endpoint_ConfigureEndpointTable:0000000000000000 Endpoint_ConfigureEndpointTable
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:307    .text.Endpoint_ClearEndpoints:0000000000000000 Endpoint_ClearEndpoints
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:358    .text.Endpoint_ClearStatusStage:0000000000000000 Endpoint_ClearStatusStage
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccZIADSG.s:426    .text.Endpoint_WaitUntilReady:0000000000000000 Endpoint_WaitUntilReady
+     /tmp/ccYMO0AX.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccYMO0AX.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccYMO0AX.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccYMO0AX.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccYMO0AX.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccYMO0AX.s:13     .text.Endpoint_ConfigureEndpoint_Prv:0000000000000000 Endpoint_ConfigureEndpoint_Prv
+     /tmp/ccYMO0AX.s:139    .text.Endpoint_ConfigureEndpointTable:0000000000000000 Endpoint_ConfigureEndpointTable
+     /tmp/ccYMO0AX.s:307    .text.Endpoint_ClearEndpoints:0000000000000000 Endpoint_ClearEndpoints
+     /tmp/ccYMO0AX.s:358    .text.Endpoint_ClearStatusStage:0000000000000000 Endpoint_ClearStatusStage
+     /tmp/ccYMO0AX.s:426    .text.Endpoint_WaitUntilReady:0000000000000000 Endpoint_WaitUntilReady
 
 UNDEFINED SYMBOLS
 USB_ControlRequest

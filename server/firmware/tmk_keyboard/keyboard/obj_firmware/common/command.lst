@@ -555,8 +555,8 @@
   20               	.L__stack_usage = 0
  537:../tmk_core/common/command.c ****     print("\n\t- Mousekey -\n"
   21               		.loc 1 537 0
-  22 0000 80E0      		ldi r24,lo8(__c.5177)
-  23 0002 90E0      		ldi r25,hi8(__c.5177)
+  22 0000 80E0      		ldi r24,lo8(__c.5121)
+  23 0002 90E0      		ldi r25,hi8(__c.5121)
   24 0004 0E94 0000 		call xputs
   25               	.LVL0:
  538:../tmk_core/common/command.c ****           "ESC/q:	quit\n"
@@ -591,8 +591,8 @@
   38 0012 8F93      		push r24
   39               	.LCFI3:
   40               		.cfi_def_cfa_offset 6
-  41 0014 80E0      		ldi r24,lo8(__c.5179)
-  42 0016 90E0      		ldi r25,hi8(__c.5179)
+  41 0014 80E0      		ldi r24,lo8(__c.5123)
+  42 0016 90E0      		ldi r25,hi8(__c.5123)
   43 0018 9F93      		push r25
   44               	.LCFI4:
   45               		.cfi_def_cfa_offset 7
@@ -679,8 +679,8 @@
  122 0048 8F93      		push r24
  123               	.LCFI8:
  124               		.cfi_def_cfa_offset 4
- 125 004a 80E0      		ldi r24,lo8(__c.5133)
- 126 004c 90E0      		ldi r25,hi8(__c.5133)
+ 125 004a 80E0      		ldi r24,lo8(__c.5077)
+ 126 004c 90E0      		ldi r25,hi8(__c.5077)
  127 004e 00C0      		rjmp .L23
  128               	.LVL7:
  129               	.L7:
@@ -721,8 +721,8 @@
  160 0076 8F93      		push r24
  161               	.LCFI11:
  162               		.cfi_def_cfa_offset 4
- 163 0078 80E0      		ldi r24,lo8(__c.5137)
- 164 007a 90E0      		ldi r25,hi8(__c.5137)
+ 163 0078 80E0      		ldi r24,lo8(__c.5081)
+ 164 007a 90E0      		ldi r25,hi8(__c.5081)
  165 007c 00C0      		rjmp .L23
  166               	.LVL12:
  167               	.L4:
@@ -763,8 +763,8 @@
  198 00a4 8F93      		push r24
  199               	.LCFI14:
  200               		.cfi_def_cfa_offset 4
- 201 00a6 80E0      		ldi r24,lo8(__c.5140)
- 202 00a8 90E0      		ldi r25,hi8(__c.5140)
+ 201 00a6 80E0      		ldi r24,lo8(__c.5084)
+ 202 00a8 90E0      		ldi r25,hi8(__c.5084)
  203 00aa 00C0      		rjmp .L23
  204               	.LVL17:
  205               	.L9:
@@ -805,8 +805,8 @@
  236 00d2 8F93      		push r24
  237               	.LCFI17:
  238               		.cfi_def_cfa_offset 4
- 239 00d4 80E0      		ldi r24,lo8(__c.5143)
- 240 00d6 90E0      		ldi r25,hi8(__c.5143)
+ 239 00d4 80E0      		ldi r24,lo8(__c.5087)
+ 240 00d6 90E0      		ldi r25,hi8(__c.5087)
  241 00d8 00C0      		rjmp .L23
  242               	.LVL22:
  243               	.L8:
@@ -847,8 +847,8 @@
  274 0100 8F93      		push r24
  275               	.LCFI20:
  276               		.cfi_def_cfa_offset 4
- 277 0102 80E0      		ldi r24,lo8(__c.5146)
- 278 0104 90E0      		ldi r25,hi8(__c.5146)
+ 277 0102 80E0      		ldi r24,lo8(__c.5090)
+ 278 0104 90E0      		ldi r25,hi8(__c.5090)
  279 0106 00C0      		rjmp .L23
  280               	.LVL27:
  281               	.L10:
@@ -888,8 +888,8 @@
  311 012e 8F93      		push r24
  312               	.LCFI23:
  313               		.cfi_def_cfa_offset 4
- 314 0130 80E0      		ldi r24,lo8(__c.5149)
- 315 0132 90E0      		ldi r25,hi8(__c.5149)
+ 314 0130 80E0      		ldi r24,lo8(__c.5093)
+ 315 0132 90E0      		ldi r25,hi8(__c.5093)
  316               	.L23:
  317 0134 9F93      		push r25
  318               	.LCFI24:
@@ -967,8 +967,8 @@
  385 003a 8F93      		push r24
  386               	.LCFI28:
  387               		.cfi_def_cfa_offset 4
- 388 003c 80E0      		ldi r24,lo8(__c.5156)
- 389 003e 90E0      		ldi r25,hi8(__c.5156)
+ 388 003c 80E0      		ldi r24,lo8(__c.5100)
+ 389 003e 90E0      		ldi r25,hi8(__c.5100)
  390 0040 00C0      		rjmp .L46
  391               	.LVL35:
  392               	.L30:
@@ -1000,8 +1000,8 @@
  414 005c 8F93      		push r24
  415               	.LCFI31:
  416               		.cfi_def_cfa_offset 4
- 417 005e 80E0      		ldi r24,lo8(__c.5160)
- 418 0060 90E0      		ldi r25,hi8(__c.5160)
+ 417 005e 80E0      		ldi r24,lo8(__c.5104)
+ 418 0060 90E0      		ldi r25,hi8(__c.5104)
  419 0062 00C0      		rjmp .L46
  420               	.LVL37:
  421               	.L27:
@@ -1033,8 +1033,8 @@
  443 007e 8F93      		push r24
  444               	.LCFI34:
  445               		.cfi_def_cfa_offset 4
- 446 0080 80E0      		ldi r24,lo8(__c.5163)
- 447 0082 90E0      		ldi r25,hi8(__c.5163)
+ 446 0080 80E0      		ldi r24,lo8(__c.5107)
+ 447 0082 90E0      		ldi r25,hi8(__c.5107)
  448 0084 00C0      		rjmp .L46
  449               	.LVL39:
  450               	.L32:
@@ -1066,8 +1066,8 @@
  472 00a0 8F93      		push r24
  473               	.LCFI37:
  474               		.cfi_def_cfa_offset 4
- 475 00a2 80E0      		ldi r24,lo8(__c.5166)
- 476 00a4 90E0      		ldi r25,hi8(__c.5166)
+ 475 00a2 80E0      		ldi r24,lo8(__c.5110)
+ 476 00a4 90E0      		ldi r25,hi8(__c.5110)
  477 00a6 00C0      		rjmp .L46
  478               	.LVL41:
  479               	.L31:
@@ -1099,8 +1099,8 @@
  501 00c2 8F93      		push r24
  502               	.LCFI40:
  503               		.cfi_def_cfa_offset 4
- 504 00c4 80E0      		ldi r24,lo8(__c.5169)
- 505 00c6 90E0      		ldi r25,hi8(__c.5169)
+ 504 00c4 80E0      		ldi r24,lo8(__c.5113)
+ 505 00c6 90E0      		ldi r25,hi8(__c.5113)
  506 00c8 00C0      		rjmp .L46
  507               	.LVL43:
  508               	.L33:
@@ -1131,8 +1131,8 @@
  529 00e4 8F93      		push r24
  530               	.LCFI43:
  531               		.cfi_def_cfa_offset 4
- 532 00e6 80E0      		ldi r24,lo8(__c.5172)
- 533 00e8 90E0      		ldi r25,hi8(__c.5172)
+ 532 00e6 80E0      		ldi r24,lo8(__c.5116)
+ 533 00e8 90E0      		ldi r25,hi8(__c.5116)
  534               	.L46:
  535 00ea 9F93      		push r25
  536               	.LCFI44:
@@ -1264,8 +1264,8 @@
  574 0006 8F93      		push r24
  575               	.LCFI49:
  576               		.cfi_def_cfa_offset 5
- 577 0008 80E0      		ldi r24,lo8(__c.5228)
- 578 000a 90E0      		ldi r25,hi8(__c.5228)
+ 577 0008 80E0      		ldi r24,lo8(__c.5172)
+ 578 000a 90E0      		ldi r25,hi8(__c.5172)
  579               	.LVL47:
  580 000c 9F93      		push r25
  581               	.LCFI50:
@@ -1357,15 +1357,15 @@
  661               	.LBB112:
  385:../tmk_core/common/command.c ****           "ESC/q:	quit\n"
  662               		.loc 1 385 0
- 663 002e 80E0      		ldi r24,lo8(__c.5068)
- 664 0030 90E0      		ldi r25,hi8(__c.5068)
+ 663 002e 80E0      		ldi r24,lo8(__c.5012)
+ 664 0030 90E0      		ldi r25,hi8(__c.5012)
  665 0032 0E94 0000 		call xputs
  666               	.LBE112:
  667               	.LBE111:
  224:../tmk_core/common/command.c ****             command_state = CONSOLE;
  668               		.loc 1 224 0
- 669 0036 80E0      		ldi r24,lo8(__c.5000)
- 670 0038 90E0      		ldi r25,hi8(__c.5000)
+ 669 0036 80E0      		ldi r24,lo8(__c.4944)
+ 670 0038 90E0      		ldi r25,hi8(__c.4944)
  671 003a 0E94 0000 		call xputs
  225:../tmk_core/common/command.c ****             break;
  672               		.loc 1 225 0
@@ -1400,33 +1400,33 @@
  700 006e 00C0      		rjmp .L49
  273:../tmk_core/common/command.c ****             print("DESC: " STR(DESCRIPTION) "\n");
  701               		.loc 1 273 0
- 702 0070 80E0      		ldi r24,lo8(__c.5026)
- 703 0072 90E0      		ldi r25,hi8(__c.5026)
+ 702 0070 80E0      		ldi r24,lo8(__c.4970)
+ 703 0072 90E0      		ldi r25,hi8(__c.4970)
  704 0074 0E94 0000 		call xputs
  274:../tmk_core/common/command.c ****             print("VID: " STR(VENDOR_ID) "(" STR(MANUFACTURER) ") "
  705               		.loc 1 274 0
- 706 0078 80E0      		ldi r24,lo8(__c.5028)
- 707 007a 90E0      		ldi r25,hi8(__c.5028)
+ 706 0078 80E0      		ldi r24,lo8(__c.4972)
+ 707 007a 90E0      		ldi r25,hi8(__c.4972)
  708 007c 0E94 0000 		call xputs
  275:../tmk_core/common/command.c ****                   "PID: " STR(PRODUCT_ID) "(" STR(PRODUCT) ") "
  709               		.loc 1 275 0
- 710 0080 80E0      		ldi r24,lo8(__c.5030)
- 711 0082 90E0      		ldi r25,hi8(__c.5030)
+ 710 0080 80E0      		ldi r24,lo8(__c.4974)
+ 711 0082 90E0      		ldi r25,hi8(__c.4974)
  712 0084 0E94 0000 		call xputs
  278:../tmk_core/common/command.c ****             /* build options */
  713               		.loc 1 278 0
- 714 0088 80E0      		ldi r24,lo8(__c.5032)
- 715 008a 90E0      		ldi r25,hi8(__c.5032)
+ 714 0088 80E0      		ldi r24,lo8(__c.4976)
+ 715 008a 90E0      		ldi r25,hi8(__c.4976)
  716 008c 0E94 0000 		call xputs
  280:../tmk_core/common/command.c **** #ifdef PROTOCOL_PJRC
  717               		.loc 1 280 0
- 718 0090 80E0      		ldi r24,lo8(__c.5034)
- 719 0092 90E0      		ldi r25,hi8(__c.5034)
+ 718 0090 80E0      		ldi r24,lo8(__c.4978)
+ 719 0092 90E0      		ldi r25,hi8(__c.4978)
  720 0094 0E94 0000 		call xputs
  316:../tmk_core/common/command.c **** #if defined(__AVR__)
  721               		.loc 1 316 0
- 722 0098 80E0      		ldi r24,lo8(__c.5036)
- 723 009a 90E0      		ldi r25,hi8(__c.5036)
+ 722 0098 80E0      		ldi r24,lo8(__c.4980)
+ 723 009a 90E0      		ldi r25,hi8(__c.4980)
  724 009c 00C0      		rjmp .L99
  725               	.L51:
  186:../tmk_core/common/command.c **** #ifdef SLEEP_LED_ENABLE
@@ -1475,180 +1475,180 @@
  765 00de 0E94 0000 		call clear_keyboard
  229:../tmk_core/common/command.c ****             wait_ms(1000);
  766               		.loc 1 229 0
- 767 00e2 80E0      		ldi r24,lo8(__c.5003)
- 768 00e4 90E0      		ldi r25,hi8(__c.5003)
+ 767 00e2 80E0      		ldi r24,lo8(__c.4947)
+ 768 00e4 90E0      		ldi r25,hi8(__c.4947)
  769 00e6 0E94 0000 		call xputs
  770               	.LBB113:
  771               	.LBB114:
- 772               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h"
-   1:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
-   2:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
-   3:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
-   4:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    All rights reserved.
-   5:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-   6:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
-   7:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
-   8:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-   9:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
-  10:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
-  11:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  12:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
-  13:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
-  14:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
-  15:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****      distribution.
-  16:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  17:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
-  18:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
-  19:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****      from this software without specific prior written permission.
-  20:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  21:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  22:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  23:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-  24:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
-  25:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-  26:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-  27:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-  28:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-  29:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-  30:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-  31:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
-  32:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  33:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** /* $Id: delay.h.in 2385 2013-05-03 13:14:20Z joerg_wunsch $ */
-  34:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  35:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
-  36:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
-  37:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  38:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
-  39:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
-  40:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #endif
-  41:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  42:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #include <inttypes.h>
-  43:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #include <util/delay_basic.h>
-  44:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #include <math.h>
-  45:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  46:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** /** \file */
-  47:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
-  48:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     \code
-  49:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
-  50:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
-  51:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     #include <util/delay.h>
-  52:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     \endcode
-  53:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  54:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
-  55:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
-  56:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
-  57:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     used.
-  58:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  59:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
-  60:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
-  61:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
-  62:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
-  63:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
-  64:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
-  65:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
-  66:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
-  67:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  68:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
-  69:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
-  70:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
-  71:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
-  72:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
-  73:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
-  74:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
-  75:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     routines linked into the application.
-  76:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  77:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
-  78:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
-  79:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
-  80:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  81:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** */
-  82:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  83:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
-  84:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
-  85:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
-  86:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #endif
-  87:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  88:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #ifndef F_CPU
-  89:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
-  90:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
-  91:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** # define F_CPU 1000000UL
-  92:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #endif
-  93:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  94:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
-  95:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-  96:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #endif
-  97:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
-  98:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
-  99:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
- 100:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   __STDC_HOSTED__
- 101:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #  include <math.h>
- 102:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #endif
- 103:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 104:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** /**
- 105:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    \ingroup util_delay
- 106:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 107:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
- 108:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 109:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
- 110:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
- 111:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 112:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
- 113:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 114:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
- 115:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
- 116:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
- 117:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
- 118:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
- 119:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 120:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
- 121:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
- 122:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
- 123:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    no delay i.e., 0ms.
- 124:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 125:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
- 126:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
- 127:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
- 128:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 129:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
- 130:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    to round down and round to closest integer.
- 131:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 132:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
- 133:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
- 134:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
- 135:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    Also, the backward compatible
- 136:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
- 137:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
- 138:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
- 139:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 140:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****  */
- 141:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** void
- 142:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** _delay_ms(double __ms)
- 143:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** {
- 144:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	double __tmp ; 
- 145:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
- 146:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
- 147:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h ****   __STDC_HOSTED__
- 148:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
- 149:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
- 150:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
- 151:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 152:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
- 153:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
- 154:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 155:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
- 156:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
- 157:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 158:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	#else
- 159:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 		//round up by default
- 160:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
- 161:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	#endif
- 162:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 
- 163:/usr/local/Cellar/avr-gcc/4.9.3/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 772               		.file 2 "/usr/lib/avr/include/util/delay.h"
+   1:/usr/lib/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/lib/avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/avr/include/util/delay.h **** 
+   6:/usr/lib/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/lib/avr/include/util/delay.h **** 
+   9:/usr/lib/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/avr/include/util/delay.h **** 
+  12:/usr/lib/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/lib/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/avr/include/util/delay.h **** 
+  17:/usr/lib/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/avr/include/util/delay.h **** 
+  21:/usr/lib/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/lib/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/lib/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/avr/include/util/delay.h **** 
+  33:/usr/lib/avr/include/util/delay.h **** /* $Id$ */
+  34:/usr/lib/avr/include/util/delay.h **** 
+  35:/usr/lib/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/lib/avr/include/util/delay.h **** 
+  38:/usr/lib/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/lib/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/lib/avr/include/util/delay.h **** #endif
+  41:/usr/lib/avr/include/util/delay.h **** 
+  42:/usr/lib/avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/lib/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/lib/avr/include/util/delay.h **** #include <math.h>
+  45:/usr/lib/avr/include/util/delay.h **** 
+  46:/usr/lib/avr/include/util/delay.h **** /** \file */
+  47:/usr/lib/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/lib/avr/include/util/delay.h ****     \code
+  49:/usr/lib/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/lib/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/lib/avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/lib/avr/include/util/delay.h ****     \endcode
+  53:/usr/lib/avr/include/util/delay.h **** 
+  54:/usr/lib/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/lib/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/lib/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/lib/avr/include/util/delay.h ****     used.
+  58:/usr/lib/avr/include/util/delay.h **** 
+  59:/usr/lib/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/lib/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/lib/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/lib/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/lib/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/lib/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/lib/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/lib/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/lib/avr/include/util/delay.h **** 
+  68:/usr/lib/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/lib/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/lib/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/lib/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/lib/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/lib/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/lib/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/lib/avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/lib/avr/include/util/delay.h **** 
+  77:/usr/lib/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/lib/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/lib/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/lib/avr/include/util/delay.h **** 
+  81:/usr/lib/avr/include/util/delay.h **** */
+  82:/usr/lib/avr/include/util/delay.h **** 
+  83:/usr/lib/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/lib/avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/lib/avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/lib/avr/include/util/delay.h **** #endif
+  87:/usr/lib/avr/include/util/delay.h **** 
+  88:/usr/lib/avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/lib/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/lib/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/lib/avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/lib/avr/include/util/delay.h **** #endif
+  93:/usr/lib/avr/include/util/delay.h **** 
+  94:/usr/lib/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/lib/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/lib/avr/include/util/delay.h **** #endif
+  97:/usr/lib/avr/include/util/delay.h **** 
+  98:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/lib/avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/lib/avr/include/util/delay.h **** #endif
+ 103:/usr/lib/avr/include/util/delay.h **** 
+ 104:/usr/lib/avr/include/util/delay.h **** /**
+ 105:/usr/lib/avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/lib/avr/include/util/delay.h **** 
+ 107:/usr/lib/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/lib/avr/include/util/delay.h **** 
+ 109:/usr/lib/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/lib/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/lib/avr/include/util/delay.h **** 
+ 112:/usr/lib/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/lib/avr/include/util/delay.h **** 
+ 114:/usr/lib/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/lib/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/lib/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/lib/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/lib/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/lib/avr/include/util/delay.h **** 
+ 120:/usr/lib/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/lib/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/lib/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/lib/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/lib/avr/include/util/delay.h **** 
+ 125:/usr/lib/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/lib/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/lib/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/lib/avr/include/util/delay.h **** 
+ 129:/usr/lib/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/lib/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/lib/avr/include/util/delay.h **** 
+ 132:/usr/lib/avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/lib/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/lib/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/lib/avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/lib/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/lib/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/lib/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/lib/avr/include/util/delay.h **** 
+ 140:/usr/lib/avr/include/util/delay.h ****  */
+ 141:/usr/lib/avr/include/util/delay.h **** void
+ 142:/usr/lib/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/lib/avr/include/util/delay.h **** {
+ 144:/usr/lib/avr/include/util/delay.h **** 	double __tmp ; 
+ 145:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 146:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 147:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 148:/usr/lib/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 149:/usr/lib/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 150:/usr/lib/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 151:/usr/lib/avr/include/util/delay.h **** 
+ 152:/usr/lib/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 153:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 154:/usr/lib/avr/include/util/delay.h **** 
+ 155:/usr/lib/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 156:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 157:/usr/lib/avr/include/util/delay.h **** 
+ 158:/usr/lib/avr/include/util/delay.h **** 	#else
+ 159:/usr/lib/avr/include/util/delay.h **** 		//round up by default
+ 160:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 161:/usr/lib/avr/include/util/delay.h **** 	#endif
+ 162:/usr/lib/avr/include/util/delay.h **** 
+ 163:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
  773               		.loc 2 163 0
  774 00ea 9FEF      		ldi r25,lo8(3199999)
  775 00ec 23ED      		ldi r18,hi8(3199999)
  776 00ee 80E3      		ldi r24,hlo8(3199999)
- 777 00f0 9150      		1: subi r25,1
+ 777 00f0 9150      	1:	subi r25,1
  778 00f2 2040      		sbci r18,0
  779 00f4 8040      		sbci r24,0
  780 00f6 01F4      		brne 1b
@@ -1663,15 +1663,15 @@
  788               	.L57:
  197:../tmk_core/common/command.c ****             print_eeconfig();
  789               		.loc 1 197 0
- 790 0102 80E0      		ldi r24,lo8(__c.4994)
- 791 0104 90E0      		ldi r25,hi8(__c.4994)
+ 790 0102 80E0      		ldi r24,lo8(__c.4938)
+ 791 0104 90E0      		ldi r25,hi8(__c.4938)
  792 0106 0E94 0000 		call xputs
  793               	.LBB115:
  794               	.LBB116:
  149:../tmk_core/common/command.c **** 
  795               		.loc 1 149 0
- 796 010a 80E0      		ldi r24,lo8(__c.4898)
- 797 010c 90E0      		ldi r25,hi8(__c.4898)
+ 796 010a 80E0      		ldi r24,lo8(__c.4842)
+ 797 010c 90E0      		ldi r25,hi8(__c.4842)
  798 010e 0E94 0000 		call xputs
  799 0112 0E94 0000 		call eeconfig_read_default_layer
  800 0116 1F92      		push __zero_reg__
@@ -1680,8 +1680,8 @@
  803 0118 8F93      		push r24
  804               	.LCFI55:
  805               		.cfi_def_cfa_offset 5
- 806 011a 80E0      		ldi r24,lo8(__c.4900)
- 807 011c 90E0      		ldi r25,hi8(__c.4900)
+ 806 011a 80E0      		ldi r24,lo8(__c.4844)
+ 807 011c 90E0      		ldi r25,hi8(__c.4844)
  808 011e 9F93      		push r25
  809               	.LCFI56:
  810               		.cfi_def_cfa_offset 6
@@ -1689,8 +1689,8 @@
  812               	.LCFI57:
  813               		.cfi_def_cfa_offset 7
  814 0122 0E94 0000 		call __xprintf
- 815 0126 80E0      		ldi r24,lo8(__c.4902)
- 816 0128 90E0      		ldi r25,hi8(__c.4902)
+ 815 0126 80E0      		ldi r24,lo8(__c.4846)
+ 816 0128 90E0      		ldi r25,hi8(__c.4846)
  817 012a 0E94 0000 		call xputs
  152:../tmk_core/common/command.c ****     print("debug_config.raw: "); print_hex8(dc.raw); print("\n");
  818               		.loc 1 152 0
@@ -1698,8 +1698,8 @@
  820 0132 C82F      		mov r28,r24
  153:../tmk_core/common/command.c ****     print(".enable: "); print_dec(dc.enable); print("\n");
  821               		.loc 1 153 0
- 822 0134 80E0      		ldi r24,lo8(__c.4905)
- 823 0136 90E0      		ldi r25,hi8(__c.4905)
+ 822 0134 80E0      		ldi r24,lo8(__c.4849)
+ 823 0136 90E0      		ldi r25,hi8(__c.4849)
  824 0138 0E94 0000 		call xputs
  825 013c 1F92      		push __zero_reg__
  826               	.LCFI58:
@@ -1707,8 +1707,8 @@
  828 013e CF93      		push r28
  829               	.LCFI59:
  830               		.cfi_def_cfa_offset 9
- 831 0140 80E0      		ldi r24,lo8(__c.4907)
- 832 0142 90E0      		ldi r25,hi8(__c.4907)
+ 831 0140 80E0      		ldi r24,lo8(__c.4851)
+ 832 0142 90E0      		ldi r25,hi8(__c.4851)
  833 0144 9F93      		push r25
  834               	.LCFI60:
  835               		.cfi_def_cfa_offset 10
@@ -1716,13 +1716,13 @@
  837               	.LCFI61:
  838               		.cfi_def_cfa_offset 11
  839 0148 0E94 0000 		call __xprintf
- 840 014c 80E0      		ldi r24,lo8(__c.4909)
- 841 014e 90E0      		ldi r25,hi8(__c.4909)
+ 840 014c 80E0      		ldi r24,lo8(__c.4853)
+ 841 014e 90E0      		ldi r25,hi8(__c.4853)
  842 0150 0E94 0000 		call xputs
  154:../tmk_core/common/command.c ****     print(".matrix: "); print_dec(dc.matrix); print("\n");
  843               		.loc 1 154 0
- 844 0154 80E0      		ldi r24,lo8(__c.4911)
- 845 0156 90E0      		ldi r25,hi8(__c.4911)
+ 844 0154 80E0      		ldi r24,lo8(__c.4855)
+ 845 0156 90E0      		ldi r25,hi8(__c.4855)
  846 0158 0E94 0000 		call xputs
  847 015c 8C2F      		mov r24,r28
  848 015e 8170      		andi r24,1
@@ -1732,8 +1732,8 @@
  852 0162 8F93      		push r24
  853               	.LCFI63:
  854               		.cfi_def_cfa_offset 13
- 855 0164 80E0      		ldi r24,lo8(__c.4913)
- 856 0166 90E0      		ldi r25,hi8(__c.4913)
+ 855 0164 80E0      		ldi r24,lo8(__c.4857)
+ 856 0166 90E0      		ldi r25,hi8(__c.4857)
  857 0168 9F93      		push r25
  858               	.LCFI64:
  859               		.cfi_def_cfa_offset 14
@@ -1741,13 +1741,13 @@
  861               	.LCFI65:
  862               		.cfi_def_cfa_offset 15
  863 016c 0E94 0000 		call __xprintf
- 864 0170 80E0      		ldi r24,lo8(__c.4915)
- 865 0172 90E0      		ldi r25,hi8(__c.4915)
+ 864 0170 80E0      		ldi r24,lo8(__c.4859)
+ 865 0172 90E0      		ldi r25,hi8(__c.4859)
  866 0174 0E94 0000 		call xputs
  155:../tmk_core/common/command.c ****     print(".keyboard: "); print_dec(dc.keyboard); print("\n");
  867               		.loc 1 155 0
- 868 0178 80E0      		ldi r24,lo8(__c.4917)
- 869 017a 90E0      		ldi r25,hi8(__c.4917)
+ 868 0178 80E0      		ldi r24,lo8(__c.4861)
+ 869 017a 90E0      		ldi r25,hi8(__c.4861)
  870 017c 0E94 0000 		call xputs
  871 0180 C1FB      		bst r28,1
  872 0182 8827      		clr r24
@@ -1758,8 +1758,8 @@
  877 0188 8F93      		push r24
  878               	.LCFI67:
  879               		.cfi_def_cfa_offset 17
- 880 018a 80E0      		ldi r24,lo8(__c.4919)
- 881 018c 90E0      		ldi r25,hi8(__c.4919)
+ 880 018a 80E0      		ldi r24,lo8(__c.4863)
+ 881 018c 90E0      		ldi r25,hi8(__c.4863)
  882 018e 9F93      		push r25
  883               	.LCFI68:
  884               		.cfi_def_cfa_offset 18
@@ -1767,13 +1767,13 @@
  886               	.LCFI69:
  887               		.cfi_def_cfa_offset 19
  888 0192 0E94 0000 		call __xprintf
- 889 0196 80E0      		ldi r24,lo8(__c.4921)
- 890 0198 90E0      		ldi r25,hi8(__c.4921)
+ 889 0196 80E0      		ldi r24,lo8(__c.4865)
+ 890 0198 90E0      		ldi r25,hi8(__c.4865)
  891 019a 0E94 0000 		call xputs
  156:../tmk_core/common/command.c ****     print(".mouse: "); print_dec(dc.mouse); print("\n");
  892               		.loc 1 156 0
- 893 019e 80E0      		ldi r24,lo8(__c.4923)
- 894 01a0 90E0      		ldi r25,hi8(__c.4923)
+ 893 019e 80E0      		ldi r24,lo8(__c.4867)
+ 894 01a0 90E0      		ldi r25,hi8(__c.4867)
  895 01a2 0E94 0000 		call xputs
  896 01a6 C2FB      		bst r28,2
  897 01a8 8827      		clr r24
@@ -1784,8 +1784,8 @@
  902 01ae 8F93      		push r24
  903               	.LCFI71:
  904               		.cfi_def_cfa_offset 21
- 905 01b0 80E0      		ldi r24,lo8(__c.4925)
- 906 01b2 90E0      		ldi r25,hi8(__c.4925)
+ 905 01b0 80E0      		ldi r24,lo8(__c.4869)
+ 906 01b2 90E0      		ldi r25,hi8(__c.4869)
  907 01b4 9F93      		push r25
  908               	.LCFI72:
  909               		.cfi_def_cfa_offset 22
@@ -1793,13 +1793,13 @@
  911               	.LCFI73:
  912               		.cfi_def_cfa_offset 23
  913 01b8 0E94 0000 		call __xprintf
- 914 01bc 80E0      		ldi r24,lo8(__c.4927)
- 915 01be 90E0      		ldi r25,hi8(__c.4927)
+ 914 01bc 80E0      		ldi r24,lo8(__c.4871)
+ 915 01be 90E0      		ldi r25,hi8(__c.4871)
  916 01c0 0E94 0000 		call xputs
  157:../tmk_core/common/command.c **** 
  917               		.loc 1 157 0
- 918 01c4 80E0      		ldi r24,lo8(__c.4929)
- 919 01c6 90E0      		ldi r25,hi8(__c.4929)
+ 918 01c4 80E0      		ldi r24,lo8(__c.4873)
+ 919 01c6 90E0      		ldi r25,hi8(__c.4873)
  920 01c8 0E94 0000 		call xputs
  921 01cc C3FB      		bst r28,3
  922 01ce CC27      		clr r28
@@ -1810,8 +1810,8 @@
  927 01d4 CF93      		push r28
  928               	.LCFI75:
  929               		.cfi_def_cfa_offset 25
- 930 01d6 80E0      		ldi r24,lo8(__c.4931)
- 931 01d8 90E0      		ldi r25,hi8(__c.4931)
+ 930 01d6 80E0      		ldi r24,lo8(__c.4875)
+ 931 01d8 90E0      		ldi r25,hi8(__c.4875)
  932 01da 9F93      		push r25
  933               	.LCFI76:
  934               		.cfi_def_cfa_offset 26
@@ -1819,8 +1819,8 @@
  936               	.LCFI77:
  937               		.cfi_def_cfa_offset 27
  938 01de 0E94 0000 		call __xprintf
- 939 01e2 80E0      		ldi r24,lo8(__c.4933)
- 940 01e4 90E0      		ldi r25,hi8(__c.4933)
+ 939 01e2 80E0      		ldi r24,lo8(__c.4877)
+ 940 01e4 90E0      		ldi r25,hi8(__c.4877)
  941 01e6 0E94 0000 		call xputs
  160:../tmk_core/common/command.c ****     print("keymap_config.raw: "); print_hex8(kc.raw); print("\n");
  942               		.loc 1 160 0
@@ -1828,8 +1828,8 @@
  944 01ee C82F      		mov r28,r24
  161:../tmk_core/common/command.c ****     print(".swap_control_capslock: "); print_dec(kc.swap_control_capslock); print("\n");
  945               		.loc 1 161 0
- 946 01f0 80E0      		ldi r24,lo8(__c.4936)
- 947 01f2 90E0      		ldi r25,hi8(__c.4936)
+ 946 01f0 80E0      		ldi r24,lo8(__c.4880)
+ 947 01f2 90E0      		ldi r25,hi8(__c.4880)
  948 01f4 0E94 0000 		call xputs
  949 01f8 1F92      		push __zero_reg__
  950               	.LCFI78:
@@ -1837,8 +1837,8 @@
  952 01fa CF93      		push r28
  953               	.LCFI79:
  954               		.cfi_def_cfa_offset 29
- 955 01fc 80E0      		ldi r24,lo8(__c.4938)
- 956 01fe 90E0      		ldi r25,hi8(__c.4938)
+ 955 01fc 80E0      		ldi r24,lo8(__c.4882)
+ 956 01fe 90E0      		ldi r25,hi8(__c.4882)
  957 0200 9F93      		push r25
  958               	.LCFI80:
  959               		.cfi_def_cfa_offset 30
@@ -1846,13 +1846,13 @@
  961               	.LCFI81:
  962               		.cfi_def_cfa_offset 31
  963 0204 0E94 0000 		call __xprintf
- 964 0208 80E0      		ldi r24,lo8(__c.4940)
- 965 020a 90E0      		ldi r25,hi8(__c.4940)
+ 964 0208 80E0      		ldi r24,lo8(__c.4884)
+ 965 020a 90E0      		ldi r25,hi8(__c.4884)
  966 020c 0E94 0000 		call xputs
  162:../tmk_core/common/command.c ****     print(".capslock_to_control: "); print_dec(kc.capslock_to_control); print("\n");
  967               		.loc 1 162 0
- 968 0210 80E0      		ldi r24,lo8(__c.4942)
- 969 0212 90E0      		ldi r25,hi8(__c.4942)
+ 968 0210 80E0      		ldi r24,lo8(__c.4886)
+ 969 0212 90E0      		ldi r25,hi8(__c.4886)
  970 0214 0E94 0000 		call xputs
  971 0218 8C2F      		mov r24,r28
  972 021a 8170      		andi r24,1
@@ -1862,8 +1862,8 @@
  976 021e 8F93      		push r24
  977               	.LCFI83:
  978               		.cfi_def_cfa_offset 33
- 979 0220 80E0      		ldi r24,lo8(__c.4944)
- 980 0222 90E0      		ldi r25,hi8(__c.4944)
+ 979 0220 80E0      		ldi r24,lo8(__c.4888)
+ 980 0222 90E0      		ldi r25,hi8(__c.4888)
  981 0224 9F93      		push r25
  982               	.LCFI84:
  983               		.cfi_def_cfa_offset 34
@@ -1881,13 +1881,13 @@
  995 023a 8DBF      		out __SP_L__,r24
  996               	.LCFI86:
  997               		.cfi_def_cfa_offset 3
- 998 023c 80E0      		ldi r24,lo8(__c.4946)
- 999 023e 90E0      		ldi r25,hi8(__c.4946)
+ 998 023c 80E0      		ldi r24,lo8(__c.4890)
+ 999 023e 90E0      		ldi r25,hi8(__c.4890)
  1000 0240 0E94 0000 		call xputs
  163:../tmk_core/common/command.c ****     print(".swap_lalt_lgui: "); print_dec(kc.swap_lalt_lgui); print("\n");
  1001               		.loc 1 163 0
- 1002 0244 80E0      		ldi r24,lo8(__c.4948)
- 1003 0246 90E0      		ldi r25,hi8(__c.4948)
+ 1002 0244 80E0      		ldi r24,lo8(__c.4892)
+ 1003 0246 90E0      		ldi r25,hi8(__c.4892)
  1004 0248 0E94 0000 		call xputs
  1005 024c C1FB      		bst r28,1
  1006 024e 8827      		clr r24
@@ -1898,8 +1898,8 @@
  1011 0254 8F93      		push r24
  1012               	.LCFI88:
  1013               		.cfi_def_cfa_offset 5
- 1014 0256 80E0      		ldi r24,lo8(__c.4950)
- 1015 0258 90E0      		ldi r25,hi8(__c.4950)
+ 1014 0256 80E0      		ldi r24,lo8(__c.4894)
+ 1015 0258 90E0      		ldi r25,hi8(__c.4894)
  1016 025a 9F93      		push r25
  1017               	.LCFI89:
  1018               		.cfi_def_cfa_offset 6
@@ -1907,13 +1907,13 @@
  1020               	.LCFI90:
  1021               		.cfi_def_cfa_offset 7
  1022 025e 0E94 0000 		call __xprintf
- 1023 0262 80E0      		ldi r24,lo8(__c.4952)
- 1024 0264 90E0      		ldi r25,hi8(__c.4952)
+ 1023 0262 80E0      		ldi r24,lo8(__c.4896)
+ 1024 0264 90E0      		ldi r25,hi8(__c.4896)
  1025 0266 0E94 0000 		call xputs
  164:../tmk_core/common/command.c ****     print(".swap_ralt_rgui: "); print_dec(kc.swap_ralt_rgui); print("\n");
  1026               		.loc 1 164 0
- 1027 026a 80E0      		ldi r24,lo8(__c.4954)
- 1028 026c 90E0      		ldi r25,hi8(__c.4954)
+ 1027 026a 80E0      		ldi r24,lo8(__c.4898)
+ 1028 026c 90E0      		ldi r25,hi8(__c.4898)
  1029 026e 0E94 0000 		call xputs
  1030 0272 C2FB      		bst r28,2
  1031 0274 8827      		clr r24
@@ -1924,8 +1924,8 @@
  1036 027a 8F93      		push r24
  1037               	.LCFI92:
  1038               		.cfi_def_cfa_offset 9
- 1039 027c 80E0      		ldi r24,lo8(__c.4956)
- 1040 027e 90E0      		ldi r25,hi8(__c.4956)
+ 1039 027c 80E0      		ldi r24,lo8(__c.4900)
+ 1040 027e 90E0      		ldi r25,hi8(__c.4900)
  1041 0280 9F93      		push r25
  1042               	.LCFI93:
  1043               		.cfi_def_cfa_offset 10
@@ -1933,13 +1933,13 @@
  1045               	.LCFI94:
  1046               		.cfi_def_cfa_offset 11
  1047 0284 0E94 0000 		call __xprintf
- 1048 0288 80E0      		ldi r24,lo8(__c.4958)
- 1049 028a 90E0      		ldi r25,hi8(__c.4958)
+ 1048 0288 80E0      		ldi r24,lo8(__c.4902)
+ 1049 028a 90E0      		ldi r25,hi8(__c.4902)
  1050 028c 0E94 0000 		call xputs
  165:../tmk_core/common/command.c ****     print(".no_gui: "); print_dec(kc.no_gui); print("\n");
  1051               		.loc 1 165 0
- 1052 0290 80E0      		ldi r24,lo8(__c.4960)
- 1053 0292 90E0      		ldi r25,hi8(__c.4960)
+ 1052 0290 80E0      		ldi r24,lo8(__c.4904)
+ 1053 0292 90E0      		ldi r25,hi8(__c.4904)
  1054 0294 0E94 0000 		call xputs
  1055 0298 C3FB      		bst r28,3
  1056 029a 8827      		clr r24
@@ -1950,8 +1950,8 @@
  1061 02a0 8F93      		push r24
  1062               	.LCFI96:
  1063               		.cfi_def_cfa_offset 13
- 1064 02a2 80E0      		ldi r24,lo8(__c.4962)
- 1065 02a4 90E0      		ldi r25,hi8(__c.4962)
+ 1064 02a2 80E0      		ldi r24,lo8(__c.4906)
+ 1065 02a4 90E0      		ldi r25,hi8(__c.4906)
  1066 02a6 9F93      		push r25
  1067               	.LCFI97:
  1068               		.cfi_def_cfa_offset 14
@@ -1959,13 +1959,13 @@
  1070               	.LCFI98:
  1071               		.cfi_def_cfa_offset 15
  1072 02aa 0E94 0000 		call __xprintf
- 1073 02ae 80E0      		ldi r24,lo8(__c.4964)
- 1074 02b0 90E0      		ldi r25,hi8(__c.4964)
+ 1073 02ae 80E0      		ldi r24,lo8(__c.4908)
+ 1074 02b0 90E0      		ldi r25,hi8(__c.4908)
  1075 02b2 0E94 0000 		call xputs
  166:../tmk_core/common/command.c ****     print(".swap_grave_esc: "); print_dec(kc.swap_grave_esc); print("\n");
  1076               		.loc 1 166 0
- 1077 02b6 80E0      		ldi r24,lo8(__c.4966)
- 1078 02b8 90E0      		ldi r25,hi8(__c.4966)
+ 1077 02b6 80E0      		ldi r24,lo8(__c.4910)
+ 1078 02b8 90E0      		ldi r25,hi8(__c.4910)
  1079 02ba 0E94 0000 		call xputs
  1080 02be C4FB      		bst r28,4
  1081 02c0 8827      		clr r24
@@ -1976,8 +1976,8 @@
  1086 02c6 8F93      		push r24
  1087               	.LCFI100:
  1088               		.cfi_def_cfa_offset 17
- 1089 02c8 80E0      		ldi r24,lo8(__c.4968)
- 1090 02ca 90E0      		ldi r25,hi8(__c.4968)
+ 1089 02c8 80E0      		ldi r24,lo8(__c.4912)
+ 1090 02ca 90E0      		ldi r25,hi8(__c.4912)
  1091 02cc 9F93      		push r25
  1092               	.LCFI101:
  1093               		.cfi_def_cfa_offset 18
@@ -1985,13 +1985,13 @@
  1095               	.LCFI102:
  1096               		.cfi_def_cfa_offset 19
  1097 02d0 0E94 0000 		call __xprintf
- 1098 02d4 80E0      		ldi r24,lo8(__c.4970)
- 1099 02d6 90E0      		ldi r25,hi8(__c.4970)
+ 1098 02d4 80E0      		ldi r24,lo8(__c.4914)
+ 1099 02d6 90E0      		ldi r25,hi8(__c.4914)
  1100 02d8 0E94 0000 		call xputs
  167:../tmk_core/common/command.c ****     print(".swap_backslash_backspace: "); print_dec(kc.swap_backslash_backspace); print("\n");
  1101               		.loc 1 167 0
- 1102 02dc 80E0      		ldi r24,lo8(__c.4972)
- 1103 02de 90E0      		ldi r25,hi8(__c.4972)
+ 1102 02dc 80E0      		ldi r24,lo8(__c.4916)
+ 1103 02de 90E0      		ldi r25,hi8(__c.4916)
  1104 02e0 0E94 0000 		call xputs
  1105 02e4 C5FB      		bst r28,5
  1106 02e6 8827      		clr r24
@@ -2002,8 +2002,8 @@
  1111 02ec 8F93      		push r24
  1112               	.LCFI104:
  1113               		.cfi_def_cfa_offset 21
- 1114 02ee 80E0      		ldi r24,lo8(__c.4974)
- 1115 02f0 90E0      		ldi r25,hi8(__c.4974)
+ 1114 02ee 80E0      		ldi r24,lo8(__c.4918)
+ 1115 02f0 90E0      		ldi r25,hi8(__c.4918)
  1116 02f2 9F93      		push r25
  1117               	.LCFI105:
  1118               		.cfi_def_cfa_offset 22
@@ -2011,13 +2011,13 @@
  1120               	.LCFI106:
  1121               		.cfi_def_cfa_offset 23
  1122 02f6 0E94 0000 		call __xprintf
- 1123 02fa 80E0      		ldi r24,lo8(__c.4976)
- 1124 02fc 90E0      		ldi r25,hi8(__c.4976)
+ 1123 02fa 80E0      		ldi r24,lo8(__c.4920)
+ 1124 02fc 90E0      		ldi r25,hi8(__c.4920)
  1125 02fe 0E94 0000 		call xputs
  168:../tmk_core/common/command.c ****     print(".nkro: "); print_dec(kc.nkro); print("\n");
  1126               		.loc 1 168 0
- 1127 0302 80E0      		ldi r24,lo8(__c.4978)
- 1128 0304 90E0      		ldi r25,hi8(__c.4978)
+ 1127 0302 80E0      		ldi r24,lo8(__c.4922)
+ 1128 0304 90E0      		ldi r25,hi8(__c.4922)
  1129 0306 0E94 0000 		call xputs
  1130 030a C6FB      		bst r28,6
  1131 030c 8827      		clr r24
@@ -2028,8 +2028,8 @@
  1136 0312 8F93      		push r24
  1137               	.LCFI108:
  1138               		.cfi_def_cfa_offset 25
- 1139 0314 80E0      		ldi r24,lo8(__c.4980)
- 1140 0316 90E0      		ldi r25,hi8(__c.4980)
+ 1139 0314 80E0      		ldi r24,lo8(__c.4924)
+ 1140 0316 90E0      		ldi r25,hi8(__c.4924)
  1141 0318 9F93      		push r25
  1142               	.LCFI109:
  1143               		.cfi_def_cfa_offset 26
@@ -2037,13 +2037,13 @@
  1145               	.LCFI110:
  1146               		.cfi_def_cfa_offset 27
  1147 031c 0E94 0000 		call __xprintf
- 1148 0320 80E0      		ldi r24,lo8(__c.4982)
- 1149 0322 90E0      		ldi r25,hi8(__c.4982)
+ 1148 0320 80E0      		ldi r24,lo8(__c.4926)
+ 1149 0322 90E0      		ldi r25,hi8(__c.4926)
  1150 0324 0E94 0000 		call xputs
  169:../tmk_core/common/command.c **** 
  1151               		.loc 1 169 0
- 1152 0328 80E0      		ldi r24,lo8(__c.4984)
- 1153 032a 90E0      		ldi r25,hi8(__c.4984)
+ 1152 0328 80E0      		ldi r24,lo8(__c.4928)
+ 1153 032a 90E0      		ldi r25,hi8(__c.4928)
  1154 032c 0E94 0000 		call xputs
  1155 0330 C7FB      		bst r28,7
  1156 0332 CC27      		clr r28
@@ -2054,8 +2054,8 @@
  1161 0338 CF93      		push r28
  1162               	.LCFI112:
  1163               		.cfi_def_cfa_offset 29
- 1164 033a 80E0      		ldi r24,lo8(__c.4986)
- 1165 033c 90E0      		ldi r25,hi8(__c.4986)
+ 1164 033a 80E0      		ldi r24,lo8(__c.4930)
+ 1165 033c 90E0      		ldi r25,hi8(__c.4930)
  1166 033e 9F93      		push r25
  1167               	.LCFI113:
  1168               		.cfi_def_cfa_offset 30
@@ -2063,8 +2063,8 @@
  1170               	.LCFI114:
  1171               		.cfi_def_cfa_offset 31
  1172 0342 0E94 0000 		call __xprintf
- 1173 0346 80E0      		ldi r24,lo8(__c.4988)
- 1174 0348 90E0      		ldi r25,hi8(__c.4988)
+ 1173 0346 80E0      		ldi r24,lo8(__c.4932)
+ 1174 0348 90E0      		ldi r25,hi8(__c.4932)
  1175 034a 0E94 0000 		call xputs
  1176 034e 8DB7      		in r24,__SP_L__
  1177 0350 9EB7      		in r25,__SP_H__
@@ -2084,8 +2084,8 @@
  1191               	.LBB118:
  117:../tmk_core/common/command.c ****           "d:	debug\n"
  1192               		.loc 1 117 0
- 1193 0360 80E0      		ldi r24,lo8(__c.4893)
- 1194 0362 90E0      		ldi r25,hi8(__c.4893)
+ 1193 0360 80E0      		ldi r24,lo8(__c.4837)
+ 1194 0362 90E0      		ldi r25,hi8(__c.4837)
  1195               	.L99:
  1196 0364 0E94 0000 		call xputs
  1197               	.L96:
@@ -2105,8 +2105,8 @@
  1209 0376 00C0      		rjmp .L72
  235:../tmk_core/common/command.c ****                 debug_matrix   = false;
  1210               		.loc 1 235 0
- 1211 0378 80E0      		ldi r24,lo8(__c.5006)
- 1212 037a 90E0      		ldi r25,hi8(__c.5006)
+ 1211 0378 80E0      		ldi r24,lo8(__c.4950)
+ 1212 037a 90E0      		ldi r25,hi8(__c.4950)
  1213 037c 0E94 0000 		call xputs
  236:../tmk_core/common/command.c ****                 debug_keyboard = false;
  1214               		.loc 1 236 0
@@ -2119,8 +2119,8 @@
  1220               	.L72:
  241:../tmk_core/common/command.c ****                 debug_enable   = true;
  1221               		.loc 1 241 0
- 1222 038a 80E0      		ldi r24,lo8(__c.5008)
- 1223 038c 90E0      		ldi r25,hi8(__c.5008)
+ 1222 038a 80E0      		ldi r24,lo8(__c.4952)
+ 1223 038c 90E0      		ldi r25,hi8(__c.4952)
  1224 038e 0E94 0000 		call xputs
  242:../tmk_core/common/command.c ****             }
  1225               		.loc 1 242 0
@@ -2147,14 +2147,14 @@
  1244 03b8 01F0      		breq .L73
  248:../tmk_core/common/command.c ****                 debug_enable = true;
  1245               		.loc 1 248 0
- 1246 03ba 80E0      		ldi r24,lo8(__c.5011)
- 1247 03bc 90E0      		ldi r25,hi8(__c.5011)
+ 1246 03ba 80E0      		ldi r24,lo8(__c.4955)
+ 1247 03bc 90E0      		ldi r25,hi8(__c.4955)
  1248 03be 00C0      		rjmp .L98
  1249               	.L73:
  251:../tmk_core/common/command.c ****             }
  1250               		.loc 1 251 0
- 1251 03c0 80E0      		ldi r24,lo8(__c.5013)
- 1252 03c2 90E0      		ldi r25,hi8(__c.5013)
+ 1251 03c0 80E0      		ldi r24,lo8(__c.4957)
+ 1252 03c2 90E0      		ldi r25,hi8(__c.4957)
  1253 03c4 00C0      		rjmp .L99
  1254               	.L52:
  255:../tmk_core/common/command.c ****             if (debug_keyboard) {
@@ -2175,14 +2175,14 @@
  1268 03e0 01F0      		breq .L74
  257:../tmk_core/common/command.c ****                 debug_enable = true;
  1269               		.loc 1 257 0
- 1270 03e2 80E0      		ldi r24,lo8(__c.5016)
- 1271 03e4 90E0      		ldi r25,hi8(__c.5016)
+ 1270 03e2 80E0      		ldi r24,lo8(__c.4960)
+ 1271 03e4 90E0      		ldi r25,hi8(__c.4960)
  1272 03e6 00C0      		rjmp .L98
  1273               	.L74:
  260:../tmk_core/common/command.c ****             }
  1274               		.loc 1 260 0
- 1275 03e8 80E0      		ldi r24,lo8(__c.5018)
- 1276 03ea 90E0      		ldi r25,hi8(__c.5018)
+ 1275 03e8 80E0      		ldi r24,lo8(__c.4962)
+ 1276 03ea 90E0      		ldi r25,hi8(__c.4962)
  1277 03ec 00C0      		rjmp .L99
  1278               	.L61:
  264:../tmk_core/common/command.c ****             if (debug_mouse) {
@@ -2203,8 +2203,8 @@
  1292 0408 01F0      		breq .L75
  266:../tmk_core/common/command.c ****                 debug_enable = true;
  1293               		.loc 1 266 0
- 1294 040a 80E0      		ldi r24,lo8(__c.5021)
- 1295 040c 90E0      		ldi r25,hi8(__c.5021)
+ 1294 040a 80E0      		ldi r24,lo8(__c.4965)
+ 1295 040c 90E0      		ldi r25,hi8(__c.4965)
  1296               	.L98:
  1297 040e 0E94 0000 		call xputs
  267:../tmk_core/common/command.c ****             } else {
@@ -2217,14 +2217,14 @@
  1304               	.L75:
  269:../tmk_core/common/command.c ****             }
  1305               		.loc 1 269 0
- 1306 041e 80E0      		ldi r24,lo8(__c.5023)
- 1307 0420 90E0      		ldi r25,hi8(__c.5023)
+ 1306 041e 80E0      		ldi r24,lo8(__c.4967)
+ 1307 0420 90E0      		ldi r25,hi8(__c.4967)
  1308 0422 00C0      		rjmp .L99
  1309               	.L62:
  326:../tmk_core/common/command.c ****             print_val_hex8(host_keyboard_leds());
  1310               		.loc 1 326 0
- 1311 0424 80E0      		ldi r24,lo8(__c.5039)
- 1312 0426 90E0      		ldi r25,hi8(__c.5039)
+ 1311 0424 80E0      		ldi r24,lo8(__c.4983)
+ 1312 0426 90E0      		ldi r25,hi8(__c.4983)
  1313 0428 0E94 0000 		call xputs
  327:../tmk_core/common/command.c ****             print_val_hex8(keyboard_protocol);
  1314               		.loc 1 327 0
@@ -2235,8 +2235,8 @@
  1319 0432 8F93      		push r24
  1320               	.LCFI117:
  1321               		.cfi_def_cfa_offset 5
- 1322 0434 80E0      		ldi r24,lo8(__c.5041)
- 1323 0436 90E0      		ldi r25,hi8(__c.5041)
+ 1322 0434 80E0      		ldi r24,lo8(__c.4985)
+ 1323 0436 90E0      		ldi r25,hi8(__c.4985)
  1324 0438 9F93      		push r25
  1325               	.LCFI118:
  1326               		.cfi_def_cfa_offset 6
@@ -2253,8 +2253,8 @@
  1336 0446 8F93      		push r24
  1337               	.LCFI121:
  1338               		.cfi_def_cfa_offset 9
- 1339 0448 80E0      		ldi r24,lo8(__c.5043)
- 1340 044a 90E0      		ldi r25,hi8(__c.5043)
+ 1339 0448 80E0      		ldi r24,lo8(__c.4987)
+ 1340 044a 90E0      		ldi r25,hi8(__c.4987)
  1341 044c 9F93      		push r25
  1342               	.LCFI122:
  1343               		.cfi_def_cfa_offset 10
@@ -2271,8 +2271,8 @@
  1353 045a 8F93      		push r24
  1354               	.LCFI125:
  1355               		.cfi_def_cfa_offset 13
- 1356 045c 80E0      		ldi r24,lo8(__c.5045)
- 1357 045e 90E0      		ldi r25,hi8(__c.5045)
+ 1356 045c 80E0      		ldi r24,lo8(__c.4989)
+ 1357 045e 90E0      		ldi r25,hi8(__c.4989)
  1358 0460 9F93      		push r25
  1359               	.LCFI126:
  1360               		.cfi_def_cfa_offset 14
@@ -2289,8 +2289,8 @@
  1370 046e 8F93      		push r24
  1371               	.LCFI129:
  1372               		.cfi_def_cfa_offset 17
- 1373 0470 80E0      		ldi r24,lo8(__c.5047)
- 1374 0472 90E0      		ldi r25,hi8(__c.5047)
+ 1373 0470 80E0      		ldi r24,lo8(__c.4991)
+ 1374 0472 90E0      		ldi r25,hi8(__c.4991)
  1375 0474 9F93      		push r25
  1376               	.LCFI130:
  1377               		.cfi_def_cfa_offset 18
@@ -2313,8 +2313,8 @@
  1393 0486 6F93      		push r22
  1394               	.LCFI135:
  1395               		.cfi_def_cfa_offset 23
- 1396 0488 80E0      		ldi r24,lo8(__c.5049)
- 1397 048a 90E0      		ldi r25,hi8(__c.5049)
+ 1396 0488 80E0      		ldi r24,lo8(__c.4993)
+ 1397 048a 90E0      		ldi r25,hi8(__c.4993)
  1398 048c 9F93      		push r25
  1399               	.LCFI136:
  1400               		.cfi_def_cfa_offset 24
@@ -2351,15 +2351,15 @@
  1427 04b8 01F0      		breq .L76
  354:../tmk_core/common/command.c ****             } else {
  1428               		.loc 1 354 0
- 1429 04ba 80E0      		ldi r24,lo8(__c.5052)
- 1430 04bc 90E0      		ldi r25,hi8(__c.5052)
+ 1429 04ba 80E0      		ldi r24,lo8(__c.4996)
+ 1430 04bc 90E0      		ldi r25,hi8(__c.4996)
  1431 04be 0E94 0000 		call xputs
  1432 04c2 00C0      		rjmp .L71
  1433               	.L76:
  356:../tmk_core/common/command.c ****             }
  1434               		.loc 1 356 0
- 1435 04c4 80E0      		ldi r24,lo8(__c.5054)
- 1436 04c6 90E0      		ldi r25,hi8(__c.5054)
+ 1435 04c4 80E0      		ldi r24,lo8(__c.4998)
+ 1436 04c6 90E0      		ldi r25,hi8(__c.4998)
  1437 04c8 00C0      		rjmp .L99
  1438               	.L64:
  364:../tmk_core/common/command.c ****             break;
@@ -2376,8 +2376,8 @@
  1448               	.L49:
  373:../tmk_core/common/command.c ****             return false;
  1449               		.loc 1 373 0
- 1450 04d6 80E0      		ldi r24,lo8(__c.5063)
- 1451 04d8 90E0      		ldi r25,hi8(__c.5063)
+ 1450 04d6 80E0      		ldi r24,lo8(__c.5007)
+ 1451 04d8 90E0      		ldi r25,hi8(__c.5007)
  1452 04da 0E94 0000 		call xputs
  374:../tmk_core/common/command.c ****     }
  1453               		.loc 1 374 0
@@ -2514,8 +2514,8 @@
  1575 0066 0E94 0000 		call mousekey_console_help
  407:../tmk_core/common/command.c ****             command_state = MOUSEKEY;
  1576               		.loc 1 407 0
- 1577 006a 80E0      		ldi r24,lo8(__c.5079)
- 1578 006c 90E0      		ldi r25,hi8(__c.5079)
+ 1577 006a 80E0      		ldi r24,lo8(__c.5023)
+ 1578 006c 90E0      		ldi r25,hi8(__c.5023)
  1579 006e 0E94 0000 		call xputs
  408:../tmk_core/common/command.c ****             return true;
  1580               		.loc 1 408 0
@@ -2534,15 +2534,15 @@
  1592               	.LBB160:
  385:../tmk_core/common/command.c ****           "ESC/q:	quit\n"
  1593               		.loc 1 385 0
- 1594 0082 80E0      		ldi r24,lo8(__c.5068)
- 1595 0084 90E0      		ldi r25,hi8(__c.5068)
+ 1594 0082 80E0      		ldi r24,lo8(__c.5012)
+ 1595 0084 90E0      		ldi r25,hi8(__c.5012)
  1596 0086 0E94 0000 		call xputs
  1597               	.LBE160:
  1598               	.LBE159:
  415:../tmk_core/common/command.c ****     return true;
  1599               		.loc 1 415 0
- 1600 008a 80E0      		ldi r24,lo8(__c.5084)
- 1601 008c 90E0      		ldi r25,hi8(__c.5084)
+ 1600 008a 80E0      		ldi r24,lo8(__c.5028)
+ 1601 008c 90E0      		ldi r25,hi8(__c.5028)
  1602 008e 0E94 0000 		call xputs
  1603 0092 00C0      		rjmp .L139
  1604               	.L114:
@@ -2553,8 +2553,8 @@
  1608               	.L113:
  412:../tmk_core/common/command.c ****             return false;
  1609               		.loc 1 412 0
- 1610 009a 80E0      		ldi r24,lo8(__c.5082)
- 1611 009c 90E0      		ldi r25,hi8(__c.5082)
+ 1610 009a 80E0      		ldi r24,lo8(__c.5026)
+ 1611 009c 90E0      		ldi r25,hi8(__c.5026)
  1612 009e 0E94 0000 		call xputs
  1613 00a2 00C0      		rjmp .L119
  1614               	.L139:
@@ -2610,8 +2610,8 @@
  1655 00e0 8093 0000 		sts mk_wheel_time_to_max,r24
  605:../tmk_core/common/command.c ****             break;
  1656               		.loc 1 605 0
- 1657 00e4 80E0      		ldi r24,lo8(__c.5203)
- 1658 00e6 90E0      		ldi r25,hi8(__c.5203)
+ 1657 00e4 80E0      		ldi r24,lo8(__c.5147)
+ 1658 00e6 90E0      		ldi r25,hi8(__c.5147)
  1659 00e8 0E94 0000 		call xputs
  1660 00ec 00C0      		rjmp .L133
  1661               	.L124:
@@ -2664,8 +2664,8 @@
  1703               	.L134:
  570:../tmk_core/common/command.c ****                 command_state = CONSOLE;
  1704               		.loc 1 570 0
- 1705 0134 80E0      		ldi r24,lo8(__c.5189)
- 1706 0136 90E0      		ldi r25,hi8(__c.5189)
+ 1705 0134 80E0      		ldi r24,lo8(__c.5133)
+ 1706 0136 90E0      		ldi r25,hi8(__c.5133)
  1707 0138 0E94 0000 		call xputs
  571:../tmk_core/common/command.c ****                 return false;
  1708               		.loc 1 571 0
@@ -2677,13 +2677,13 @@
  1714               	.LBB164:
  428:../tmk_core/common/command.c ****     print("1: delay(*10ms): "); pdec(mk_delay); print("\n");
  1715               		.loc 1 428 0
- 1716 0144 80E0      		ldi r24,lo8(__c.5090)
- 1717 0146 90E0      		ldi r25,hi8(__c.5090)
+ 1716 0144 80E0      		ldi r24,lo8(__c.5034)
+ 1717 0146 90E0      		ldi r25,hi8(__c.5034)
  1718 0148 0E94 0000 		call xputs
  429:../tmk_core/common/command.c ****     print("2: interval(ms): "); pdec(mk_interval); print("\n");
  1719               		.loc 1 429 0
- 1720 014c 80E0      		ldi r24,lo8(__c.5092)
- 1721 014e 90E0      		ldi r25,hi8(__c.5092)
+ 1720 014c 80E0      		ldi r24,lo8(__c.5036)
+ 1721 014e 90E0      		ldi r25,hi8(__c.5036)
  1722 0150 0E94 0000 		call xputs
  1723 0154 8091 0000 		lds r24,mk_delay
  1724 0158 1F92      		push __zero_reg__
@@ -2692,8 +2692,8 @@
  1727 015a 8F93      		push r24
  1728               	.LCFI141:
  1729               		.cfi_def_cfa_offset 5
- 1730 015c 80E0      		ldi r24,lo8(__c.5094)
- 1731 015e 90E0      		ldi r25,hi8(__c.5094)
+ 1730 015c 80E0      		ldi r24,lo8(__c.5038)
+ 1731 015e 90E0      		ldi r25,hi8(__c.5038)
  1732 0160 9F93      		push r25
  1733               	.LCFI142:
  1734               		.cfi_def_cfa_offset 6
@@ -2701,13 +2701,13 @@
  1736               	.LCFI143:
  1737               		.cfi_def_cfa_offset 7
  1738 0164 0E94 0000 		call __xprintf
- 1739 0168 80E0      		ldi r24,lo8(__c.5096)
- 1740 016a 90E0      		ldi r25,hi8(__c.5096)
+ 1739 0168 80E0      		ldi r24,lo8(__c.5040)
+ 1740 016a 90E0      		ldi r25,hi8(__c.5040)
  1741 016c 0E94 0000 		call xputs
  430:../tmk_core/common/command.c ****     print("3: max_speed: "); pdec(mk_max_speed); print("\n");
  1742               		.loc 1 430 0
- 1743 0170 80E0      		ldi r24,lo8(__c.5098)
- 1744 0172 90E0      		ldi r25,hi8(__c.5098)
+ 1743 0170 80E0      		ldi r24,lo8(__c.5042)
+ 1744 0172 90E0      		ldi r25,hi8(__c.5042)
  1745 0174 0E94 0000 		call xputs
  1746 0178 8091 0000 		lds r24,mk_interval
  1747 017c 1F92      		push __zero_reg__
@@ -2716,8 +2716,8 @@
  1750 017e 8F93      		push r24
  1751               	.LCFI145:
  1752               		.cfi_def_cfa_offset 9
- 1753 0180 80E0      		ldi r24,lo8(__c.5100)
- 1754 0182 90E0      		ldi r25,hi8(__c.5100)
+ 1753 0180 80E0      		ldi r24,lo8(__c.5044)
+ 1754 0182 90E0      		ldi r25,hi8(__c.5044)
  1755 0184 9F93      		push r25
  1756               	.LCFI146:
  1757               		.cfi_def_cfa_offset 10
@@ -2725,13 +2725,13 @@
  1759               	.LCFI147:
  1760               		.cfi_def_cfa_offset 11
  1761 0188 0E94 0000 		call __xprintf
- 1762 018c 80E0      		ldi r24,lo8(__c.5102)
- 1763 018e 90E0      		ldi r25,hi8(__c.5102)
+ 1762 018c 80E0      		ldi r24,lo8(__c.5046)
+ 1763 018e 90E0      		ldi r25,hi8(__c.5046)
  1764 0190 0E94 0000 		call xputs
  431:../tmk_core/common/command.c ****     print("4: time_to_max: "); pdec(mk_time_to_max); print("\n");
  1765               		.loc 1 431 0
- 1766 0194 80E0      		ldi r24,lo8(__c.5104)
- 1767 0196 90E0      		ldi r25,hi8(__c.5104)
+ 1766 0194 80E0      		ldi r24,lo8(__c.5048)
+ 1767 0196 90E0      		ldi r25,hi8(__c.5048)
  1768 0198 0E94 0000 		call xputs
  1769 019c 8091 0000 		lds r24,mk_max_speed
  1770 01a0 1F92      		push __zero_reg__
@@ -2740,8 +2740,8 @@
  1773 01a2 8F93      		push r24
  1774               	.LCFI149:
  1775               		.cfi_def_cfa_offset 13
- 1776 01a4 80E0      		ldi r24,lo8(__c.5106)
- 1777 01a6 90E0      		ldi r25,hi8(__c.5106)
+ 1776 01a4 80E0      		ldi r24,lo8(__c.5050)
+ 1777 01a6 90E0      		ldi r25,hi8(__c.5050)
  1778 01a8 9F93      		push r25
  1779               	.LCFI150:
  1780               		.cfi_def_cfa_offset 14
@@ -2749,13 +2749,13 @@
  1782               	.LCFI151:
  1783               		.cfi_def_cfa_offset 15
  1784 01ac 0E94 0000 		call __xprintf
- 1785 01b0 80E0      		ldi r24,lo8(__c.5108)
- 1786 01b2 90E0      		ldi r25,hi8(__c.5108)
+ 1785 01b0 80E0      		ldi r24,lo8(__c.5052)
+ 1786 01b2 90E0      		ldi r25,hi8(__c.5052)
  1787 01b4 0E94 0000 		call xputs
  432:../tmk_core/common/command.c ****     print("5: wheel_max_speed: "); pdec(mk_wheel_max_speed); print("\n");
  1788               		.loc 1 432 0
- 1789 01b8 80E0      		ldi r24,lo8(__c.5110)
- 1790 01ba 90E0      		ldi r25,hi8(__c.5110)
+ 1789 01b8 80E0      		ldi r24,lo8(__c.5054)
+ 1790 01ba 90E0      		ldi r25,hi8(__c.5054)
  1791 01bc 0E94 0000 		call xputs
  1792 01c0 8091 0000 		lds r24,mk_time_to_max
  1793 01c4 1F92      		push __zero_reg__
@@ -2764,8 +2764,8 @@
  1796 01c6 8F93      		push r24
  1797               	.LCFI153:
  1798               		.cfi_def_cfa_offset 17
- 1799 01c8 80E0      		ldi r24,lo8(__c.5112)
- 1800 01ca 90E0      		ldi r25,hi8(__c.5112)
+ 1799 01c8 80E0      		ldi r24,lo8(__c.5056)
+ 1800 01ca 90E0      		ldi r25,hi8(__c.5056)
  1801 01cc 9F93      		push r25
  1802               	.LCFI154:
  1803               		.cfi_def_cfa_offset 18
@@ -2773,13 +2773,13 @@
  1805               	.LCFI155:
  1806               		.cfi_def_cfa_offset 19
  1807 01d0 0E94 0000 		call __xprintf
- 1808 01d4 80E0      		ldi r24,lo8(__c.5114)
- 1809 01d6 90E0      		ldi r25,hi8(__c.5114)
+ 1808 01d4 80E0      		ldi r24,lo8(__c.5058)
+ 1809 01d6 90E0      		ldi r25,hi8(__c.5058)
  1810 01d8 0E94 0000 		call xputs
  433:../tmk_core/common/command.c ****     print("6: wheel_time_to_max: "); pdec(mk_wheel_time_to_max); print("\n");
  1811               		.loc 1 433 0
- 1812 01dc 80E0      		ldi r24,lo8(__c.5116)
- 1813 01de 90E0      		ldi r25,hi8(__c.5116)
+ 1812 01dc 80E0      		ldi r24,lo8(__c.5060)
+ 1813 01de 90E0      		ldi r25,hi8(__c.5060)
  1814 01e0 0E94 0000 		call xputs
  1815 01e4 8091 0000 		lds r24,mk_wheel_max_speed
  1816 01e8 1F92      		push __zero_reg__
@@ -2788,8 +2788,8 @@
  1819 01ea 8F93      		push r24
  1820               	.LCFI157:
  1821               		.cfi_def_cfa_offset 21
- 1822 01ec 80E0      		ldi r24,lo8(__c.5118)
- 1823 01ee 90E0      		ldi r25,hi8(__c.5118)
+ 1822 01ec 80E0      		ldi r24,lo8(__c.5062)
+ 1823 01ee 90E0      		ldi r25,hi8(__c.5062)
  1824 01f0 9F93      		push r25
  1825               	.LCFI158:
  1826               		.cfi_def_cfa_offset 22
@@ -2797,13 +2797,13 @@
  1828               	.LCFI159:
  1829               		.cfi_def_cfa_offset 23
  1830 01f4 0E94 0000 		call __xprintf
- 1831 01f8 80E0      		ldi r24,lo8(__c.5120)
- 1832 01fa 90E0      		ldi r25,hi8(__c.5120)
+ 1831 01f8 80E0      		ldi r24,lo8(__c.5064)
+ 1832 01fa 90E0      		ldi r25,hi8(__c.5064)
  1833 01fc 0E94 0000 		call xputs
  434:../tmk_core/common/command.c **** }
  1834               		.loc 1 434 0
- 1835 0200 80E0      		ldi r24,lo8(__c.5122)
- 1836 0202 90E0      		ldi r25,hi8(__c.5122)
+ 1835 0200 80E0      		ldi r24,lo8(__c.5066)
+ 1836 0202 90E0      		ldi r25,hi8(__c.5066)
  1837 0204 0E94 0000 		call xputs
  1838 0208 8091 0000 		lds r24,mk_wheel_time_to_max
  1839 020c 1F92      		push __zero_reg__
@@ -2812,8 +2812,8 @@
  1842 020e 8F93      		push r24
  1843               	.LCFI161:
  1844               		.cfi_def_cfa_offset 25
- 1845 0210 80E0      		ldi r24,lo8(__c.5124)
- 1846 0212 90E0      		ldi r25,hi8(__c.5124)
+ 1845 0210 80E0      		ldi r24,lo8(__c.5068)
+ 1846 0212 90E0      		ldi r25,hi8(__c.5068)
  1847 0214 9F93      		push r25
  1848               	.LCFI162:
  1849               		.cfi_def_cfa_offset 26
@@ -2821,8 +2821,8 @@
  1851               	.LCFI163:
  1852               		.cfi_def_cfa_offset 27
  1853 0218 0E94 0000 		call __xprintf
- 1854 021c 80E0      		ldi r24,lo8(__c.5126)
- 1855 021e 90E0      		ldi r25,hi8(__c.5126)
+ 1854 021c 80E0      		ldi r24,lo8(__c.5070)
+ 1855 021e 90E0      		ldi r25,hi8(__c.5070)
  1856 0220 0E94 0000 		call xputs
  1857 0224 8DB7      		in r24,__SP_L__
  1858 0226 9EB7      		in r25,__SP_H__
@@ -2875,8 +2875,8 @@
  1900               	.L120:
  608:../tmk_core/common/command.c ****             return false;
  1901               		.loc 1 608 0
- 1902 0266 80E0      		ldi r24,lo8(__c.5206)
- 1903 0268 90E0      		ldi r25,hi8(__c.5206)
+ 1902 0266 80E0      		ldi r24,lo8(__c.5150)
+ 1903 0268 90E0      		ldi r25,hi8(__c.5150)
  1904 026a 00C0      		rjmp .L169
  1905               	.L133:
  611:../tmk_core/common/command.c ****         xprintf("M%d> ", mousekey_param);
@@ -2892,8 +2892,8 @@
  1914 0276 8F93      		push r24
  1915               	.LCFI166:
  1916               		.cfi_def_cfa_offset 5
- 1917 0278 80E0      		ldi r24,lo8(__c.5208)
- 1918 027a 90E0      		ldi r25,hi8(__c.5208)
+ 1917 0278 80E0      		ldi r24,lo8(__c.5152)
+ 1918 027a 90E0      		ldi r25,hi8(__c.5152)
  1919 027c 9F93      		push r25
  1920               	.LCFI167:
  1921               		.cfi_def_cfa_offset 6
@@ -2911,8 +2911,8 @@
  1933               	.L135:
  614:../tmk_core/common/command.c ****     }
  1934               		.loc 1 614 0
- 1935 028e 80E0      		ldi r24,lo8(__c.5210)
- 1936 0290 90E0      		ldi r25,hi8(__c.5210)
+ 1935 028e 80E0      		ldi r24,lo8(__c.5154)
+ 1936 0290 90E0      		ldi r25,hi8(__c.5154)
  1937               	.L169:
  1938 0292 0E94 0000 		call xputs
  1939               	.L168:
@@ -2956,567 +2956,567 @@
  1975 0007 08        		.byte	8
  1976 0008 09        		.byte	9
  1977 0009 00        		.byte	0
- 1978               		.section	.progmem.data.__c.5172,"a",@progbits
- 1981               	__c.5172:
+ 1978               		.section	.progmem.data.__c.5116,"a",@progbits
+ 1981               	__c.5116:
  1982 0000 6D6B 5F77 		.string	"mk_wheel_time_to_max = %d\n"
  1982      6865 656C 
  1982      5F74 696D 
  1982      655F 746F 
  1982      5F6D 6178 
- 1983               		.section	.progmem.data.__c.5169,"a",@progbits
- 1986               	__c.5169:
+ 1983               		.section	.progmem.data.__c.5113,"a",@progbits
+ 1986               	__c.5113:
  1987 0000 6D6B 5F77 		.string	"mk_wheel_max_speed = %d\n"
  1987      6865 656C 
  1987      5F6D 6178 
  1987      5F73 7065 
  1987      6564 203D 
- 1988               		.section	.progmem.data.__c.5166,"a",@progbits
- 1991               	__c.5166:
+ 1988               		.section	.progmem.data.__c.5110,"a",@progbits
+ 1991               	__c.5110:
  1992 0000 6D6B 5F74 		.string	"mk_time_to_max = %d\n"
  1992      696D 655F 
  1992      746F 5F6D 
  1992      6178 203D 
  1992      2025 640A 
- 1993               		.section	.progmem.data.__c.5163,"a",@progbits
- 1996               	__c.5163:
+ 1993               		.section	.progmem.data.__c.5107,"a",@progbits
+ 1996               	__c.5107:
  1997 0000 6D6B 5F6D 		.string	"mk_max_speed = %d\n"
  1997      6178 5F73 
  1997      7065 6564 
  1997      203D 2025 
  1997      640A 00
- 1998               		.section	.progmem.data.__c.5160,"a",@progbits
- 2001               	__c.5160:
+ 1998               		.section	.progmem.data.__c.5104,"a",@progbits
+ 2001               	__c.5104:
  2002 0000 6D6B 5F69 		.string	"mk_interval = %d\n"
  2002      6E74 6572 
  2002      7661 6C20 
  2002      3D20 2564 
  2002      0A00 
- 2003               		.section	.progmem.data.__c.5156,"a",@progbits
- 2006               	__c.5156:
+ 2003               		.section	.progmem.data.__c.5100,"a",@progbits
+ 2006               	__c.5100:
  2007 0000 6D6B 5F64 		.string	"mk_delay = %d\n"
  2007      656C 6179 
  2007      203D 2025 
  2007      640A 00
- 2008               		.section	.progmem.data.__c.5149,"a",@progbits
- 2011               	__c.5149:
+ 2008               		.section	.progmem.data.__c.5093,"a",@progbits
+ 2011               	__c.5093:
  2012 0000 6D6B 5F77 		.string	"mk_wheel_time_to_max = %d\n"
  2012      6865 656C 
  2012      5F74 696D 
  2012      655F 746F 
  2012      5F6D 6178 
- 2013               		.section	.progmem.data.__c.5146,"a",@progbits
- 2016               	__c.5146:
+ 2013               		.section	.progmem.data.__c.5090,"a",@progbits
+ 2016               	__c.5090:
  2017 0000 6D6B 5F77 		.string	"mk_wheel_max_speed = %d\n"
  2017      6865 656C 
  2017      5F6D 6178 
  2017      5F73 7065 
  2017      6564 203D 
- 2018               		.section	.progmem.data.__c.5143,"a",@progbits
- 2021               	__c.5143:
+ 2018               		.section	.progmem.data.__c.5087,"a",@progbits
+ 2021               	__c.5087:
  2022 0000 6D6B 5F74 		.string	"mk_time_to_max = %d\n"
  2022      696D 655F 
  2022      746F 5F6D 
  2022      6178 203D 
  2022      2025 640A 
- 2023               		.section	.progmem.data.__c.5140,"a",@progbits
- 2026               	__c.5140:
+ 2023               		.section	.progmem.data.__c.5084,"a",@progbits
+ 2026               	__c.5084:
  2027 0000 6D6B 5F6D 		.string	"mk_max_speed = %d\n"
  2027      6178 5F73 
  2027      7065 6564 
  2027      203D 2025 
  2027      640A 00
- 2028               		.section	.progmem.data.__c.5137,"a",@progbits
- 2031               	__c.5137:
+ 2028               		.section	.progmem.data.__c.5081,"a",@progbits
+ 2031               	__c.5081:
  2032 0000 6D6B 5F69 		.string	"mk_interval = %d\n"
  2032      6E74 6572 
  2032      7661 6C20 
  2032      3D20 2564 
  2032      0A00 
- 2033               		.section	.progmem.data.__c.5133,"a",@progbits
- 2036               	__c.5133:
+ 2033               		.section	.progmem.data.__c.5077,"a",@progbits
+ 2036               	__c.5077:
  2037 0000 6D6B 5F64 		.string	"mk_delay = %d\n"
  2037      656C 6179 
  2037      203D 2025 
  2037      640A 00
- 2038               		.section	.progmem.data.__c.5126,"a",@progbits
- 2041               	__c.5126:
+ 2038               		.section	.progmem.data.__c.5070,"a",@progbits
+ 2041               	__c.5070:
  2042 0000 0A00      		.string	"\n"
- 2043               		.section	.progmem.data.__c.5124,"a",@progbits
- 2046               	__c.5124:
+ 2043               		.section	.progmem.data.__c.5068,"a",@progbits
+ 2046               	__c.5068:
  2047 0000 2575 00   		.string	"%u"
- 2048               		.section	.progmem.data.__c.5122,"a",@progbits
- 2051               	__c.5122:
+ 2048               		.section	.progmem.data.__c.5066,"a",@progbits
+ 2051               	__c.5066:
  2052 0000 363A 2077 		.string	"6: wheel_time_to_max: "
  2052      6865 656C 
  2052      5F74 696D 
  2052      655F 746F 
  2052      5F6D 6178 
- 2053               		.section	.progmem.data.__c.5120,"a",@progbits
- 2056               	__c.5120:
+ 2053               		.section	.progmem.data.__c.5064,"a",@progbits
+ 2056               	__c.5064:
  2057 0000 0A00      		.string	"\n"
- 2058               		.section	.progmem.data.__c.5118,"a",@progbits
- 2061               	__c.5118:
+ 2058               		.section	.progmem.data.__c.5062,"a",@progbits
+ 2061               	__c.5062:
  2062 0000 2575 00   		.string	"%u"
- 2063               		.section	.progmem.data.__c.5116,"a",@progbits
- 2066               	__c.5116:
+ 2063               		.section	.progmem.data.__c.5060,"a",@progbits
+ 2066               	__c.5060:
  2067 0000 353A 2077 		.string	"5: wheel_max_speed: "
  2067      6865 656C 
  2067      5F6D 6178 
  2067      5F73 7065 
  2067      6564 3A20 
- 2068               		.section	.progmem.data.__c.5114,"a",@progbits
- 2071               	__c.5114:
+ 2068               		.section	.progmem.data.__c.5058,"a",@progbits
+ 2071               	__c.5058:
  2072 0000 0A00      		.string	"\n"
- 2073               		.section	.progmem.data.__c.5112,"a",@progbits
- 2076               	__c.5112:
+ 2073               		.section	.progmem.data.__c.5056,"a",@progbits
+ 2076               	__c.5056:
  2077 0000 2575 00   		.string	"%u"
- 2078               		.section	.progmem.data.__c.5110,"a",@progbits
- 2081               	__c.5110:
+ 2078               		.section	.progmem.data.__c.5054,"a",@progbits
+ 2081               	__c.5054:
  2082 0000 343A 2074 		.string	"4: time_to_max: "
  2082      696D 655F 
  2082      746F 5F6D 
  2082      6178 3A20 
  2082      00
- 2083               		.section	.progmem.data.__c.5108,"a",@progbits
- 2086               	__c.5108:
+ 2083               		.section	.progmem.data.__c.5052,"a",@progbits
+ 2086               	__c.5052:
  2087 0000 0A00      		.string	"\n"
- 2088               		.section	.progmem.data.__c.5106,"a",@progbits
- 2091               	__c.5106:
+ 2088               		.section	.progmem.data.__c.5050,"a",@progbits
+ 2091               	__c.5050:
  2092 0000 2575 00   		.string	"%u"
- 2093               		.section	.progmem.data.__c.5104,"a",@progbits
- 2096               	__c.5104:
+ 2093               		.section	.progmem.data.__c.5048,"a",@progbits
+ 2096               	__c.5048:
  2097 0000 333A 206D 		.string	"3: max_speed: "
  2097      6178 5F73 
  2097      7065 6564 
  2097      3A20 00
- 2098               		.section	.progmem.data.__c.5102,"a",@progbits
- 2101               	__c.5102:
+ 2098               		.section	.progmem.data.__c.5046,"a",@progbits
+ 2101               	__c.5046:
  2102 0000 0A00      		.string	"\n"
- 2103               		.section	.progmem.data.__c.5100,"a",@progbits
- 2106               	__c.5100:
+ 2103               		.section	.progmem.data.__c.5044,"a",@progbits
+ 2106               	__c.5044:
  2107 0000 2575 00   		.string	"%u"
- 2108               		.section	.progmem.data.__c.5098,"a",@progbits
- 2111               	__c.5098:
+ 2108               		.section	.progmem.data.__c.5042,"a",@progbits
+ 2111               	__c.5042:
  2112 0000 323A 2069 		.string	"2: interval(ms): "
  2112      6E74 6572 
  2112      7661 6C28 
  2112      6D73 293A 
  2112      2000 
- 2113               		.section	.progmem.data.__c.5096,"a",@progbits
- 2116               	__c.5096:
+ 2113               		.section	.progmem.data.__c.5040,"a",@progbits
+ 2116               	__c.5040:
  2117 0000 0A00      		.string	"\n"
- 2118               		.section	.progmem.data.__c.5094,"a",@progbits
- 2121               	__c.5094:
+ 2118               		.section	.progmem.data.__c.5038,"a",@progbits
+ 2121               	__c.5038:
  2122 0000 2575 00   		.string	"%u"
- 2123               		.section	.progmem.data.__c.5092,"a",@progbits
- 2126               	__c.5092:
+ 2123               		.section	.progmem.data.__c.5036,"a",@progbits
+ 2126               	__c.5036:
  2127 0000 313A 2064 		.string	"1: delay(*10ms): "
  2127      656C 6179 
  2127      282A 3130 
  2127      6D73 293A 
  2127      2000 
- 2128               		.section	.progmem.data.__c.5090,"a",@progbits
- 2131               	__c.5090:
+ 2128               		.section	.progmem.data.__c.5034,"a",@progbits
+ 2131               	__c.5034:
  2132 0000 0A09 2D20 		.string	"\n\t- Values -\n"
  2132      5661 6C75 
  2132      6573 202D 
  2132      0A00 
- 2133               		.section	.progmem.data.__c.5210,"a",@progbits
- 2136               	__c.5210:
+ 2133               		.section	.progmem.data.__c.5154,"a",@progbits
+ 2136               	__c.5154:
  2137 0000 4D3E 00   		.string	"M>"
- 2138               		.section	.progmem.data.__c.5208,"a",@progbits
- 2141               	__c.5208:
+ 2138               		.section	.progmem.data.__c.5152,"a",@progbits
+ 2141               	__c.5152:
  2142 0000 4D25 643E 		.string	"M%d> "
  2142      2000 
- 2143               		.section	.progmem.data.__c.5206,"a",@progbits
- 2146               	__c.5206:
+ 2143               		.section	.progmem.data.__c.5150,"a",@progbits
+ 2146               	__c.5150:
  2147 0000 3F00      		.string	"?"
- 2148               		.section	.progmem.data.__c.5203,"a",@progbits
- 2151               	__c.5203:
+ 2148               		.section	.progmem.data.__c.5147,"a",@progbits
+ 2151               	__c.5147:
  2152 0000 7365 7420 		.string	"set default\n"
  2152      6465 6661 
  2152      756C 740A 
  2152      00
- 2153               		.section	.progmem.data.__c.5189,"a",@progbits
- 2156               	__c.5189:
+ 2153               		.section	.progmem.data.__c.5133,"a",@progbits
+ 2156               	__c.5133:
  2157 0000 433E 2000 		.string	"C> "
- 2158               		.section	.progmem.data.__c.5179,"a",@progbits
- 2161               	__c.5179:
+ 2158               		.section	.progmem.data.__c.5123,"a",@progbits
+ 2161               	__c.5123:
  2162 0000 7768 6572 		.string	"where delta: cursor=%d, wheel=%d\nSee http://en.wikipedia.org/wiki/Mouse_keys\n"
  2162      6520 6465 
  2162      6C74 613A 
  2162      2063 7572 
  2162      736F 723D 
- 2163               		.section	.progmem.data.__c.5177,"a",@progbits
- 2166               	__c.5177:
+ 2163               		.section	.progmem.data.__c.5121,"a",@progbits
+ 2166               	__c.5121:
  2167 0000 0A09 2D20 		.string	"\n\t- Mousekey -\nESC/q:\tquit\n1:\tdelay(*10ms)\n2:\tinterval(ms)\n3:\tmax_speed\n4:\tti
  2167      4D6F 7573 
  2167      656B 6579 
  2167      202D 0A45 
  2167      5343 2F71 
- 2168               		.section	.progmem.data.__c.5082,"a",@progbits
- 2171               	__c.5082:
+ 2168               		.section	.progmem.data.__c.5026,"a",@progbits
+ 2171               	__c.5026:
  2172 0000 3F00      		.string	"?"
- 2173               		.section	.progmem.data.__c.5079,"a",@progbits
- 2176               	__c.5079:
+ 2173               		.section	.progmem.data.__c.5023,"a",@progbits
+ 2176               	__c.5023:
  2177 0000 4D3E 2000 		.string	"M> "
- 2178               		.section	.progmem.data.__c.5084,"a",@progbits
- 2181               	__c.5084:
+ 2178               		.section	.progmem.data.__c.5028,"a",@progbits
+ 2181               	__c.5028:
  2182 0000 433E 2000 		.string	"C> "
- 2183               		.section	.progmem.data.__c.5228,"a",@progbits
- 2186               	__c.5228:
+ 2183               		.section	.progmem.data.__c.5172,"a",@progbits
+ 2186               	__c.5172:
  2187 0000 4C25 640A 		.string	"L%d\n"
  2187      00
- 2188               		.section	.progmem.data.__c.5068,"a",@progbits
- 2191               	__c.5068:
+ 2188               		.section	.progmem.data.__c.5012,"a",@progbits
+ 2191               	__c.5012:
  2192 0000 0A09 2D20 		.string	"\n\t- Console -\nESC/q:\tquit\nm:\tmousekey\n"
  2192      436F 6E73 
  2192      6F6C 6520 
  2192      2D0A 4553 
  2192      432F 713A 
- 2193               		.section	.progmem.data.__c.4893,"a",@progbits
- 2196               	__c.4893:
+ 2193               		.section	.progmem.data.__c.4837,"a",@progbits
+ 2196               	__c.4837:
  2197 0000 0A09 2D20 		.string	"\n\t- Magic -\nd:\tdebug\nx:\tdebug matrix\nk:\tdebug keyboard\nm:\tdebug mouse\nv:\tvers
  2197      4D61 6769 
  2197      6320 2D0A 
  2197      643A 0964 
  2197      6562 7567 
- 2198               		.section	.progmem.data.__c.4988,"a",@progbits
- 2201               	__c.4988:
+ 2198               		.section	.progmem.data.__c.4932,"a",@progbits
+ 2201               	__c.4932:
  2202 0000 0A00      		.string	"\n"
- 2203               		.section	.progmem.data.__c.4986,"a",@progbits
- 2206               	__c.4986:
+ 2203               		.section	.progmem.data.__c.4930,"a",@progbits
+ 2206               	__c.4930:
  2207 0000 2575 00   		.string	"%u"
- 2208               		.section	.progmem.data.__c.4984,"a",@progbits
- 2211               	__c.4984:
+ 2208               		.section	.progmem.data.__c.4928,"a",@progbits
+ 2211               	__c.4928:
  2212 0000 2E6E 6B72 		.string	".nkro: "
  2212      6F3A 2000 
- 2213               		.section	.progmem.data.__c.4982,"a",@progbits
- 2216               	__c.4982:
+ 2213               		.section	.progmem.data.__c.4926,"a",@progbits
+ 2216               	__c.4926:
  2217 0000 0A00      		.string	"\n"
- 2218               		.section	.progmem.data.__c.4980,"a",@progbits
- 2221               	__c.4980:
+ 2218               		.section	.progmem.data.__c.4924,"a",@progbits
+ 2221               	__c.4924:
  2222 0000 2575 00   		.string	"%u"
- 2223               		.section	.progmem.data.__c.4978,"a",@progbits
- 2226               	__c.4978:
+ 2223               		.section	.progmem.data.__c.4922,"a",@progbits
+ 2226               	__c.4922:
  2227 0000 2E73 7761 		.string	".swap_backslash_backspace: "
  2227      705F 6261 
  2227      636B 736C 
  2227      6173 685F 
  2227      6261 636B 
- 2228               		.section	.progmem.data.__c.4976,"a",@progbits
- 2231               	__c.4976:
+ 2228               		.section	.progmem.data.__c.4920,"a",@progbits
+ 2231               	__c.4920:
  2232 0000 0A00      		.string	"\n"
- 2233               		.section	.progmem.data.__c.4974,"a",@progbits
- 2236               	__c.4974:
+ 2233               		.section	.progmem.data.__c.4918,"a",@progbits
+ 2236               	__c.4918:
  2237 0000 2575 00   		.string	"%u"
- 2238               		.section	.progmem.data.__c.4972,"a",@progbits
- 2241               	__c.4972:
+ 2238               		.section	.progmem.data.__c.4916,"a",@progbits
+ 2241               	__c.4916:
  2242 0000 2E73 7761 		.string	".swap_grave_esc: "
  2242      705F 6772 
  2242      6176 655F 
  2242      6573 633A 
  2242      2000 
- 2243               		.section	.progmem.data.__c.4970,"a",@progbits
- 2246               	__c.4970:
+ 2243               		.section	.progmem.data.__c.4914,"a",@progbits
+ 2246               	__c.4914:
  2247 0000 0A00      		.string	"\n"
- 2248               		.section	.progmem.data.__c.4968,"a",@progbits
- 2251               	__c.4968:
+ 2248               		.section	.progmem.data.__c.4912,"a",@progbits
+ 2251               	__c.4912:
  2252 0000 2575 00   		.string	"%u"
- 2253               		.section	.progmem.data.__c.4966,"a",@progbits
- 2256               	__c.4966:
+ 2253               		.section	.progmem.data.__c.4910,"a",@progbits
+ 2256               	__c.4910:
  2257 0000 2E6E 6F5F 		.string	".no_gui: "
  2257      6775 693A 
  2257      2000 
- 2258               		.section	.progmem.data.__c.4964,"a",@progbits
- 2261               	__c.4964:
+ 2258               		.section	.progmem.data.__c.4908,"a",@progbits
+ 2261               	__c.4908:
  2262 0000 0A00      		.string	"\n"
- 2263               		.section	.progmem.data.__c.4962,"a",@progbits
- 2266               	__c.4962:
+ 2263               		.section	.progmem.data.__c.4906,"a",@progbits
+ 2266               	__c.4906:
  2267 0000 2575 00   		.string	"%u"
- 2268               		.section	.progmem.data.__c.4960,"a",@progbits
- 2271               	__c.4960:
+ 2268               		.section	.progmem.data.__c.4904,"a",@progbits
+ 2271               	__c.4904:
  2272 0000 2E73 7761 		.string	".swap_ralt_rgui: "
  2272      705F 7261 
  2272      6C74 5F72 
  2272      6775 693A 
  2272      2000 
- 2273               		.section	.progmem.data.__c.4958,"a",@progbits
- 2276               	__c.4958:
+ 2273               		.section	.progmem.data.__c.4902,"a",@progbits
+ 2276               	__c.4902:
  2277 0000 0A00      		.string	"\n"
- 2278               		.section	.progmem.data.__c.4956,"a",@progbits
- 2281               	__c.4956:
+ 2278               		.section	.progmem.data.__c.4900,"a",@progbits
+ 2281               	__c.4900:
  2282 0000 2575 00   		.string	"%u"
- 2283               		.section	.progmem.data.__c.4954,"a",@progbits
- 2286               	__c.4954:
+ 2283               		.section	.progmem.data.__c.4898,"a",@progbits
+ 2286               	__c.4898:
  2287 0000 2E73 7761 		.string	".swap_lalt_lgui: "
  2287      705F 6C61 
  2287      6C74 5F6C 
  2287      6775 693A 
  2287      2000 
- 2288               		.section	.progmem.data.__c.4952,"a",@progbits
- 2291               	__c.4952:
+ 2288               		.section	.progmem.data.__c.4896,"a",@progbits
+ 2291               	__c.4896:
  2292 0000 0A00      		.string	"\n"
- 2293               		.section	.progmem.data.__c.4950,"a",@progbits
- 2296               	__c.4950:
+ 2293               		.section	.progmem.data.__c.4894,"a",@progbits
+ 2296               	__c.4894:
  2297 0000 2575 00   		.string	"%u"
- 2298               		.section	.progmem.data.__c.4948,"a",@progbits
- 2301               	__c.4948:
+ 2298               		.section	.progmem.data.__c.4892,"a",@progbits
+ 2301               	__c.4892:
  2302 0000 2E63 6170 		.string	".capslock_to_control: "
  2302      736C 6F63 
  2302      6B5F 746F 
  2302      5F63 6F6E 
  2302      7472 6F6C 
- 2303               		.section	.progmem.data.__c.4946,"a",@progbits
- 2306               	__c.4946:
+ 2303               		.section	.progmem.data.__c.4890,"a",@progbits
+ 2306               	__c.4890:
  2307 0000 0A00      		.string	"\n"
- 2308               		.section	.progmem.data.__c.4944,"a",@progbits
- 2311               	__c.4944:
+ 2308               		.section	.progmem.data.__c.4888,"a",@progbits
+ 2311               	__c.4888:
  2312 0000 2575 00   		.string	"%u"
- 2313               		.section	.progmem.data.__c.4942,"a",@progbits
- 2316               	__c.4942:
+ 2313               		.section	.progmem.data.__c.4886,"a",@progbits
+ 2316               	__c.4886:
  2317 0000 2E73 7761 		.string	".swap_control_capslock: "
  2317      705F 636F 
  2317      6E74 726F 
  2317      6C5F 6361 
  2317      7073 6C6F 
- 2318               		.section	.progmem.data.__c.4940,"a",@progbits
- 2321               	__c.4940:
+ 2318               		.section	.progmem.data.__c.4884,"a",@progbits
+ 2321               	__c.4884:
  2322 0000 0A00      		.string	"\n"
- 2323               		.section	.progmem.data.__c.4938,"a",@progbits
- 2326               	__c.4938:
+ 2323               		.section	.progmem.data.__c.4882,"a",@progbits
+ 2326               	__c.4882:
  2327 0000 2530 3258 		.string	"%02X"
  2327      00
- 2328               		.section	.progmem.data.__c.4936,"a",@progbits
- 2331               	__c.4936:
+ 2328               		.section	.progmem.data.__c.4880,"a",@progbits
+ 2331               	__c.4880:
  2332 0000 6B65 796D 		.string	"keymap_config.raw: "
  2332      6170 5F63 
  2332      6F6E 6669 
  2332      672E 7261 
  2332      773A 2000 
- 2333               		.section	.progmem.data.__c.4933,"a",@progbits
- 2336               	__c.4933:
+ 2333               		.section	.progmem.data.__c.4877,"a",@progbits
+ 2336               	__c.4877:
  2337 0000 0A00      		.string	"\n"
- 2338               		.section	.progmem.data.__c.4931,"a",@progbits
- 2341               	__c.4931:
+ 2338               		.section	.progmem.data.__c.4875,"a",@progbits
+ 2341               	__c.4875:
  2342 0000 2575 00   		.string	"%u"
- 2343               		.section	.progmem.data.__c.4929,"a",@progbits
- 2346               	__c.4929:
+ 2343               		.section	.progmem.data.__c.4873,"a",@progbits
+ 2346               	__c.4873:
  2347 0000 2E6D 6F75 		.string	".mouse: "
  2347      7365 3A20 
  2347      00
- 2348               		.section	.progmem.data.__c.4927,"a",@progbits
- 2351               	__c.4927:
+ 2348               		.section	.progmem.data.__c.4871,"a",@progbits
+ 2351               	__c.4871:
  2352 0000 0A00      		.string	"\n"
- 2353               		.section	.progmem.data.__c.4925,"a",@progbits
- 2356               	__c.4925:
+ 2353               		.section	.progmem.data.__c.4869,"a",@progbits
+ 2356               	__c.4869:
  2357 0000 2575 00   		.string	"%u"
- 2358               		.section	.progmem.data.__c.4923,"a",@progbits
- 2361               	__c.4923:
+ 2358               		.section	.progmem.data.__c.4867,"a",@progbits
+ 2361               	__c.4867:
  2362 0000 2E6B 6579 		.string	".keyboard: "
  2362      626F 6172 
  2362      643A 2000 
- 2363               		.section	.progmem.data.__c.4921,"a",@progbits
- 2366               	__c.4921:
+ 2363               		.section	.progmem.data.__c.4865,"a",@progbits
+ 2366               	__c.4865:
  2367 0000 0A00      		.string	"\n"
- 2368               		.section	.progmem.data.__c.4919,"a",@progbits
- 2371               	__c.4919:
+ 2368               		.section	.progmem.data.__c.4863,"a",@progbits
+ 2371               	__c.4863:
  2372 0000 2575 00   		.string	"%u"
- 2373               		.section	.progmem.data.__c.4917,"a",@progbits
- 2376               	__c.4917:
+ 2373               		.section	.progmem.data.__c.4861,"a",@progbits
+ 2376               	__c.4861:
  2377 0000 2E6D 6174 		.string	".matrix: "
  2377      7269 783A 
  2377      2000 
- 2378               		.section	.progmem.data.__c.4915,"a",@progbits
- 2381               	__c.4915:
+ 2378               		.section	.progmem.data.__c.4859,"a",@progbits
+ 2381               	__c.4859:
  2382 0000 0A00      		.string	"\n"
- 2383               		.section	.progmem.data.__c.4913,"a",@progbits
- 2386               	__c.4913:
+ 2383               		.section	.progmem.data.__c.4857,"a",@progbits
+ 2386               	__c.4857:
  2387 0000 2575 00   		.string	"%u"
- 2388               		.section	.progmem.data.__c.4911,"a",@progbits
- 2391               	__c.4911:
+ 2388               		.section	.progmem.data.__c.4855,"a",@progbits
+ 2391               	__c.4855:
  2392 0000 2E65 6E61 		.string	".enable: "
  2392      626C 653A 
  2392      2000 
- 2393               		.section	.progmem.data.__c.4909,"a",@progbits
- 2396               	__c.4909:
+ 2393               		.section	.progmem.data.__c.4853,"a",@progbits
+ 2396               	__c.4853:
  2397 0000 0A00      		.string	"\n"
- 2398               		.section	.progmem.data.__c.4907,"a",@progbits
- 2401               	__c.4907:
+ 2398               		.section	.progmem.data.__c.4851,"a",@progbits
+ 2401               	__c.4851:
  2402 0000 2530 3258 		.string	"%02X"
  2402      00
- 2403               		.section	.progmem.data.__c.4905,"a",@progbits
- 2406               	__c.4905:
+ 2403               		.section	.progmem.data.__c.4849,"a",@progbits
+ 2406               	__c.4849:
  2407 0000 6465 6275 		.string	"debug_config.raw: "
  2407      675F 636F 
  2407      6E66 6967 
  2407      2E72 6177 
  2407      3A20 00
- 2408               		.section	.progmem.data.__c.4902,"a",@progbits
- 2411               	__c.4902:
+ 2408               		.section	.progmem.data.__c.4846,"a",@progbits
+ 2411               	__c.4846:
  2412 0000 0A00      		.string	"\n"
- 2413               		.section	.progmem.data.__c.4900,"a",@progbits
- 2416               	__c.4900:
+ 2413               		.section	.progmem.data.__c.4844,"a",@progbits
+ 2416               	__c.4844:
  2417 0000 2575 00   		.string	"%u"
- 2418               		.section	.progmem.data.__c.4898,"a",@progbits
- 2421               	__c.4898:
+ 2418               		.section	.progmem.data.__c.4842,"a",@progbits
+ 2421               	__c.4842:
  2422 0000 6465 6661 		.string	"default_layer: "
  2422      756C 745F 
  2422      6C61 7965 
  2422      723A 2000 
- 2423               		.section	.progmem.data.__c.5063,"a",@progbits
- 2426               	__c.5063:
+ 2423               		.section	.progmem.data.__c.5007,"a",@progbits
+ 2426               	__c.5007:
  2427 0000 3F00      		.string	"?"
- 2428               		.section	.progmem.data.__c.5054,"a",@progbits
- 2431               	__c.5054:
+ 2428               		.section	.progmem.data.__c.4998,"a",@progbits
+ 2431               	__c.4998:
  2432 0000 4E4B 524F 		.string	"NKRO: off\n"
  2432      3A20 6F66 
  2432      660A 00
- 2433               		.section	.progmem.data.__c.5052,"a",@progbits
- 2436               	__c.5052:
+ 2433               		.section	.progmem.data.__c.4996,"a",@progbits
+ 2436               	__c.4996:
  2437 0000 4E4B 524F 		.string	"NKRO: on\n"
  2437      3A20 6F6E 
  2437      0A00 
- 2438               		.section	.progmem.data.__c.5049,"a",@progbits
- 2441               	__c.5049:
+ 2438               		.section	.progmem.data.__c.4993,"a",@progbits
+ 2441               	__c.4993:
  2442 0000 7469 6D65 		.string	"timer_read32(): %04lX\n"
  2442      725F 7265 
  2442      6164 3332 
  2442      2829 3A20 
  2442      2530 346C 
- 2443               		.section	.progmem.data.__c.5047,"a",@progbits
- 2446               	__c.5047:
+ 2443               		.section	.progmem.data.__c.4991,"a",@progbits
+ 2446               	__c.4991:
  2447 0000 6B65 7962 		.string	"keyboard_nkro: %X\n"
  2447      6F61 7264 
  2447      5F6E 6B72 
  2447      6F3A 2025 
  2447      580A 00
- 2448               		.section	.progmem.data.__c.5045,"a",@progbits
- 2451               	__c.5045:
+ 2448               		.section	.progmem.data.__c.4989,"a",@progbits
+ 2451               	__c.4989:
  2452 0000 6B65 7962 		.string	"keyboard_idle: %X\n"
  2452      6F61 7264 
  2452      5F69 646C 
  2452      653A 2025 
  2452      580A 00
- 2453               		.section	.progmem.data.__c.5043,"a",@progbits
- 2456               	__c.5043:
+ 2453               		.section	.progmem.data.__c.4987,"a",@progbits
+ 2456               	__c.4987:
  2457 0000 6B65 7962 		.string	"keyboard_protocol: %X\n"
  2457      6F61 7264 
  2457      5F70 726F 
  2457      746F 636F 
  2457      6C3A 2025 
- 2458               		.section	.progmem.data.__c.5041,"a",@progbits
- 2461               	__c.5041:
+ 2458               		.section	.progmem.data.__c.4985,"a",@progbits
+ 2461               	__c.4985:
  2462 0000 686F 7374 		.string	"host_keyboard_leds(): %X\n"
  2462      5F6B 6579 
  2462      626F 6172 
  2462      645F 6C65 
  2462      6473 2829 
- 2463               		.section	.progmem.data.__c.5039,"a",@progbits
- 2466               	__c.5039:
+ 2463               		.section	.progmem.data.__c.4983,"a",@progbits
+ 2466               	__c.4983:
  2467 0000 0A09 2D20 		.string	"\n\t- Status -\n"
  2467      5374 6174 
  2467      7573 202D 
  2467      0A00 
- 2468               		.section	.progmem.data.__c.5036,"a",@progbits
- 2471               	__c.5036:
- 2472 0000 4743 433A 		.string	"GCC: 4.9.3 AVR-LIBC: 1.8.1 AVR_ARCH: avr5\n"
+ 2468               		.section	.progmem.data.__c.4980,"a",@progbits
+ 2471               	__c.4980:
+ 2472 0000 4743 433A 		.string	"GCC: 4.9.2 AVR-LIBC: 1.8.0svn AVR_ARCH: avr5\n"
  2472      2034 2E39 
- 2472      2E33 2041 
+ 2472      2E32 2041 
  2472      5652 2D4C 
  2472      4942 433A 
- 2473               		.section	.progmem.data.__c.5034,"a",@progbits
- 2476               	__c.5034:
+ 2473               		.section	.progmem.data.__c.4978,"a",@progbits
+ 2476               	__c.4978:
  2477 0000 4F50 5449 		.string	"OPTIONS: LUFA BOOTMAGIC MOUSEKEY EXTRAKEY CONSOLE COMMAND NKRO 4096\n"
  2477      4F4E 533A 
  2477      204C 5546 
  2477      4120 424F 
  2477      4F54 4D41 
- 2478               		.section	.progmem.data.__c.5032,"a",@progbits
- 2481               	__c.5032:
- 2482 0000 4255 494C 		.string	"BUILD: unknown (19:20:40 Jul  3 2016)\n"
+ 2478               		.section	.progmem.data.__c.4976,"a",@progbits
+ 2481               	__c.4976:
+ 2482 0000 4255 494C 		.string	"BUILD: unknown (17:13:44 Jul 10 2016)\n"
  2482      443A 2075 
  2482      6E6B 6E6F 
  2482      776E 2028 
- 2482      3139 3A32 
- 2483               		.section	.progmem.data.__c.5030,"a",@progbits
- 2486               	__c.5030:
- 2487 0000 5649 443A 		.string	"VID: 0xFEED(TMK) PID: 0x6060(Custom Keyboard) VER: 0x0001\n"
+ 2482      3137 3A31 
+ 2483               		.section	.progmem.data.__c.4974,"a",@progbits
+ 2486               	__c.4974:
+ 2487 0000 5649 443A 		.string	"VID: 0xFEED(tmk) PID: 0x6060(Custom Keyboard) VER: 0x0001\n"
  2487      2030 7846 
  2487      4545 4428 
- 2487      544D 4B29 
+ 2487      746D 6B29 
  2487      2050 4944 
- 2488               		.section	.progmem.data.__c.5028,"a",@progbits
- 2491               	__c.5028:
+ 2488               		.section	.progmem.data.__c.4972,"a",@progbits
+ 2491               	__c.4972:
  2492 0000 4445 5343 		.string	"DESC: Custom Keyboard\n"
  2492      3A20 4375 
  2492      7374 6F6D 
  2492      204B 6579 
  2492      626F 6172 
- 2493               		.section	.progmem.data.__c.5026,"a",@progbits
- 2496               	__c.5026:
+ 2493               		.section	.progmem.data.__c.4970,"a",@progbits
+ 2496               	__c.4970:
  2497 0000 0A09 2D20 		.string	"\n\t- Version -\n"
  2497      5665 7273 
  2497      696F 6E20 
  2497      2D0A 00
- 2498               		.section	.progmem.data.__c.5023,"a",@progbits
- 2501               	__c.5023:
+ 2498               		.section	.progmem.data.__c.4967,"a",@progbits
+ 2501               	__c.4967:
  2502 0000 0A6D 6F75 		.string	"\nmouse: off\n"
  2502      7365 3A20 
  2502      6F66 660A 
  2502      00
- 2503               		.section	.progmem.data.__c.5021,"a",@progbits
- 2506               	__c.5021:
+ 2503               		.section	.progmem.data.__c.4965,"a",@progbits
+ 2506               	__c.4965:
  2507 0000 0A6D 6F75 		.string	"\nmouse: on\n"
  2507      7365 3A20 
  2507      6F6E 0A00 
- 2508               		.section	.progmem.data.__c.5018,"a",@progbits
- 2511               	__c.5018:
+ 2508               		.section	.progmem.data.__c.4962,"a",@progbits
+ 2511               	__c.4962:
  2512 0000 0A6B 6579 		.string	"\nkeyboard: off\n"
  2512      626F 6172 
  2512      643A 206F 
  2512      6666 0A00 
- 2513               		.section	.progmem.data.__c.5016,"a",@progbits
- 2516               	__c.5016:
+ 2513               		.section	.progmem.data.__c.4960,"a",@progbits
+ 2516               	__c.4960:
  2517 0000 0A6B 6579 		.string	"\nkeyboard: on\n"
  2517      626F 6172 
  2517      643A 206F 
  2517      6E0A 00
- 2518               		.section	.progmem.data.__c.5013,"a",@progbits
- 2521               	__c.5013:
+ 2518               		.section	.progmem.data.__c.4957,"a",@progbits
+ 2521               	__c.4957:
  2522 0000 0A6D 6174 		.string	"\nmatrix: off\n"
  2522      7269 783A 
  2522      206F 6666 
  2522      0A00 
- 2523               		.section	.progmem.data.__c.5011,"a",@progbits
- 2526               	__c.5011:
+ 2523               		.section	.progmem.data.__c.4955,"a",@progbits
+ 2526               	__c.4955:
  2527 0000 0A6D 6174 		.string	"\nmatrix: on\n"
  2527      7269 783A 
  2527      206F 6E0A 
  2527      00
- 2528               		.section	.progmem.data.__c.5008,"a",@progbits
- 2531               	__c.5008:
+ 2528               		.section	.progmem.data.__c.4952,"a",@progbits
+ 2531               	__c.4952:
  2532 0000 0A64 6562 		.string	"\ndebug: on\n"
  2532      7567 3A20 
  2532      6F6E 0A00 
- 2533               		.section	.progmem.data.__c.5006,"a",@progbits
- 2536               	__c.5006:
+ 2533               		.section	.progmem.data.__c.4950,"a",@progbits
+ 2536               	__c.4950:
  2537 0000 0A64 6562 		.string	"\ndebug: off\n"
  2537      7567 3A20 
  2537      6F66 660A 
  2537      00
- 2538               		.section	.progmem.data.__c.5003,"a",@progbits
- 2541               	__c.5003:
+ 2538               		.section	.progmem.data.__c.4947,"a",@progbits
+ 2541               	__c.4947:
  2542 0000 0A0A 626F 		.string	"\n\nbootloader... "
  2542      6F74 6C6F 
  2542      6164 6572 
  2542      2E2E 2E20 
  2542      00
- 2543               		.section	.progmem.data.__c.5000,"a",@progbits
- 2546               	__c.5000:
+ 2543               		.section	.progmem.data.__c.4944,"a",@progbits
+ 2546               	__c.4944:
  2547 0000 433E 2000 		.string	"C> "
- 2548               		.section	.progmem.data.__c.4994,"a",@progbits
- 2551               	__c.4994:
+ 2548               		.section	.progmem.data.__c.4938,"a",@progbits
+ 2551               	__c.4938:
  2552 0000 6565 636F 		.string	"eeconfig:\n"
  2552      6E66 6967 
  2552      3A0A 00
@@ -3529,7 +3529,7 @@
  2563 0000 00        		.zero	1
  2564               		.text
  2565               	.Letext0:
- 2566               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 2566               		.file 3 "/usr/lib/avr/include/stdint.h"
  2567               		.file 4 "../tmk_core/common/report.h"
  2568               		.file 5 "../tmk_core/common/keymap.h"
  2569               		.file 6 "../tmk_core/common/debug.h"
@@ -3544,137 +3544,137 @@
  2578               		.file 15 "../tmk_core/common/keycode.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 command.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:12     .text.mousekey_console_help:0000000000000000 mousekey_console_help
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2166   .progmem.data.__c.5177:0000000000000000 __c.5177
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2161   .progmem.data.__c.5179:0000000000000000 __c.5179
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:65     .text.mousekey_param_inc:0000000000000000 mousekey_param_inc
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2036   .progmem.data.__c.5133:0000000000000000 __c.5133
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2031   .progmem.data.__c.5137:0000000000000000 __c.5137
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2026   .progmem.data.__c.5140:0000000000000000 __c.5140
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2021   .progmem.data.__c.5143:0000000000000000 __c.5143
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2016   .progmem.data.__c.5146:0000000000000000 __c.5146
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2011   .progmem.data.__c.5149:0000000000000000 __c.5149
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:338    .text.mousekey_param_dec:0000000000000000 mousekey_param_dec
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2006   .progmem.data.__c.5156:0000000000000000 __c.5156
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2001   .progmem.data.__c.5160:0000000000000000 __c.5160
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1996   .progmem.data.__c.5163:0000000000000000 __c.5163
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1991   .progmem.data.__c.5166:0000000000000000 __c.5166
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1986   .progmem.data.__c.5169:0000000000000000 __c.5169
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1981   .progmem.data.__c.5172:0000000000000000 __c.5172
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:556    .text.switch_default_layer:0000000000000000 switch_default_layer
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2186   .progmem.data.__c.5228:0000000000000000 __c.5228
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:625    .text.command_common:0000000000000000 command_common
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2191   .progmem.data.__c.5068:0000000000000000 __c.5068
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2546   .progmem.data.__c.5000:0000000000000000 __c.5000
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2562   .bss.command_state:0000000000000000 command_state
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2496   .progmem.data.__c.5026:0000000000000000 __c.5026
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2491   .progmem.data.__c.5028:0000000000000000 __c.5028
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2486   .progmem.data.__c.5030:0000000000000000 __c.5030
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2481   .progmem.data.__c.5032:0000000000000000 __c.5032
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2476   .progmem.data.__c.5034:0000000000000000 __c.5034
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2471   .progmem.data.__c.5036:0000000000000000 __c.5036
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2541   .progmem.data.__c.5003:0000000000000000 __c.5003
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2551   .progmem.data.__c.4994:0000000000000000 __c.4994
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2421   .progmem.data.__c.4898:0000000000000000 __c.4898
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2416   .progmem.data.__c.4900:0000000000000000 __c.4900
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2411   .progmem.data.__c.4902:0000000000000000 __c.4902
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2406   .progmem.data.__c.4905:0000000000000000 __c.4905
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2401   .progmem.data.__c.4907:0000000000000000 __c.4907
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2396   .progmem.data.__c.4909:0000000000000000 __c.4909
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2391   .progmem.data.__c.4911:0000000000000000 __c.4911
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2386   .progmem.data.__c.4913:0000000000000000 __c.4913
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2381   .progmem.data.__c.4915:0000000000000000 __c.4915
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2376   .progmem.data.__c.4917:0000000000000000 __c.4917
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2371   .progmem.data.__c.4919:0000000000000000 __c.4919
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2366   .progmem.data.__c.4921:0000000000000000 __c.4921
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2361   .progmem.data.__c.4923:0000000000000000 __c.4923
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2356   .progmem.data.__c.4925:0000000000000000 __c.4925
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2351   .progmem.data.__c.4927:0000000000000000 __c.4927
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2346   .progmem.data.__c.4929:0000000000000000 __c.4929
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2341   .progmem.data.__c.4931:0000000000000000 __c.4931
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2336   .progmem.data.__c.4933:0000000000000000 __c.4933
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2331   .progmem.data.__c.4936:0000000000000000 __c.4936
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2326   .progmem.data.__c.4938:0000000000000000 __c.4938
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2321   .progmem.data.__c.4940:0000000000000000 __c.4940
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2316   .progmem.data.__c.4942:0000000000000000 __c.4942
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2311   .progmem.data.__c.4944:0000000000000000 __c.4944
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2306   .progmem.data.__c.4946:0000000000000000 __c.4946
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2301   .progmem.data.__c.4948:0000000000000000 __c.4948
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2296   .progmem.data.__c.4950:0000000000000000 __c.4950
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2291   .progmem.data.__c.4952:0000000000000000 __c.4952
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2286   .progmem.data.__c.4954:0000000000000000 __c.4954
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2281   .progmem.data.__c.4956:0000000000000000 __c.4956
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2276   .progmem.data.__c.4958:0000000000000000 __c.4958
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2271   .progmem.data.__c.4960:0000000000000000 __c.4960
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2266   .progmem.data.__c.4962:0000000000000000 __c.4962
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2261   .progmem.data.__c.4964:0000000000000000 __c.4964
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2256   .progmem.data.__c.4966:0000000000000000 __c.4966
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2251   .progmem.data.__c.4968:0000000000000000 __c.4968
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2246   .progmem.data.__c.4970:0000000000000000 __c.4970
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2241   .progmem.data.__c.4972:0000000000000000 __c.4972
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2236   .progmem.data.__c.4974:0000000000000000 __c.4974
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2231   .progmem.data.__c.4976:0000000000000000 __c.4976
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2226   .progmem.data.__c.4978:0000000000000000 __c.4978
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2221   .progmem.data.__c.4980:0000000000000000 __c.4980
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2216   .progmem.data.__c.4982:0000000000000000 __c.4982
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2211   .progmem.data.__c.4984:0000000000000000 __c.4984
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2206   .progmem.data.__c.4986:0000000000000000 __c.4986
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2201   .progmem.data.__c.4988:0000000000000000 __c.4988
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2196   .progmem.data.__c.4893:0000000000000000 __c.4893
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2536   .progmem.data.__c.5006:0000000000000000 __c.5006
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2531   .progmem.data.__c.5008:0000000000000000 __c.5008
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2526   .progmem.data.__c.5011:0000000000000000 __c.5011
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2521   .progmem.data.__c.5013:0000000000000000 __c.5013
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2516   .progmem.data.__c.5016:0000000000000000 __c.5016
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2511   .progmem.data.__c.5018:0000000000000000 __c.5018
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2506   .progmem.data.__c.5021:0000000000000000 __c.5021
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2501   .progmem.data.__c.5023:0000000000000000 __c.5023
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2466   .progmem.data.__c.5039:0000000000000000 __c.5039
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2461   .progmem.data.__c.5041:0000000000000000 __c.5041
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2456   .progmem.data.__c.5043:0000000000000000 __c.5043
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2451   .progmem.data.__c.5045:0000000000000000 __c.5045
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2446   .progmem.data.__c.5047:0000000000000000 __c.5047
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2441   .progmem.data.__c.5049:0000000000000000 __c.5049
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2436   .progmem.data.__c.5052:0000000000000000 __c.5052
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2431   .progmem.data.__c.5054:0000000000000000 __c.5054
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2426   .progmem.data.__c.5063:0000000000000000 __c.5063
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1467   .text.command_extra:0000000000000000 command_extra
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1486   .text.command_console_extra:0000000000000000 command_console_extra
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1505   .text.command_proc:0000000000000000 command_proc
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2176   .progmem.data.__c.5079:0000000000000000 __c.5079
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2181   .progmem.data.__c.5084:0000000000000000 __c.5084
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2171   .progmem.data.__c.5082:0000000000000000 __c.5082
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2151   .progmem.data.__c.5203:0000000000000000 __c.5203
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2556   .bss.mousekey_param:0000000000000000 mousekey_param
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2156   .progmem.data.__c.5189:0000000000000000 __c.5189
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2131   .progmem.data.__c.5090:0000000000000000 __c.5090
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2126   .progmem.data.__c.5092:0000000000000000 __c.5092
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2121   .progmem.data.__c.5094:0000000000000000 __c.5094
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2116   .progmem.data.__c.5096:0000000000000000 __c.5096
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2111   .progmem.data.__c.5098:0000000000000000 __c.5098
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2106   .progmem.data.__c.5100:0000000000000000 __c.5100
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2101   .progmem.data.__c.5102:0000000000000000 __c.5102
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2096   .progmem.data.__c.5104:0000000000000000 __c.5104
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2091   .progmem.data.__c.5106:0000000000000000 __c.5106
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2086   .progmem.data.__c.5108:0000000000000000 __c.5108
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2081   .progmem.data.__c.5110:0000000000000000 __c.5110
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2076   .progmem.data.__c.5112:0000000000000000 __c.5112
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2071   .progmem.data.__c.5114:0000000000000000 __c.5114
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2066   .progmem.data.__c.5116:0000000000000000 __c.5116
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2061   .progmem.data.__c.5118:0000000000000000 __c.5118
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2056   .progmem.data.__c.5120:0000000000000000 __c.5120
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2051   .progmem.data.__c.5122:0000000000000000 __c.5122
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2046   .progmem.data.__c.5124:0000000000000000 __c.5124
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2041   .progmem.data.__c.5126:0000000000000000 __c.5126
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:1967   .rodata.CSWTCH.43:0000000000000000 CSWTCH.43
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2146   .progmem.data.__c.5206:0000000000000000 __c.5206
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2141   .progmem.data.__c.5208:0000000000000000 __c.5208
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccQKdzJe.s:2136   .progmem.data.__c.5210:0000000000000000 __c.5210
+     /tmp/ccFsg4J5.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccFsg4J5.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccFsg4J5.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccFsg4J5.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccFsg4J5.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccFsg4J5.s:12     .text.mousekey_console_help:0000000000000000 mousekey_console_help
+     /tmp/ccFsg4J5.s:2166   .progmem.data.__c.5121:0000000000000000 __c.5121
+     /tmp/ccFsg4J5.s:2161   .progmem.data.__c.5123:0000000000000000 __c.5123
+     /tmp/ccFsg4J5.s:65     .text.mousekey_param_inc:0000000000000000 mousekey_param_inc
+     /tmp/ccFsg4J5.s:2036   .progmem.data.__c.5077:0000000000000000 __c.5077
+     /tmp/ccFsg4J5.s:2031   .progmem.data.__c.5081:0000000000000000 __c.5081
+     /tmp/ccFsg4J5.s:2026   .progmem.data.__c.5084:0000000000000000 __c.5084
+     /tmp/ccFsg4J5.s:2021   .progmem.data.__c.5087:0000000000000000 __c.5087
+     /tmp/ccFsg4J5.s:2016   .progmem.data.__c.5090:0000000000000000 __c.5090
+     /tmp/ccFsg4J5.s:2011   .progmem.data.__c.5093:0000000000000000 __c.5093
+     /tmp/ccFsg4J5.s:338    .text.mousekey_param_dec:0000000000000000 mousekey_param_dec
+     /tmp/ccFsg4J5.s:2006   .progmem.data.__c.5100:0000000000000000 __c.5100
+     /tmp/ccFsg4J5.s:2001   .progmem.data.__c.5104:0000000000000000 __c.5104
+     /tmp/ccFsg4J5.s:1996   .progmem.data.__c.5107:0000000000000000 __c.5107
+     /tmp/ccFsg4J5.s:1991   .progmem.data.__c.5110:0000000000000000 __c.5110
+     /tmp/ccFsg4J5.s:1986   .progmem.data.__c.5113:0000000000000000 __c.5113
+     /tmp/ccFsg4J5.s:1981   .progmem.data.__c.5116:0000000000000000 __c.5116
+     /tmp/ccFsg4J5.s:556    .text.switch_default_layer:0000000000000000 switch_default_layer
+     /tmp/ccFsg4J5.s:2186   .progmem.data.__c.5172:0000000000000000 __c.5172
+     /tmp/ccFsg4J5.s:625    .text.command_common:0000000000000000 command_common
+     /tmp/ccFsg4J5.s:2191   .progmem.data.__c.5012:0000000000000000 __c.5012
+     /tmp/ccFsg4J5.s:2546   .progmem.data.__c.4944:0000000000000000 __c.4944
+     /tmp/ccFsg4J5.s:2562   .bss.command_state:0000000000000000 command_state
+     /tmp/ccFsg4J5.s:2496   .progmem.data.__c.4970:0000000000000000 __c.4970
+     /tmp/ccFsg4J5.s:2491   .progmem.data.__c.4972:0000000000000000 __c.4972
+     /tmp/ccFsg4J5.s:2486   .progmem.data.__c.4974:0000000000000000 __c.4974
+     /tmp/ccFsg4J5.s:2481   .progmem.data.__c.4976:0000000000000000 __c.4976
+     /tmp/ccFsg4J5.s:2476   .progmem.data.__c.4978:0000000000000000 __c.4978
+     /tmp/ccFsg4J5.s:2471   .progmem.data.__c.4980:0000000000000000 __c.4980
+     /tmp/ccFsg4J5.s:2541   .progmem.data.__c.4947:0000000000000000 __c.4947
+     /tmp/ccFsg4J5.s:2551   .progmem.data.__c.4938:0000000000000000 __c.4938
+     /tmp/ccFsg4J5.s:2421   .progmem.data.__c.4842:0000000000000000 __c.4842
+     /tmp/ccFsg4J5.s:2416   .progmem.data.__c.4844:0000000000000000 __c.4844
+     /tmp/ccFsg4J5.s:2411   .progmem.data.__c.4846:0000000000000000 __c.4846
+     /tmp/ccFsg4J5.s:2406   .progmem.data.__c.4849:0000000000000000 __c.4849
+     /tmp/ccFsg4J5.s:2401   .progmem.data.__c.4851:0000000000000000 __c.4851
+     /tmp/ccFsg4J5.s:2396   .progmem.data.__c.4853:0000000000000000 __c.4853
+     /tmp/ccFsg4J5.s:2391   .progmem.data.__c.4855:0000000000000000 __c.4855
+     /tmp/ccFsg4J5.s:2386   .progmem.data.__c.4857:0000000000000000 __c.4857
+     /tmp/ccFsg4J5.s:2381   .progmem.data.__c.4859:0000000000000000 __c.4859
+     /tmp/ccFsg4J5.s:2376   .progmem.data.__c.4861:0000000000000000 __c.4861
+     /tmp/ccFsg4J5.s:2371   .progmem.data.__c.4863:0000000000000000 __c.4863
+     /tmp/ccFsg4J5.s:2366   .progmem.data.__c.4865:0000000000000000 __c.4865
+     /tmp/ccFsg4J5.s:2361   .progmem.data.__c.4867:0000000000000000 __c.4867
+     /tmp/ccFsg4J5.s:2356   .progmem.data.__c.4869:0000000000000000 __c.4869
+     /tmp/ccFsg4J5.s:2351   .progmem.data.__c.4871:0000000000000000 __c.4871
+     /tmp/ccFsg4J5.s:2346   .progmem.data.__c.4873:0000000000000000 __c.4873
+     /tmp/ccFsg4J5.s:2341   .progmem.data.__c.4875:0000000000000000 __c.4875
+     /tmp/ccFsg4J5.s:2336   .progmem.data.__c.4877:0000000000000000 __c.4877
+     /tmp/ccFsg4J5.s:2331   .progmem.data.__c.4880:0000000000000000 __c.4880
+     /tmp/ccFsg4J5.s:2326   .progmem.data.__c.4882:0000000000000000 __c.4882
+     /tmp/ccFsg4J5.s:2321   .progmem.data.__c.4884:0000000000000000 __c.4884
+     /tmp/ccFsg4J5.s:2316   .progmem.data.__c.4886:0000000000000000 __c.4886
+     /tmp/ccFsg4J5.s:2311   .progmem.data.__c.4888:0000000000000000 __c.4888
+     /tmp/ccFsg4J5.s:2306   .progmem.data.__c.4890:0000000000000000 __c.4890
+     /tmp/ccFsg4J5.s:2301   .progmem.data.__c.4892:0000000000000000 __c.4892
+     /tmp/ccFsg4J5.s:2296   .progmem.data.__c.4894:0000000000000000 __c.4894
+     /tmp/ccFsg4J5.s:2291   .progmem.data.__c.4896:0000000000000000 __c.4896
+     /tmp/ccFsg4J5.s:2286   .progmem.data.__c.4898:0000000000000000 __c.4898
+     /tmp/ccFsg4J5.s:2281   .progmem.data.__c.4900:0000000000000000 __c.4900
+     /tmp/ccFsg4J5.s:2276   .progmem.data.__c.4902:0000000000000000 __c.4902
+     /tmp/ccFsg4J5.s:2271   .progmem.data.__c.4904:0000000000000000 __c.4904
+     /tmp/ccFsg4J5.s:2266   .progmem.data.__c.4906:0000000000000000 __c.4906
+     /tmp/ccFsg4J5.s:2261   .progmem.data.__c.4908:0000000000000000 __c.4908
+     /tmp/ccFsg4J5.s:2256   .progmem.data.__c.4910:0000000000000000 __c.4910
+     /tmp/ccFsg4J5.s:2251   .progmem.data.__c.4912:0000000000000000 __c.4912
+     /tmp/ccFsg4J5.s:2246   .progmem.data.__c.4914:0000000000000000 __c.4914
+     /tmp/ccFsg4J5.s:2241   .progmem.data.__c.4916:0000000000000000 __c.4916
+     /tmp/ccFsg4J5.s:2236   .progmem.data.__c.4918:0000000000000000 __c.4918
+     /tmp/ccFsg4J5.s:2231   .progmem.data.__c.4920:0000000000000000 __c.4920
+     /tmp/ccFsg4J5.s:2226   .progmem.data.__c.4922:0000000000000000 __c.4922
+     /tmp/ccFsg4J5.s:2221   .progmem.data.__c.4924:0000000000000000 __c.4924
+     /tmp/ccFsg4J5.s:2216   .progmem.data.__c.4926:0000000000000000 __c.4926
+     /tmp/ccFsg4J5.s:2211   .progmem.data.__c.4928:0000000000000000 __c.4928
+     /tmp/ccFsg4J5.s:2206   .progmem.data.__c.4930:0000000000000000 __c.4930
+     /tmp/ccFsg4J5.s:2201   .progmem.data.__c.4932:0000000000000000 __c.4932
+     /tmp/ccFsg4J5.s:2196   .progmem.data.__c.4837:0000000000000000 __c.4837
+     /tmp/ccFsg4J5.s:2536   .progmem.data.__c.4950:0000000000000000 __c.4950
+     /tmp/ccFsg4J5.s:2531   .progmem.data.__c.4952:0000000000000000 __c.4952
+     /tmp/ccFsg4J5.s:2526   .progmem.data.__c.4955:0000000000000000 __c.4955
+     /tmp/ccFsg4J5.s:2521   .progmem.data.__c.4957:0000000000000000 __c.4957
+     /tmp/ccFsg4J5.s:2516   .progmem.data.__c.4960:0000000000000000 __c.4960
+     /tmp/ccFsg4J5.s:2511   .progmem.data.__c.4962:0000000000000000 __c.4962
+     /tmp/ccFsg4J5.s:2506   .progmem.data.__c.4965:0000000000000000 __c.4965
+     /tmp/ccFsg4J5.s:2501   .progmem.data.__c.4967:0000000000000000 __c.4967
+     /tmp/ccFsg4J5.s:2466   .progmem.data.__c.4983:0000000000000000 __c.4983
+     /tmp/ccFsg4J5.s:2461   .progmem.data.__c.4985:0000000000000000 __c.4985
+     /tmp/ccFsg4J5.s:2456   .progmem.data.__c.4987:0000000000000000 __c.4987
+     /tmp/ccFsg4J5.s:2451   .progmem.data.__c.4989:0000000000000000 __c.4989
+     /tmp/ccFsg4J5.s:2446   .progmem.data.__c.4991:0000000000000000 __c.4991
+     /tmp/ccFsg4J5.s:2441   .progmem.data.__c.4993:0000000000000000 __c.4993
+     /tmp/ccFsg4J5.s:2436   .progmem.data.__c.4996:0000000000000000 __c.4996
+     /tmp/ccFsg4J5.s:2431   .progmem.data.__c.4998:0000000000000000 __c.4998
+     /tmp/ccFsg4J5.s:2426   .progmem.data.__c.5007:0000000000000000 __c.5007
+     /tmp/ccFsg4J5.s:1467   .text.command_extra:0000000000000000 command_extra
+     /tmp/ccFsg4J5.s:1486   .text.command_console_extra:0000000000000000 command_console_extra
+     /tmp/ccFsg4J5.s:1505   .text.command_proc:0000000000000000 command_proc
+     /tmp/ccFsg4J5.s:2176   .progmem.data.__c.5023:0000000000000000 __c.5023
+     /tmp/ccFsg4J5.s:2181   .progmem.data.__c.5028:0000000000000000 __c.5028
+     /tmp/ccFsg4J5.s:2171   .progmem.data.__c.5026:0000000000000000 __c.5026
+     /tmp/ccFsg4J5.s:2151   .progmem.data.__c.5147:0000000000000000 __c.5147
+     /tmp/ccFsg4J5.s:2556   .bss.mousekey_param:0000000000000000 mousekey_param
+     /tmp/ccFsg4J5.s:2156   .progmem.data.__c.5133:0000000000000000 __c.5133
+     /tmp/ccFsg4J5.s:2131   .progmem.data.__c.5034:0000000000000000 __c.5034
+     /tmp/ccFsg4J5.s:2126   .progmem.data.__c.5036:0000000000000000 __c.5036
+     /tmp/ccFsg4J5.s:2121   .progmem.data.__c.5038:0000000000000000 __c.5038
+     /tmp/ccFsg4J5.s:2116   .progmem.data.__c.5040:0000000000000000 __c.5040
+     /tmp/ccFsg4J5.s:2111   .progmem.data.__c.5042:0000000000000000 __c.5042
+     /tmp/ccFsg4J5.s:2106   .progmem.data.__c.5044:0000000000000000 __c.5044
+     /tmp/ccFsg4J5.s:2101   .progmem.data.__c.5046:0000000000000000 __c.5046
+     /tmp/ccFsg4J5.s:2096   .progmem.data.__c.5048:0000000000000000 __c.5048
+     /tmp/ccFsg4J5.s:2091   .progmem.data.__c.5050:0000000000000000 __c.5050
+     /tmp/ccFsg4J5.s:2086   .progmem.data.__c.5052:0000000000000000 __c.5052
+     /tmp/ccFsg4J5.s:2081   .progmem.data.__c.5054:0000000000000000 __c.5054
+     /tmp/ccFsg4J5.s:2076   .progmem.data.__c.5056:0000000000000000 __c.5056
+     /tmp/ccFsg4J5.s:2071   .progmem.data.__c.5058:0000000000000000 __c.5058
+     /tmp/ccFsg4J5.s:2066   .progmem.data.__c.5060:0000000000000000 __c.5060
+     /tmp/ccFsg4J5.s:2061   .progmem.data.__c.5062:0000000000000000 __c.5062
+     /tmp/ccFsg4J5.s:2056   .progmem.data.__c.5064:0000000000000000 __c.5064
+     /tmp/ccFsg4J5.s:2051   .progmem.data.__c.5066:0000000000000000 __c.5066
+     /tmp/ccFsg4J5.s:2046   .progmem.data.__c.5068:0000000000000000 __c.5068
+     /tmp/ccFsg4J5.s:2041   .progmem.data.__c.5070:0000000000000000 __c.5070
+     /tmp/ccFsg4J5.s:1967   .rodata.CSWTCH.43:0000000000000000 CSWTCH.43
+     /tmp/ccFsg4J5.s:2146   .progmem.data.__c.5150:0000000000000000 __c.5150
+     /tmp/ccFsg4J5.s:2141   .progmem.data.__c.5152:0000000000000000 __c.5152
+     /tmp/ccFsg4J5.s:2136   .progmem.data.__c.5154:0000000000000000 __c.5154
 
 UNDEFINED SYMBOLS
 xputs

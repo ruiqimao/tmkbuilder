@@ -847,37 +847,37 @@
  723 0000 0000 0000 		.zero	4
  724               		.text
  725               	.Letext0:
- 726               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+ 726               		.file 2 "/usr/lib/avr/include/stdint.h"
  727               		.file 3 "../tmk_core/common/keyboard.h"
  728               		.file 4 "../tmk_core/common/action_code.h"
  729               		.file 5 "../tmk_core/common/hook.h"
  730               		.file 6 "../tmk_core/common/action.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 action_layer.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:12     .text.default_layer_state_set:0000000000000000 default_layer_state_set
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:722    .bss.default_layer_state:0000000000000000 default_layer_state
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:38     .text.layer_state_set:0000000000000000 layer_state_set
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:716    .bss.layer_state:0000000000000000 layer_state
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:64     .text.default_layer_debug:0000000000000000 default_layer_debug
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:79     .text.default_layer_set:0000000000000000 default_layer_set
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:97     .text.default_layer_or:0000000000000000 default_layer_or
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:137    .text.default_layer_and:0000000000000000 default_layer_and
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:177    .text.default_layer_xor:0000000000000000 default_layer_xor
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:217    .text.layer_clear:0000000000000000 layer_clear
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:237    .text.layer_move:0000000000000000 layer_move
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:285    .text.layer_on:0000000000000000 layer_on
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:342    .text.layer_off:0000000000000000 layer_off
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:403    .text.layer_invert:0000000000000000 layer_invert
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:460    .text.layer_or:0000000000000000 layer_or
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:500    .text.layer_and:0000000000000000 layer_and
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:540    .text.layer_xor:0000000000000000 layer_xor
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:580    .text.layer_debug:0000000000000000 layer_debug
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccc04tpn.s:595    .text.layer_switch_get_action:0000000000000000 layer_switch_get_action
+     /tmp/ccjifmO8.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccjifmO8.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccjifmO8.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccjifmO8.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccjifmO8.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccjifmO8.s:12     .text.default_layer_state_set:0000000000000000 default_layer_state_set
+     /tmp/ccjifmO8.s:722    .bss.default_layer_state:0000000000000000 default_layer_state
+     /tmp/ccjifmO8.s:38     .text.layer_state_set:0000000000000000 layer_state_set
+     /tmp/ccjifmO8.s:716    .bss.layer_state:0000000000000000 layer_state
+     /tmp/ccjifmO8.s:64     .text.default_layer_debug:0000000000000000 default_layer_debug
+     /tmp/ccjifmO8.s:79     .text.default_layer_set:0000000000000000 default_layer_set
+     /tmp/ccjifmO8.s:97     .text.default_layer_or:0000000000000000 default_layer_or
+     /tmp/ccjifmO8.s:137    .text.default_layer_and:0000000000000000 default_layer_and
+     /tmp/ccjifmO8.s:177    .text.default_layer_xor:0000000000000000 default_layer_xor
+     /tmp/ccjifmO8.s:217    .text.layer_clear:0000000000000000 layer_clear
+     /tmp/ccjifmO8.s:237    .text.layer_move:0000000000000000 layer_move
+     /tmp/ccjifmO8.s:285    .text.layer_on:0000000000000000 layer_on
+     /tmp/ccjifmO8.s:342    .text.layer_off:0000000000000000 layer_off
+     /tmp/ccjifmO8.s:403    .text.layer_invert:0000000000000000 layer_invert
+     /tmp/ccjifmO8.s:460    .text.layer_or:0000000000000000 layer_or
+     /tmp/ccjifmO8.s:500    .text.layer_and:0000000000000000 layer_and
+     /tmp/ccjifmO8.s:540    .text.layer_xor:0000000000000000 layer_xor
+     /tmp/ccjifmO8.s:580    .text.layer_debug:0000000000000000 layer_debug
+     /tmp/ccjifmO8.s:595    .text.layer_switch_get_action:0000000000000000 layer_switch_get_action
 
 UNDEFINED SYMBOLS
 hook_default_layer_change

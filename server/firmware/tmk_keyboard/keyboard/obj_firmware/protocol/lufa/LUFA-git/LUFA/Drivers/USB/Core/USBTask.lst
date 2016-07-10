@@ -596,18 +596,18 @@
   93               		.comm	USB_IsInitialized,1,1
   94               		.text
   95               	.Letext0:
-  96               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+  96               		.file 3 "/usr/lib/avr/include/stdint.h"
   97               		.file 4 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../StdRequestType.h"
   98               		.file 5 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../Device.h"
   99               		.file 6 "../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/../DeviceStandardReq.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 USBTask.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc4KApvt.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc4KApvt.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc4KApvt.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc4KApvt.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc4KApvt.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//cc4KApvt.s:13     .text.USB_USBTask:0000000000000000 USB_USBTask
+     /tmp/cc25BsbD.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc25BsbD.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc25BsbD.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc25BsbD.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc25BsbD.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cc25BsbD.s:13     .text.USB_USBTask:0000000000000000 USB_USBTask
                             *COM*:0000000000000001 USB_DeviceState
                             *COM*:0000000000000008 USB_ControlRequest
                             *COM*:0000000000000001 USB_IsInitialized

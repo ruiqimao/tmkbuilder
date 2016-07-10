@@ -31,35 +31,35 @@
   24 0002 7EEF      		ldi r23,lo8(-2)
   25 0004 80E0      		ldi r24,0
   26 0006 90E0      		ldi r25,0
-  27 0008 0E94 0000 		call __eewr_word_m32u4
+  27 0008 0E94 0000 		call eeprom_write_word
   28               	.LVL0:
    9:../tmk_core/common/avr/eeconfig.c ****     eeprom_write_byte(EECONFIG_DEBUG,          0);
   29               		.loc 1 9 0
   30 000c 60E0      		ldi r22,0
   31 000e 82E0      		ldi r24,lo8(2)
   32 0010 90E0      		ldi r25,0
-  33 0012 0E94 0000 		call __eewr_byte_m32u4
+  33 0012 0E94 0000 		call eeprom_write_byte
   34               	.LVL1:
   10:../tmk_core/common/avr/eeconfig.c ****     eeprom_write_byte(EECONFIG_DEFAULT_LAYER,  0);
   35               		.loc 1 10 0
   36 0016 60E0      		ldi r22,0
   37 0018 83E0      		ldi r24,lo8(3)
   38 001a 90E0      		ldi r25,0
-  39 001c 0E94 0000 		call __eewr_byte_m32u4
+  39 001c 0E94 0000 		call eeprom_write_byte
   40               	.LVL2:
   11:../tmk_core/common/avr/eeconfig.c ****     eeprom_write_byte(EECONFIG_KEYMAP,         0);
   41               		.loc 1 11 0
   42 0020 60E0      		ldi r22,0
   43 0022 84E0      		ldi r24,lo8(4)
   44 0024 90E0      		ldi r25,0
-  45 0026 0E94 0000 		call __eewr_byte_m32u4
+  45 0026 0E94 0000 		call eeprom_write_byte
   46               	.LVL3:
   12:../tmk_core/common/avr/eeconfig.c ****     eeprom_write_byte(EECONFIG_MOUSEKEY_ACCEL, 0);
   47               		.loc 1 12 0
   48 002a 60E0      		ldi r22,0
   49 002c 85E0      		ldi r24,lo8(5)
   50 002e 90E0      		ldi r25,0
-  51 0030 0C94 0000 		jmp __eewr_byte_m32u4
+  51 0030 0C94 0000 		jmp eeprom_write_byte
   52               	.LVL4:
   53               		.cfi_endproc
   54               	.LFE0:
@@ -86,7 +86,7 @@
   69 0002 7EEF      		ldi r23,lo8(-2)
   70 0004 80E0      		ldi r24,0
   71 0006 90E0      		ldi r25,0
-  72 0008 0C94 0000 		jmp __eewr_word_m32u4
+  72 0008 0C94 0000 		jmp eeprom_write_word
   73               	.LVL5:
   74               		.cfi_endproc
   75               	.LFE1:
@@ -110,7 +110,7 @@
   90 0002 7FEF      		ldi r23,lo8(-1)
   91 0004 80E0      		ldi r24,0
   92 0006 90E0      		ldi r25,0
-  93 0008 0C94 0000 		jmp __eewr_word_m32u4
+  93 0008 0C94 0000 		jmp eeprom_write_word
   94               	.LVL6:
   95               		.cfi_endproc
   96               	.LFE2:
@@ -132,7 +132,7 @@
  109               		.loc 1 30 0
  110 0000 80E0      		ldi r24,0
  111 0002 90E0      		ldi r25,0
- 112 0004 0E94 0000 		call __eerd_word_m32u4
+ 112 0004 0E94 0000 		call eeprom_read_word
  113               	.LVL7:
  114 0008 21E0      		ldi r18,lo8(1)
  115 000a 8D3E      		cpi r24,-19
@@ -161,7 +161,7 @@
  137               		.loc 1 33 0
  138 0000 82E0      		ldi r24,lo8(2)
  139 0002 90E0      		ldi r25,0
- 140 0004 0C94 0000 		jmp __eerd_byte_m32u4
+ 140 0004 0C94 0000 		jmp eeprom_read_byte
  141               	.LVL8:
  142               		.cfi_endproc
  143               	.LFE4:
@@ -182,7 +182,7 @@
  159 0002 82E0      		ldi r24,lo8(2)
  160 0004 90E0      		ldi r25,0
  161               	.LVL10:
- 162 0006 0C94 0000 		jmp __eewr_byte_m32u4
+ 162 0006 0C94 0000 		jmp eeprom_write_byte
  163               	.LVL11:
  164               		.cfi_endproc
  165               	.LFE5:
@@ -201,7 +201,7 @@
  178               		.loc 1 36 0
  179 0000 83E0      		ldi r24,lo8(3)
  180 0002 90E0      		ldi r25,0
- 181 0004 0C94 0000 		jmp __eerd_byte_m32u4
+ 181 0004 0C94 0000 		jmp eeprom_read_byte
  182               	.LVL12:
  183               		.cfi_endproc
  184               	.LFE6:
@@ -222,7 +222,7 @@
  200 0002 83E0      		ldi r24,lo8(3)
  201 0004 90E0      		ldi r25,0
  202               	.LVL14:
- 203 0006 0C94 0000 		jmp __eewr_byte_m32u4
+ 203 0006 0C94 0000 		jmp eeprom_write_byte
  204               	.LVL15:
  205               		.cfi_endproc
  206               	.LFE7:
@@ -241,7 +241,7 @@
  219               		.loc 1 39 0
  220 0000 84E0      		ldi r24,lo8(4)
  221 0002 90E0      		ldi r25,0
- 222 0004 0C94 0000 		jmp __eerd_byte_m32u4
+ 222 0004 0C94 0000 		jmp eeprom_read_byte
  223               	.LVL16:
  224               		.cfi_endproc
  225               	.LFE8:
@@ -262,34 +262,34 @@
  241 0002 84E0      		ldi r24,lo8(4)
  242 0004 90E0      		ldi r25,0
  243               	.LVL18:
- 244 0006 0C94 0000 		jmp __eewr_byte_m32u4
+ 244 0006 0C94 0000 		jmp eeprom_write_byte
  245               	.LVL19:
  246               		.cfi_endproc
  247               	.LFE9:
  249               		.text
  250               	.Letext0:
- 251               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
- 252               		.file 3 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/avr/eeprom.h"
+ 251               		.file 2 "/usr/lib/avr/include/stdint.h"
+ 252               		.file 3 "/usr/lib/avr/include/avr/eeprom.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 eeconfig.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:13     .text.eeconfig_init:0000000000000000 eeconfig_init
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:59     .text.eeconfig_enable:0000000000000000 eeconfig_enable
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:80     .text.eeconfig_disable:0000000000000000 eeconfig_disable
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:101    .text.eeconfig_is_enabled:0000000000000000 eeconfig_is_enabled
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:129    .text.eeconfig_read_debug:0000000000000000 eeconfig_read_debug
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:148    .text.eeconfig_write_debug:0000000000000000 eeconfig_write_debug
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:170    .text.eeconfig_read_default_layer:0000000000000000 eeconfig_read_default_layer
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:189    .text.eeconfig_write_default_layer:0000000000000000 eeconfig_write_default_layer
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:211    .text.eeconfig_read_keymap:0000000000000000 eeconfig_read_keymap
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccDoWceD.s:230    .text.eeconfig_write_keymap:0000000000000000 eeconfig_write_keymap
+     /tmp/ccaI7qwR.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccaI7qwR.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccaI7qwR.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccaI7qwR.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccaI7qwR.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccaI7qwR.s:13     .text.eeconfig_init:0000000000000000 eeconfig_init
+     /tmp/ccaI7qwR.s:59     .text.eeconfig_enable:0000000000000000 eeconfig_enable
+     /tmp/ccaI7qwR.s:80     .text.eeconfig_disable:0000000000000000 eeconfig_disable
+     /tmp/ccaI7qwR.s:101    .text.eeconfig_is_enabled:0000000000000000 eeconfig_is_enabled
+     /tmp/ccaI7qwR.s:129    .text.eeconfig_read_debug:0000000000000000 eeconfig_read_debug
+     /tmp/ccaI7qwR.s:148    .text.eeconfig_write_debug:0000000000000000 eeconfig_write_debug
+     /tmp/ccaI7qwR.s:170    .text.eeconfig_read_default_layer:0000000000000000 eeconfig_read_default_layer
+     /tmp/ccaI7qwR.s:189    .text.eeconfig_write_default_layer:0000000000000000 eeconfig_write_default_layer
+     /tmp/ccaI7qwR.s:211    .text.eeconfig_read_keymap:0000000000000000 eeconfig_read_keymap
+     /tmp/ccaI7qwR.s:230    .text.eeconfig_write_keymap:0000000000000000 eeconfig_write_keymap
 
 UNDEFINED SYMBOLS
-__eewr_word_m32u4
-__eewr_byte_m32u4
-__eerd_word_m32u4
-__eerd_byte_m32u4
+eeprom_write_word
+eeprom_write_byte
+eeprom_read_word
+eeprom_read_byte

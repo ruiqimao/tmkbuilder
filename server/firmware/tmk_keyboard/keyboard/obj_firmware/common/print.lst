@@ -65,16 +65,16 @@
   28               	.LFE1:
   30               		.text
   31               	.Letext0:
-  32               		.file 2 "/usr/local/Cellar/avr-gcc/4.9.3/avr/include/stdint.h"
+  32               		.file 2 "/usr/lib/avr/include/stdint.h"
   33               		.file 3 "../tmk_core/common/avr/xprintf.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 print.c
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKvZoPO.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKvZoPO.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKvZoPO.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKvZoPO.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKvZoPO.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/w_/62ddyc51061dt7n8j2r43p_c0000gn/T//ccKvZoPO.s:13     .text.print_set_sendchar:0000000000000000 print_set_sendchar
+     /tmp/ccJiClYj.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccJiClYj.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccJiClYj.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccJiClYj.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccJiClYj.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccJiClYj.s:13     .text.print_set_sendchar:0000000000000000 print_set_sendchar
 
 UNDEFINED SYMBOLS
 xfunc_out
