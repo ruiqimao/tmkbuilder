@@ -20,6 +20,7 @@ function Key() {
 function Keyboard() {
 	this.name = 'Custom Keyboard';
 	this.reversed = false;
+	this.bootloaderSize = '4096';
 
 	this.keys = [];
 	this.macros = [[], [], [], [], [], [], [], []];

@@ -14,6 +14,12 @@ $('#config-settings-diode').change(function() {
 	}
 });
 
+// Diode direction.
+$('#config-settings-bootloader').change(function() {
+	// Set the bootloader size.
+	_keyboard.bootloaderSize = $(this).val();
+});
+
 // Download configuration.
 $('#download-config').click(function() {
 	// Stringify the keyboard.
@@ -48,6 +54,7 @@ $('#download-source').click(function() {
 					var keymapC = generateKeymapC();
 					var ledC = generateLedC();
 					var matrixC = generateMatrixC();
+					var makefile = generateMakefile();
 
 					// Insert the files into the zip file.
 					zip.file('tmk_keyboard/keyboard/config.h', configH);
@@ -55,6 +62,7 @@ $('#download-source').click(function() {
 					zip.file('tmk_keyboard/keyboard/keymap.c', keymapC);
 					zip.file('tmk_keyboard/keyboard/led.c', ledC);
 					zip.file('tmk_keyboard/keyboard/matrix.c', matrixC);
+					zip.file('tmk_keyboard/keyboard/Makefile', makefile);
 
 					// Download the file.
 					zip.generateAsync({ type: 'blob' })
@@ -88,6 +96,7 @@ $('#download-hex').click(function() {
 		var keymapC = generateKeymapC();
 		var ledC = generateLedC();
 		var matrixC = generateMatrixC();
+		var makefile = generateMakefile();
 
 		// Make the request to the server.
 		$.ajax({
@@ -97,7 +106,8 @@ $('#download-hex').click(function() {
 				keymapCommonH: keymapCommonH,
 				keymapC: keymapC,
 				ledC: ledC,
-				matrixC: matrixC
+				matrixC: matrixC,
+				makefile: makefile
 			},
 			method: 'POST',
 			dataType: 'json',
@@ -142,6 +152,9 @@ function loadCompileConfig() {
 	} else {
 		$('#config-settings-diode').val(0);
 	}
+
+	// Set the bootloader size.
+	$('#config-settings-bootloader').val(_keyboard.bootloaderSize);
 }
 
 /*

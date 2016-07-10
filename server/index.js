@@ -26,6 +26,7 @@ app.post('/api/build', function(req, res) {
 	attributes.keymapC = req.body.keymapC;
 	attributes.ledC = req.body.ledC;
 	attributes.matrixC = req.body.matrixC;
+	attributes.makefile = req.body.makefile;
 
 	// Begin the operations.
 	async.series([
@@ -95,6 +96,18 @@ app.post('/api/build', function(req, res) {
 
 			// Copy matrix.c.
 			fs.writeFile(this.temp + '/keyboard/matrix.c', this.matrixC, function(err) {
+				if (err) return sendError(this);
+
+				this.callback();
+			}.bind(this));
+
+		}.bind(attributes),
+
+		function(callback) {
+			this.callback = callback;
+
+			// Copy Makefile.
+			fs.writeFile(this.temp + '/keyboard/Makefile', this.makefile, function(err) {
 				if (err) return sendError(this);
 
 				this.callback();
