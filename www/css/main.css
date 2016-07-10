@@ -452,6 +452,8 @@ select {
 	border-top:1px solid #dddddd;
 	position:relative;
 	top:-1px;
+	cursor:move;
+	background:#ffffff;
 }
 
 .config-macro-entry span, #config-compile-warning-keys span {
@@ -465,14 +467,31 @@ select {
 	margin:0 0.3rem;
 }
 
-.config-macro-remove {
+.config-macro-down, .config-macro-up, .config-macro-remove {
 	position:absolute;
 	top:50%;
-	right:1.5rem;
 	-webkit-transform:translateY(-50%);
 	-moz-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
+}
+
+.config-macro-down {
+	width:2.5rem;
+	right:3.55rem;
+	border-bottom-left-radius:0;
+	border-top-left-radius:0;
+}
+
+.config-macro-up {
+	width:2.5rem;
+	right:5.95rem;
+	border-bottom-right-radius:0;
+	border-top-right-radius:0;
+}
+
+.config-macro-remove {
+	right:1.5rem;
 	height:1rem;
 	width:1rem;
 	line-height:1.2rem;

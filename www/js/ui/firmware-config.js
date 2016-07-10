@@ -91,6 +91,9 @@ $('#config-macro-w').click(function() {
 	loadMacroConfig();
 });
 
+// Drag macro entry.
+
+
 /*
  * Load the firmware config.
  */
@@ -284,6 +287,32 @@ function loadMacroConfig() {
 		}
 		entry.append('<span>' + value + '</span>');
 		if (action[0] == MACRO_WAIT) entry.append(' milliseconds');
+
+		// Add the movement buttons.
+		var downButton = $('<button class="config-macro-down light"><i class="fa fa-chevron-down"></i></button>');
+		var upButton = $('<button class="config-macro-up light"><i class="fa fa-chevron-up"></i></button>');
+		downButton.click(function() {
+			var macro = _keyboard.macros[_activeMacro];
+			// Move the entry down.
+			if (this.index < macro.length - 1) {
+				macro.splice(this.index + 1, 0, macro.splice(this.index, 1)[0]);
+
+				// Redraw the list.
+				loadMacroConfig();
+			}
+		}.bind({ index: i }));
+		upButton.click(function() {
+			var macro = _keyboard.macros[_activeMacro];
+			// Move the entry up.
+			if (this.index > 0) {
+				macro.splice(this.index - 1, 0, macro.splice(this.index, 1)[0]);
+
+				// Redraw the list.
+				loadMacroConfig();
+			}
+		}.bind({ index: i }));
+		entry.append(downButton);
+		entry.append(upButton);
 
 		// Add the remove button.
 		var remove = $('<div class="config-macro-remove">&times;</div>');
