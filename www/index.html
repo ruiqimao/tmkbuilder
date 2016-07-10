@@ -30,6 +30,7 @@
 				<button class="block light preset-btn" data-id="s60x-iso">S60-X (ISO)</button>
 				<button class="block light preset-btn" data-id="phantom-ansi">Phantom TKL (ANSI)</button>
 				<button class="block light preset-btn" data-id="phantom-iso">Phantom TKL (ISO)</button>
+				<button class="block light preset-btn" data-id="clueboard-ansi">Clueboard (ANSI)</button>
 			</div>
 
 			<!-- CONFIG -->
@@ -74,19 +75,21 @@
 
 				<div class="config-pin config-panel panel clearfix" style="padding-bottom:1rem;">
 					<h2>Pin Config</h2>
-					<div class="config-pin-column">
-						<h3>Rows</h3>
-						<button class="small number-sm" data-for="config-pin-rows-c"><i class="fa fa-minus"></i></button>
-						<input type="text" class="number" id="config-pin-rows-c" value="0" min="1" max="99">
-						<button class="small number-lg" data-for="config-pin-rows-c"><i class="fa fa-plus"></i></button>
-						<div id="config-pin-rows"></div>
-					</div>
-					<div class="config-pin-column">
-						<h3>Columns</h3>
-						<button class="small number-sm" data-for="config-pin-cols-c"><i class="fa fa-minus"></i></button>
-						<input type="text" class="number" id="config-pin-cols-c" value="0" min="1" max="99">
-						<button class="small number-lg" data-for="config-pin-cols-c"><i class="fa fa-plus"></i></button>
-						<div id="config-pin-cols"></div>
+					<div class="clearfix">
+						<div class="config-pin-column">
+							<h3>Rows</h3>
+							<button class="small number-sm" data-for="config-pin-rows-c"><i class="fa fa-minus"></i></button>
+							<input type="text" class="number" id="config-pin-rows-c" value="0" min="1" max="99">
+							<button class="small number-lg" data-for="config-pin-rows-c"><i class="fa fa-plus"></i></button>
+							<div id="config-pin-rows"></div>
+						</div>
+						<div class="config-pin-column">
+							<h3>Columns</h3>
+							<button class="small number-sm" data-for="config-pin-cols-c"><i class="fa fa-minus"></i></button>
+							<input type="text" class="number" id="config-pin-cols-c" value="0" min="1" max="99">
+							<button class="small number-lg" data-for="config-pin-cols-c"><i class="fa fa-plus"></i></button>
+							<div id="config-pin-cols"></div>
+						</div>
 					</div>
 					<h3>LEDs</h3>
 					<div id="config-pin-leds"></div>

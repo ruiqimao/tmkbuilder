@@ -1,6 +1,7 @@
 // List of all possible keys.
 KEYS = [
 	'TRNS',
+	'BTLD',
 	'NO',
 	'A',
 	'B',
