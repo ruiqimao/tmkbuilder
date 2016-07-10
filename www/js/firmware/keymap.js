@@ -46,7 +46,21 @@ function generateBaseKeymap() {
 			if (associations[row + ',' + col] !== undefined) {
 				// If the assocation exists, add the entry.
 				var key = leftPad(row.toString(), rowWidth, '0') + leftPad(col.toString(), colWidth, '0');
-				keymap1 += 'K' + key + ((row < _keyboard.rows - 1 || col < _keyboard.cols - 1) ? ', ' : '  ');
+
+				// Determine if this is the last character in the map.
+				var last = false;
+				if (row == _keyboard.rows - 1) {
+					last = true;
+					for (var col2 = col + 1; col2 < _keyboard.cols; col2 ++) {
+						if (associations[row + ',' + col2] !== undefined) {
+							last = false;
+							break;
+						}
+					}
+				}
+
+				// Add the entry.
+				keymap1 += 'K' + key + (last ? '  ' : ', ');
 				keymap2 += 'KC_##K' + key + ', ';
 			} else {
 				// Otherwise, make it a nonexistent key.
