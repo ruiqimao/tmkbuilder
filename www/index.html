@@ -143,6 +143,7 @@
 					<div class="input">
 						<label>Layout Name</label>
 						<input type="text" id="config-name" value="Custom Keyboard">
+						<span class="tooltip-hover" data-text="Give your layout a name!"><i class="fa fa-question-circle"></i></span>
 					</div>
 					<div class="input">
 						<label>Diode Direction</label>
@@ -150,6 +151,9 @@
 							<option value="0">Column to Row</option>
 							<option value="1">Row to Column</option>
 						</select>
+						<span class="tooltip-hover"
+							data-text="<b>Column to Row</b>: Marked end of diode towards row. This is what most hand-wired boards will be.<br><b>Row to Column</b>: Marked end of diode towards column."
+						><i class="fa fa-question-circle"></i></span>
 					</div>
 					<div class="input">
 						<label>Bootloader Size</label>
@@ -158,6 +162,9 @@
 							<option value="2048">2048 KB</option>
 							<option value="512">512 KB</option>
 						</select>
+						<span class="tooltip-hover"
+							data-text="<b>4096 KB</b>: Atmel DFU Loader, LUFA Bootloader, Arduino Caterina<br><b>2048 KB</b>: USBaspLoader<br><b>512 KB</b>: Teensy halfKay"
+						><i class="fa fa-question-circle"></i></span>
 					</div>
 					<br>
 					<div class="input">
@@ -188,6 +195,9 @@
 				TMK Firmware by <a href="https://github.com/tmk" target="_blank">Hasu</a>
 			</div>
 		</div>
+
+		<!-- TOOLTIP -->
+		<div class="tooltip"></div>
 
 		<!-- JQUERY -->
 		<script src="js/jquery.min.js"></script>

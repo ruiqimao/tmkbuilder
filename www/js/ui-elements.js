@@ -28,3 +28,24 @@ $('.number-lg').click(function() {
 		box.change();
 	}
 });
+
+// Tooltip.
+$(window).mousemove(function() {
+	$('.tooltip').hide();
+});
+$('.tooltip-hover').mousemove(function(e) {
+	// Prevent the event from propagating to the window.
+	e.stopPropagation();
+
+	// Set the tooltip text.
+	$('.tooltip').html($(this).data('text'));
+
+	// Show the tooltip.
+	$('.tooltip').show();
+
+	// Move the tooltip to the mouse.
+	$('.tooltip').css({
+		'top': e.pageY - $('.tooltip').outerHeight() / 2,
+		'left': e.pageX + 10
+	});
+});

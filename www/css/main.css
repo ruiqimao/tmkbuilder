@@ -224,6 +224,15 @@ select {
 	margin:0;
 }
 
+.tooltip-hover {
+	display:inline-block;
+	vertical-align:middle;
+	font-size:1rem;
+	color:#888888;
+	margin-left:0.5rem;
+	cursor:help;
+}
+
 .input {
 	margin:0.5rem 0;
 }
@@ -561,4 +570,22 @@ select {
 	line-height:1.5rem;
 	color:#444444;
 	margin:2rem 0;
+}
+
+/*** TOOLTIP ***/
+
+.tooltip {
+	display:none;
+	position:absolute;
+	font-family:Hind;
+	font-size:0.8rem;
+	color:#ffffff;
+	background:#444444;
+	padding:0.3rem 0.5rem;
+	pointer-events:none;
+	max-width:300px;
+}
+
+.tooltip b {
+	font-weight:500;
 }
