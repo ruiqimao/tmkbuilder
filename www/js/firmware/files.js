@@ -345,7 +345,7 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 
 
 # Boot Section Size in *bytes*
-OPT_DEFS += -DBOOTLOADER_SIZE=` + _keyboard.booloaderSize + `
+OPT_DEFS += -DBOOTLOADER_SIZE=` + _keyboard.bootloaderSize + `
 
 
 # Build Options
