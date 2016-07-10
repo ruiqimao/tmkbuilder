@@ -32,6 +32,16 @@ $(window).keydown(function(e) {
 		// Assign key based on keyboard event.
 		assignKeyPress(e);
 	}
+	if (_recording) {
+		// Record the key press.
+		recordMacroDown(e);
+	}
+});
+$(window).keyup(function(e) {
+	if (_recording) {
+		// Record the key release.
+		recordMacroUp(e);
+	}
 });
 
 // Remove keyboard input focus.

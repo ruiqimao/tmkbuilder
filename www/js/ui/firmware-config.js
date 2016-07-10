@@ -91,8 +91,26 @@ $('#config-macro-w').click(function() {
 	loadMacroConfig();
 });
 
-// Drag macro entry.
+// Clear macro button.
+$('#config-macro-clear').click(function() {
+	// Clear the current macro.
+	_keyboard.macros[_activeMacro] = [];
 
+	// Redraw the macro.
+	loadMacroConfig();
+});
+
+// Record macro button.
+$('#config-macro-record').click(function() {
+	// Check if currently recording.
+	if (_recording) {
+		// Stop recording.
+		stopRecording();
+	} else {
+		// Start recording.
+		startRecording();
+	}
+});
 
 /*
  * Load the firmware config.
@@ -347,4 +365,72 @@ function addMacroAction(keycode) {
 
 	// Hide the selector.
 	$('#config-macro-cancel').click();
+}
+
+/*
+ * Start recording a macro.
+ */
+function startRecording() {
+	_recording = true;
+	_recordingMacro = [];
+	$('#config-macro-record').addClass('recording');
+	$('#config-macro-record').text('Stop Recording');
+}
+
+/*
+ * Stop recording a macro.
+ */
+function stopRecording() {
+	_recording = false;
+	$('#config-macro-record').removeClass('recording');
+	$('#config-macro-record').text('Record Macro');
+
+	// Set the current macro to be the recorded macro.
+	_keyboard.macros[_activeMacro] = JSON.parse(JSON.stringify(_recordingMacro));
+
+	// Redraw the macro.
+	loadMacroConfig();
+}
+
+/*
+ * Record a key down.
+ *
+ * @param e The key event.
+ */
+function recordMacroDown(e) {
+	// Get the code.
+	var code = KEYCODES[e.which];
+	if (code === undefined) return;
+	if (code == 'CTL' || code == 'SFT' || code == 'ALT') {
+		// Assume left, since there is no way of telling.
+		code = 'L' + code;
+	}
+
+	// Add the action to the recording macro.
+	_recordingMacro.push(['D', code]);
+}
+
+/*
+ * Record a key up.
+ *
+ * @param e The key event.
+ */
+function recordMacroUp(e) {
+	// Get the code.
+	var code = KEYCODES[e.which];
+	if (code === undefined) return;
+	if (code == 'CTL' || code == 'SFT' || code == 'ALT') {
+		// Assume left, since there is no way of telling.
+		code = 'L' + code;
+	}
+
+	// Check if the previous action was a down on the same key.
+	var prevAction = _recordingMacro[_recordingMacro.length - 1];
+	if (prevAction[0] == 'D' && prevAction[1] == code) {
+		// Replace the previous action with a type action.
+		prevAction[0] = 'T';
+	} else {
+		// Add the action to the recording macro.
+		_recordingMacro.push(['U', code]);
+	}
 }
