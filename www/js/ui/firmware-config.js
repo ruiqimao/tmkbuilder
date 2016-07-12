@@ -102,6 +102,9 @@ $('#config-macro-clear').click(function() {
 
 // Record macro button.
 $('#config-macro-record').click(function() {
+	// Lose focus.
+	$('#config-macro-record').blur();
+
 	// Check if currently recording.
 	if (_recording) {
 		// Stop recording.

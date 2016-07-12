@@ -7,6 +7,12 @@ $('.radio-group button').click(function() {
 	$(this).addClass('active');
 });
 
+// Number field.
+$('input.number').click(function() {
+	// Select everything when clicked.
+	$(this).select();
+});
+
 // Number selector buttons.
 $('.number-sm').click(function() {
 	// Get the element it corresponds to.
