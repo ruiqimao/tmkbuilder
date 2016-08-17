@@ -260,9 +260,6 @@ function getKeyValue(value) {
 		}
 	}
 
-	// If the closest value is NO, then return TRNS.
-	if (closest == 'NO') closest = 'TRNS';
-
 	// Return the closest value.
 	return closest;
 }
